@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+    type="text/javascript"
+  ></script>
+
+
+    <title>Aula #2 - Campo Elétrico</title>
+  </head>
+  <body>
+    <header id="title-block-header">
+      <h1 class="title">O Campo Elétrico</h1>
+    </header>
+    <p>
+      Quando colocamos uma carga elétrica na presença de outra carga, a primeira
+      sofre a influência da segunda à distância. Assim, podemos considerar que a
+      força sofrida pela primeira carga é resultado da interação da mesma com o
+      <strong><em>campo elétrico</em></strong> produzido pela segunda carga.
+      Para determinar o campo elétrico formalmente, consideramos que a primeira
+      carga é um carga teste, ou seja, uma carga muito pequena de modo que não
+      influencia o campo elétrico produzido pela carga que origina o campo.
+      Neste caso, o campo elétrico
+      <span class="math inline">\(\vec{E}\)</span> é definido por:
+      <span class="math display"
+        >\[\tag{1}\label{campoeletrico}
+        \vec{E}=\lim_{q\rightarrow0}\dfrac{\vec{F}_{q}}{q}\]</span
+      >
+      onde o limite explicita o fato de que a carga teste deve ser muito pequena
+      de maneira a não afetar a distribuição de cargas.
+    </p>
+    <p>
+      As expressões anteriores para a força elétrica nos permitem determinar a
+      equação para o campo elétrico. Vamos considerar o caso mais geral
+      possível, onde temos uma distribuição discreta de cargas além de
+      distribuições de volume e superfície. Neste caso a força elétrica sobre
+      uma carga teste <span class="math inline">\(q\)</span> na posição
+      <span class="math inline">\(\vec{r}\)</span> é dada por:
+      <span class="math display"
+        >\[\begin{multline} \vec{F}_{q} =
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{V}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
+        \\+
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{S}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+        \\+
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{C}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\lambda(\vec{r}^{\prime})~dl^{\prime}
+        \\+ \dfrac{q}{4\pi\epsilon_{0}}\sum_{j\neq
+        i}^{N}q_{j}\dfrac{(\vec{r}-\vec{r}_{j})}{|\vec{r}-\vec{r}_{j}|^{3}}\end{multline}\label{forcaCoulomb}\]</span
+      >
+      e substituindo esta expressão na Eq. \eqref{campoeletrico} obtemos uma equação geral para o campo elétrico produzido pela
+      distribuição de cargas:
+      <span class="math display"
+        >\[\begin{multline} \vec{E}(\vec{r}) =
+        \dfrac{1}{4\pi\epsilon_{0}}\int_{V}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
+        \\+
+        \dfrac{1}{4\pi\epsilon_{0}}\int_{S}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+        \\+
+        \dfrac{1}{4\pi\epsilon_{0}}\int_{C}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\lambda(\vec{r}^{\prime})~dl^{\prime}
+        \\+ \dfrac{1}{4\pi\epsilon_{0}}\sum_{j\neq
+        i}^{N}q_{j}\dfrac{(\vec{r}-\vec{r}_{j})}{|\vec{r}-\vec{r}_{j}|^{3}}.\end{multline} \tag{2}\label{campo:eletrico}\]</span
+      >
+    </p>
+    <h2 id="linhas-de-força">Linhas de Força</h2>
+    <p>
+      Note que a expressão para o campo elétrico implica que este é uma função
+      vetorial puntual,
+      <span class="math inline">\(\vec{E}=\vec{E}(\vec{r})\)</span> e, portanto,
+      é um campo vetorial. Assim, podemos atribuir a cada ponto do espaço um
+      vetor indicando o módulo, direção e sentido do campo elétrico. Uma maneira
+      complementar largamente utilizada para visualizar a forma do campo
+      elétrico foi formulada por M. Faraday e é baseada no conceito de linhas de
+      força. Uma linha de força é uma curva imaginária traçada de forma que sua
+      direção e sentido em qualquer ponto seja o do campo elétrico naquele
+      ponto. No caso de uma carga pontual isolada, as linhas de força estão na
+      direção radial com o sentido saindo da partícula no caso de cargas
+      positivas e entrando na partícula para cargas negativas. Na Fig.
+      <a href="#linhas" data-reference-type="ref" data-reference="linhas"
+        >1.1</a
+      >
+      são ilustradas as linhas de forças para duas cargas puntuais. A convenção
+      usada para as linhas de força é definida de modo que as linhas emanam da
+      carga positiva enquanto as linhas convergem para a carga negativa.
+    </p>
+    <figure class="img">
+      <embed src=".images/linhascargas.png" />
+      <figcaption aria-hidden="true">
+        <span id="linhas" label="linhas">Fig. 1.1. </span> Linhas de força para
+        cargas isoladas. (a) carga positiva. (b) carga negativa.
+      </figcaption>
+    </figure>
+    <p>
+      Na Fig.
+      <a href="#fig1m" data-reference-type="ref" data-reference="fig1m">1.2</a>
+      temos uma segunda ilustração das linhas de campo para duas cargas postas
+      próximas uma da outra.
+    </p>
+    <figure class="img">
+      <embed src=".images/linhascampo.png" id="fig1m" height="250" />
+      <figcaption aria-hidden="true">
+        <span id="fig1m" label="fig1m">Fig. 1.2.</span> (a) Linhas de força para
+        duas cargas de sinais opostos (veja o exemplo resolvido <b>1</b>.). (b) Linhas de forças
+        para duas cargas de mesmo sinal.
+      </figcaption>
+    </figure>
+
+
+    <h2 id="exemplos-resolvidos">Exemplos Resolvidos</h2>
+    <p class="semparagraph">
+      <strong>1. Moysés, cap. 3, Exemplo 3, pg. 18.</strong> <em
+        >Uma carga puntiforme <span class="math inline">\(-q\)</span> está
+        localizada no ponto <span class="math inline">\((0, 0, -d)\)</span> de
+        um sistema de coordenadas cartesianas, e outra
+        <span class="math inline">\(+q\)</span> no ponto
+        <span class="math inline">\((0, 0, +d)\)</span>. Qual é o campo num
+        ponto <span class="math inline">\((x, y, z)\)</span>?</em
+      >
+    </p>
+    <div class="center">
+      <p class="img"><strong>Solução</strong></p>
+    </div>
+    <p>
+      O campo elétrico é dado pela Eq. \eqref{campo:eletrico}. As cargas estão localizadas de acordo com os vetores:
+      <span class="math display"
+        >\[\begin{aligned} \vec{r}_{+}=d\hat{\mathbf{k}},\qquad\text{e}\qquad
+        \vec{r}_{-}=-d\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      O ponto onde o campo elétrico deve ser determinado é um ponto qualquer de coordenadas
+      <span class="math inline">\((x, y, z)\)</span>. Assim, o vetor
+      <span class="math inline">\(\vec{r}\)</span> é dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{r}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}},\end{aligned}\]</span
+      >
+      o que nos permite formar os vetores:
+      <span class="math display"
+        >\[\begin{multline}
+        \vec{r}-\vec{r}_{+}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z-d)\hat{\mathbf{k}}\\\quad\therefore\quad
+        |\vec{r}-\vec{r}_{+}|=\sqrt{x^{2}+y^{2}+(z-d)^{2}}\end{multline}\]</span
+      >
+      e,
+      <span class="math display"
+        >\[\begin{multline}
+        \vec{r}-\vec{r}_{-}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z+d)\hat{\mathbf{k}}\\\quad\therefore\quad
+        |\vec{r}-\vec{r}_{-}|=\sqrt{x^{2}+y^{2}+(z+d)^{2}}.\end{multline}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se estes dados na Eq. \eqref{campo:eletrico}, obtemos:
+      <span class="math display"
+        >\[\begin{multline}
+        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z-d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}}\right.\\\left.-\left(\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z+d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z+d)^{2}]^{3/2}}\right)\right]\end{multline}\]</span
+      >
+      o que pode ser escrito na forma:
+      <span class="math display"
+        >\[\begin{multline} \vec{E}(x, y, z)=\dfrac{q}{4\pi\epsilon_{0}}
+        \left[\dfrac{1}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}} \right.\\\left.-
+        \dfrac{1}{[x^{2}+y^{2}+(z+d)^{2}]^{3/2}}\right](x\hat{\mathbf{i}}+y\hat{\mathbf{j}})
+        \\+\dfrac{q}{4\pi\epsilon_{0}}
+        \left[\dfrac{(z-d)}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}} \right.\\\left.-
+        \dfrac{(z+d)}{[x^{2}+y^{2}+(z+d)^{2}]^{3/2}}\right]\hat{\mathbf{k}},\end{multline}\]</span
+      >
+      que é a expressão para o campo elétrico.
+    </p>
+    <p>
+      No plano-<span class="math inline">\(xy\)</span>, o campo elétrico é
+      obtido fazendo <span class="math inline">\(z=0\)</span> na expressão
+      acima:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(x, y, 0)=-\dfrac{1}{4\pi\epsilon_{0}}
+        \dfrac{2qd}{[x^{2}+y^{2}+d^{2}]^{3/2}}\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      mostrando que o campo está dirigido ao longo da direção
+      <span class="math inline">\(\hat{z}\)</span>. Por outro lado, sabemos que
+      o campo é radial quando muito próximo das cargas. Usando a expressão geral obtida acima é possível mostrar que as linhas de
+      força têm a forma mostrada na Fig.
+      <a href="#fig1m" data-reference-type="ref" data-reference="fig1m">1.2</a
+      >(a).
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+    <p class="semparagraph">
+      <strong
+        >2. Moysés, cap. 3, Exemplo 4, pg. 19. <span
+          id="pgdisco"
+          label="pgdisco"
+          ></span
+        ></strong
+      > <em
+        >Um disco circular horizontal de raio
+        <span class="math inline">\(a\)</span> está uniformemente carregado com
+        densidade superficial de carga,
+        <span class="math inline">\(\sigma\)</span>. Qual é o campo num ponto do
+        eixo vertical que atravessa o disco em seu centro, a uma distância
+        <span class="math inline">\(D\)</span> do centro?</em
+      >
+    </p>
+    <figure class="img">
+      <embed src=".images/disco.png" id="ex4:fig" height="550" />
+      <figcaption aria-hidden="true">
+        <span id="ex4:fig" label="ex4:fig">Fig. 1.3.</span> Veja o exemplo
+        <strong>2</strong>.
+      </figcaption>
+    </figure>
+    <div class="center">
+      <p class="img"><strong>Solução</strong></p>
+    </div>
+    <p>
+      Para obter o campo elétrico
+      <span class="math inline">\(\vec{E}\)</span> para o disco, utilizamos o
+      resultado obtido do exemplo 2, do capítulo sobre <a rel="text/html" href="aula1a.html">Lei de Coulomb</a>.    Naquela ocasião, obtivemos a seguinte equação para a força exercida por um anel, de raio <span class="math inline">\(\rho\)</span> e carga <span class="math inline">\(Q\)</span>, sobre uma carga <span class="math inline">\(q\)</span>, localizada a um distância <span class="math inline">\(D\)</span> do anel:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{F}_{q}&amp;=\dfrac{qQ}{4\pi\epsilon_{0}}\dfrac{D}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+      e usando a Eq. \eqref{campo:eletrico}, podemos determinar o campo elétrico gerado por um anel de raio
+      <span class="math inline">\(\rho\)</span> em um ponto localizado no eixo
+      do anel a uma distância, <span class="math inline">\(D\)</span>:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})&amp;=\dfrac{Q}{4\pi\epsilon_{0}}\dfrac{D}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Vamos adaptar a expressão acima para o caso presente. Temos que o disco é
+      formado por um número infinito de anéis de espessura
+      <span class="math inline">\(d\rho\)</span> e cada um contribuindo com uma
+      carga <span class="math inline">\(dQ\)</span>. Como resultado, cada anel
+      contribui com um valor <span class="math inline">\(d\vec{E}\)</span>,
+      assim, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        d\vec{E}(\vec{r})&amp;=\dfrac{dQ}{4\pi\epsilon_{0}}\dfrac{D}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Como o disco tem densidade de carga
+      <span class="math inline">\(\sigma\)</span>, e cada anel tem uma área
+      <span class="math inline">\(da=2\pi\rho d\rho\)</span>, então temos que:
+      <span class="math display"
+        >\[\begin{aligned} da=\sigma da=\sigma 2\pi\rho
+        d\rho,\end{aligned}\]</span
+      >
+      e assim, a equação para <span class="math inline">\(d\vec{E}\)</span> toma
+      a forma:
+      <span class="math display"
+        >\[\begin{aligned} d\vec{E}(\vec{r})&amp;=\dfrac{\sigma
+        D}{4\pi\epsilon_{0}}\dfrac{2\pi\rho
+        d\rho}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned} d\vec{E}(\vec{r})&amp;=\dfrac{\sigma
+        D}{2\epsilon_{0}}\dfrac{\rho
+        d\rho}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+      e integrando sobre <span class="math inline">\(\rho\)</span>, somamos as
+      contribuições de todos os anéis que compõem o disco:
+      <span class="math display"
+        >\[
+        \vec{E}(\vec{r})=\dfrac{\sigma
+        D}{2\epsilon_{0}}\hat{\mathbf{k}}\int_{0}^{a}\dfrac{\rho
+        }{[\rho^{2}+D^{2}]^{3/2}}d\rho.\label{intermed:eq1}\tag{3}\]</span
+      >
+    </p>
+    <p>
+      Para resolver a integração dada pela Eq.
+\eqref{intermed:eq1}, utilizamos a substituição,
+      <span class="math display"
+        >\[\begin{aligned} u(\rho)=\rho^{2}+D^{2},\qquad\text{e}\qquad \rho
+        d\rho=\dfrac{du}{2},\end{aligned}\]</span
+      >
+      e, além disso, <span class="math inline">\(u(0)=D^{2}\)</span> e
+      <span class="math inline">\(u(a)=a^{2}+D^{2}\)</span>. Assim, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})&amp;=\dfrac{\sigma
+        D}{2\epsilon_{0}}\hat{\mathbf{k}}\dfrac{1}{2}\int_{u(0)}^{u(a)}\dfrac{du}{u^{3/2}}\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{multline} \vec{E}(\vec{r})=\dfrac{\sigma
+        D}{2\epsilon_{0}}\hat{\mathbf{k}}\dfrac{1}{2}\left[-\dfrac{2}{u^{1/2}}\right]_{u(0)}^{u(a)}
+        \\=\dfrac{\sigma
+        D}{2\epsilon_{0}}\hat{\mathbf{k}}\left[\dfrac{1}{u(0)^{1/2}}-\dfrac{1}{u(a)^{1/2}}\right]\end{multline}\]</span
+      >
+      e substituindo as funções <span class="math inline">\(u\)</span>, segue
+      que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})&amp;=\dfrac{\sigma
+        D}{2\epsilon_{0}}\hat{\mathbf{k}}\left[\dfrac{1}{D}-\dfrac{1}{\sqrt{a^{2}+D^{2}}}\right]\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})&amp;=\dfrac{\sigma}{2\epsilon_{0}}\left[1-\dfrac{D}{\sqrt{a^{2}+D^{2}}}\right]\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A expressão acima pode ser reduzida à dois casos conhecidos. O primeiro
+      caso é quando a distância <span class="math inline">\(D\)</span>
+      é muito maior do que o raio do disco,
+      <span class="math inline">\(a\)</span>. Para isso, expandimos o denominador da expressão acima em
+      série de Taylor, retendo apenas os primeiros termos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \dfrac{D}{\sqrt{a^{2}+D^{2}}}\sim1-\dfrac{1}{2}\dfrac{a^{2}}{D^{2}},\end{aligned}\]</span
+      >
+      e substituindo na equação acima:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})&amp;\sim\dfrac{\sigma}{2\epsilon_{0}}\left[1-\left(1-\dfrac{1}{2}\dfrac{a^{2}}{D^{2}}\right)\right]\hat{\mathbf{k}}
+        =
+        \dfrac{\sigma}{4\epsilon_{0}}\dfrac{a^{2}}{D^{2}}\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      e considerando que a densidade de carga é dada por
+      <span class="math inline">\(\sigma=Q/\pi a^{2}\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})&amp;\sim
+        \dfrac{Q}{4\pi\epsilon_{0}}\dfrac{1}{D^{2}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+
+      Note que a expressão para o campo elétrico foi reduzida à expressão para o campo gerado por uma carga puntual na origem. Isso ocorre porque, de fato, o disco se torna um objeto puntual quando a distância <span class="math inline">\(D\rightarrow\infty\)</span>.
+    </p>
+    <p>
+      Vamos considerar agora outro limite: quando <span class="math inline">\(D\rightarrow0^{+}\)</span>.
+      
+      Aplicando este limite na Eq. \eqref{intermed:eq1}, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(D\rightarrow0^{+})&amp;=\dfrac{\sigma}{2\epsilon_{0}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+      </p>
+      <p>
+      Conforme veremos adiante, este é o campo gerado por um plano infinito carregado com uma densidade de
+      carga <span class="math inline">\(\sigma\)</span>, válido para
+      <span class="math inline">\(z&gt;0\)</span>.
+    </p>
+    <p>
+      Para <span class="math inline">\(z&lt;0\)</span>, tomamos o limite
+      <span class="math inline">\(D\rightarrow0^{-}\)</span> e assim, obtemos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(D\rightarrow0^{-})&amp;=-\dfrac{\sigma}{2\epsilon_{0}}\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+    <p class="semparagraph"></p>
+      <strong>3.</strong> <em
+        >Considere um fio de comprimento
+        <span class="math inline">\(l=2d\)</span> que está disposto ao longo do
+        eixo <span class="math inline">\(\hat{z}\)</span> e passa pelo
+        plano-<span class="math inline">\(xy\)</span> nas coordenadas
+        <span class="math inline">\(x^{\prime}, y^{\prime}\)</span>. Determine o
+        campo elétrico do fio em um ponto arbitrário no espaço.</em
+      >
+    </p>
+    <div class="img">
+      <p><strong>Solução</strong></p>
+    </div>
+    <p>
+      Considerando que estamos interessados no campo calculado no ponto
+      <span class="math inline">\(x,y,z\)</span>, apontado pelo vetor posição
+      <span class="math inline">\(\vec{r}\)</span>, então segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}~dl^{\prime}\end{aligned}\]</span
+      >
+      o que nos permite escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}+(z-z^{\prime})\hat{\mathbf{k}}}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\label{campo:exemplo}\tag{4}\]</span
+      >
+    </p>
+    <p>
+      Temos dois casos separados: o cálculo do campo no eixo do fio (<span
+        class="math inline"
+        >\(x=x^{\prime}\)</span
+      >
+      e <span class="math inline">\(y=y^{\prime}\)</span>) e fora do eixo do fio
+      (<span class="math inline">\(x\neq x^{\prime}\)</span> e
+      <span class="math inline">\(y\neq y^{\prime}\)</span>).
+    </p>
+    <h4 class="unnumbered" id="fora-do-eixo-do-fio-xneq-xprime-e-yneq-yprime">
+      Fora do eixo do fio,
+      <span class="math inline">\(x\neq x^{\prime}\)</span> e
+      <span class="math inline">\(y\neq y^{\prime}\)</span>
+    </h4>
+    <p>
+      Para facilitar o cálculo, vamos definir o vetor
+      <span class="math inline">\(\vec{\rho}\)</span>,
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}=(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}\end{aligned}\]</span
+      >
+      e assim, o campo elétrico pode ser escrito na forma:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{\vec{\rho}+(z-z^{\prime})\hat{\mathbf{k}}}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\]</span
+      >
+      o que pode ser escrito na forma:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{dz^{\prime}}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}
+        \\+
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(z-z^{\prime})}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\]</span
+      >
+      e fazendo a troca de variável,
+      <span class="math display"
+        >\[\begin{aligned} u=z-z^{\prime}\qquad
+        du=-dz^{\prime}\end{aligned}\]</span
+      >
+      com os limites dados por:
+      <span class="math display"
+        >\[\begin{aligned} u(d)=z-d\qquad\text{and}\qquad
+        u(-d)=z+d,\end{aligned}\]</span
+      >
+      segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=-\dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{z+d}^{z-d}\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}
+        \\-
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{z+d}^{z-d}\dfrac{u}{[\rho^{2}+u^{2}]^{3/2}}~du\end{aligned}\]</span
+      >
+      <p class="semparagraph"></p>e, invertendo a ordem dos limites de interação, podemos escrever ainda:</p>
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})=
+        \dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{z-d}^{z+d}\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}
+        \\+
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{z-d}^{z+d}\dfrac{u}{[\rho^{2}+u^{2}]^{3/2}}~du\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A primeira integral acima pode ser resolvida mediante substituição
+      trigonométrica<a
+        href="#fn1"
+        class="footnote-ref"
+        id="fnref1"
+        role="doc-noteref"
+        ><sup>1</sup></a
+      >
+      enquanto que a segunda é facilmente resolvida mediante substituição:
+      <span class="math inline">\(v=\rho^{2}+u^{2}\)</span>. Assim, temos que:
+      <span class="math display"
+        >\[\vec{E}(\vec{r}) =
+        \dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\dfrac{1}{\rho^{2}}\left[\dfrac{u}{\sqrt{u^{2}+\rho^{2}}}\right]_{z-d}^{z+d}
+        +
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\left[\dfrac{1}{\sqrt{\rho^{2}+u^{2}}}\right]_{z-d}^{z+d}
+        \]</span
+        >
+        <p class="semparagraph"></p>e, substituindo-se os limites de integração, segue que:</p>
+        <span class="math display"
+        >\[\begin{multline*}
+        \vec{E}(\vec{r})=
+        \dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\dfrac{1}{\rho^{2}}\left[\dfrac{z+d}{\sqrt{(z+d)^{2}+\rho^{2}}}-\dfrac{(z-d)}{\sqrt{(z-d)^{2}+\rho^{2}}}\right]
+        \\+
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\left[\dfrac{1}{\sqrt{\rho^{2}+(z+d)^{2}}}-\dfrac{1}{\sqrt{\rho^{2}+(z-d)^{2}}}\right]
+        \end{multline*}\]</span
+      >
+    </p>
+    <p class="semparagraph">e, simplificando as expressões acima, obtemos finalmente:</p>
+    <p>
+      <span class="math display"
+        >\[\tag{5}\label{campo:fio:finito} \vec{E}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f(z)\dfrac{\vec{\rho}}{\rho^{2}}+g(z)\hat{\mathbf{k}}\right],\qquad
+        \rho\neq0.\]</span
+      >
+    </p>
+    <p>
+      Na Eq. \eqref{campo:fio:finito}, definimos as seguintes quantidades:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}=(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned}
+        f(z)=\dfrac{z+d}{\sqrt{(z+d)^{2}+\rho^{2}}}-\dfrac{(z-d)}{\sqrt{(z-d)^{2}+\rho^{2}}}\end{aligned}\]</span
+      >
+      e,
+      <span class="math display"
+        >\[\begin{aligned}
+        g(z)=\dfrac{1}{\sqrt{\rho^{2}+(z+d)^{2}}}-\dfrac{1}{\sqrt{\rho^{2}+(z-d)^{2}}},\end{aligned}\]</span
+      >
+      lembrando que <span class="math inline">\(d=l/2\)</span> é a metade do
+      comprimento do fio.
+    </p>
+    <h4 class="unnumbered" id="no-eixo-do-fio-xxprime-e-yyprime">
+      No eixo do fio, <span class="math inline">\(x=x^{\prime}\)</span> e
+      <span class="math inline">\(y=y^{\prime}\)</span>
+    </h4>
+    <p>
+      Neste caso, a expressão dada pela Eq.  \eqref{campo:exemplo} é simplificada pois o campo no plano <i>xy</i> é nulo, assim ficamos apenas com a componete ao longo do eixo-<i>z</i>:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}
+        \dfrac{(z-z^{\prime})\hat{\mathbf{k}}}{[(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}
+        \\= \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{-d}^{+d}
+        \dfrac{dz^{\prime}}{(z-z^{\prime})^{2}} \\=
+        -\dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{z+d}^{z-d}
+        \dfrac{du}{u^{2}}\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\left[\dfrac{1}{z-d}-\dfrac{1}{z+d}\right]
+        =
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\dfrac{2d}{z^{2}-d^{2}}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Podemos assumir que o ponto de cálculo do campo elétrico é dado por:
+      <span class="math display"
+        >\[\begin{aligned} z=d+\delta,\end{aligned}\]</span
+      >
+      assim,
+      <span class="math inline">\(z^{2}=d^{2}+2d\delta +\delta^{2}\)</span>. Com
+      isso, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r}) =
+        \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\dfrac{2d}{2d\delta
+        +\delta^{2}}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{2d}{\delta(2d
+        +\delta)}\hat{\mathbf{k}},\end{aligned}\]</span
+      >
+      e considerando que o fio tem comprimento igual a
+      <span class="math inline">\(2d\)</span>, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{l}{\delta(l+\delta)}\hat{\mathbf{k}},\quad
+        \rho=0.\end{aligned}\]</span
+      >
+    </p>
+    <p class="semparagraph">
+      <strong>4.</strong> <strong>Moysés, cap. 3, problema 5, pg. 38.</strong
+      > <em
+        >Dois fios retilíneos de mesmo comprimento
+        <span class="math inline">\(a\)</span>, separados por uma distância
+        <span class="math inline">\(b\)</span>, estão uniformemente carregados
+        com densidades lineares de carga
+        <span class="math inline">\(\lambda\)</span> e
+        <span class="math inline">\(-\lambda\)</span>, (veja a figura no
+        livro-texto). Calcule o campo elétrico no centro
+        <span class="math inline">\(P\)</span> do retângulo de lados
+        <span class="math inline">\(a\)</span> e
+        <span class="math inline">\(b\)</span>.</em
+      >
+    </p>
+    <div class="img">
+      <p><strong>Solução</strong></p>
+    </div>
+    <p>
+      Vamos começar definindo o sistema de coordenadas. Vamos considerar que a
+      origem coincide com o ponto <span class="math inline">\(P\)</span> onde
+      devemos calcular o campo elétrico. Com isso, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{r}=0, \qquad\text{ou}\qquad
+        x=y=z=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Além disso, vamos assumir que os dois fios passam pelo eixo
+      <span class="math inline">\(\hat{y}\)</span> e têm comprimento ao longo da
+      direção <span class="math inline">\(\hat{z}\)</span>. Sendo assim, as
+      coordenadas no plano-<span class="math inline">\(xy\)</span> do fio são
+      <span class="math inline">\(x_{+}^{\prime}=x_{-}^{\prime}=0\)</span> e
+      <span class="math inline">\(y_{\mp}^{\prime}=\pm\dfrac{b}{2}\)</span>.
+      Como o ponto <span class="math inline">\(P\)</span> está fora do eixo dos
+      fios, o campo elétrico pode ser escrito como:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\vec{E}_{+}(\vec{r})+\vec{E}_{-}(\vec{r}),\end{aligned}\]</span
+      >
+      e fazendo <span class="math inline">\(z=0\)</span> na expressão para o
+      campo elétrico dos fios, obtemos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{\lambda_{+}}{4\pi\epsilon_{0}}\dfrac{f_{+}(0)}{\rho_{+}^{2}}\vec{\rho}_{+}+\dfrac{\lambda_{-}}{4\pi\epsilon_{0}}\dfrac{f_{-}(0)}{\rho_{-}^{2}}\vec{\rho}_{-}\end{aligned}\]</span
+      >
+      e considerando as densidade lineares de carga para cada fio, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \label{ps:campo}
+        \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}} \left[
+        \dfrac{f_{+}(0)}{\rho_{+}^{2}}\vec{\rho}_{+}-\dfrac{f_{-}(0)}{\rho_{-}^{2}}\vec{\rho}_{-}
+        \right].\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Vejamos as posições dos fios fixadas pelo vetor
+      <span class="math inline">\(\vec{\rho}\)</span>:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{-}=x\hat{\mathbf{i}}+\left(y-\dfrac{b}{2}\right)\hat{\mathbf{j}}\quad\therefore\quad
+        \rho_{-}=\left[x^{2}+\left(y-\dfrac{b}{2}\right)^{2}\right]^{1/2} \\
+        \vec{\rho}_{+}=x\hat{\mathbf{i}}+\left(y+\dfrac{b}{2}\right)\hat{\mathbf{j}}\quad\therefore\quad
+        \rho_{+}=\left[x^{2}+\left(y+\dfrac{b}{2}\right)^{2}\right]^{1/2}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      O ponto <span class="math inline">\(P\)</span>, onde é pedido o valor do
+      campo é dado por <span class="math inline">\(\vec{r}=0\)</span>. Sendo
+      assim, podemos escrever a Eq.
+      <a href="#ps:campo" data-reference-type="eqref" data-reference="ps:campo"
+        >[ps:campo]</a
+      >
+      na forma:
+      <span class="math display"
+        >\[\begin{aligned} \label{ps:campo2}
+        \vec{E}(0)=\dfrac{\lambda}{4\pi\epsilon_{0}} \left[
+        \dfrac{f_{+}(0)}{\rho_{+}^{2}}\vec{\rho}_{+}-\dfrac{f_{-}(0)}{\rho_{-}^{2}}\vec{\rho}_{-}
+        \right].\end{aligned}\]</span
+      >
+      onde os vetores
+      <span class="math inline">\(\vec{\rho}_{\pm}\)</span> tomam a forma mais
+      simples:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{-}=-\rho\hat{\mathbf{j}}=-\dfrac{b}{2}\hat{\mathbf{j}}\qquad\therefore\qquad
+        \rho_{-}=\rho=\dfrac{b}{2}, \\
+        \vec{\rho}_{+}=\rho\hat{\mathbf{j}}=\dfrac{b}{2}\hat{\mathbf{j}}\qquad\therefore\qquad
+        \rho_{+}=\rho=\dfrac{b}{2}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Com esta expressão, a Eq.
+      <a
+        href="#ps:campo2"
+        data-reference-type="eqref"
+        data-reference="ps:campo2"
+        >[ps:campo2]</a
+      >, fica:
+      <span class="math display"
+        >\[\begin{aligned} \label{ps:campo3}
+        \vec{E}(0)=\dfrac{\lambda}{4\pi\epsilon_{0}} \left[
+        \dfrac{f_{+}(0)}{\rho^{2}}\rho\hat{\mathbf{j}}+\dfrac{f_{-}(0)}{\rho^{2}}\rho\hat{\mathbf{j}}
+        \right].\end{aligned}\]</span
+      >
+      ou seja,
+      <span class="math display"
+        >\[\begin{aligned} \label{ps:campo4}
+        \vec{E}(0)=\dfrac{\lambda}{4\pi\epsilon_{0}\rho}[f_{+}(0)+f_{-}(0)]\hat{\mathbf{j}}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Com as funções <span class="math inline">\(f_{\pm}(z)\)</span> dependem
+      apenas do módulo de <span class="math inline">\(\rho\)</span>, então elas
+      são iguais. Deste modo, escrevemos:
+      <span class="math display">\[\begin{aligned}
+        \vec{E}(0)=\dfrac{\lambda}{2\pi\epsilon_{0}\rho}f(0)\hat{\mathbf{j}}=\dfrac{\lambda}{\pi\epsilon_{0}b}f(0)\hat{\mathbf{j}}\end{aligned}\]</span>
+      onde, no último passo, trocamos
+      <span class="math inline">\(\rho=b/2\)</span>. onde,
+      <span class="math display"
+        >\[\begin{aligned}
+        f(0)=\dfrac{d}{\sqrt{d^{2}+\rho^{2}}}+\dfrac{d}{\sqrt{d^{2}+\rho^{2}}}=\dfrac{2d}{\sqrt{d^{2}+\rho^{2}}}\end{aligned}\]</span
+      >
+      e como <span class="math inline">\(d\)</span> é a metade do comprimento do
+      fio que vale <span class="math inline">\(a\)</span>, podemos escrever
+      <span class="math inline">\(d=a/2\)</span> e assim, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f(0)=\dfrac{a}{\sqrt{\dfrac{a^{2}}{4}+\dfrac{b^{2}}{4}}}=\dfrac{2a}{\sqrt{a^{2}+b^{2}}}\end{aligned}\]</span
+      >
+      e substituindo o valor de <span class="math inline">\(f(0)\)</span> na Eq.
+      <a
+        href="#ps:campo4"
+        data-reference-type="eqref"
+        data-reference="ps:campo4"
+        >[ps:campo4]</a
+      >, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \label{ps:campo5}
+        \vec{E}(0)=\dfrac{2\lambda}{\pi\epsilon_{0}}\dfrac{(a/b)}{\sqrt{a^{2}+b^{2}}}\hat{\mathbf{j}}.\end{aligned}\]</span
+      >
+    </p>
+    <div class="img">
+      <p class="img">********</p>
+    </div>
+    <p class="semparagraph">
+      <strong>4.</strong> <strong>Moysés, cap. 3, problema 6, pg. 38.</strong
+      > <em
+        >Um frio quadrado de lado <span class="math inline">\(2l\)</span> está
+        uniformemente carregado com densidade linear de carga
+        <span class="math inline">\(\lambda\)</span>. Calcule o campo elétrico
+        num ponto <span class="math inline">\(P\)</span> situado sobre a
+        perpendicular ao centro do quadrado, à distância
+        <span class="math inline">\(D\)</span> do seu plano.
+        <strong>Sugestão</strong>: use componentes cartesianas e considerações
+        de simetria.</em
+      >
+    </p>
+    <div class="img">
+      <p><strong>Solução</strong></p>
+    </div>
+    <p>
+      Primeiramente, vamos considerar que a origem do sistema de coordenadas
+      está no centro do plano do quadrado formado pelos fios. Deste modo, o
+      ponto onde é solicitado para calcular o campo elétrico é dado por:
+      <span class="math display"
+        >\[\begin{aligned} \vec{r}=D\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Nos problema 1 determinamos o campo elétrico devido a uma distribuição
+      linear de carga de comprimento finito
+      <span class="math inline">\(2d\)</span>. Naquele caso, consideramos o fio
+      paralelo ao eixo-<span class="math inline">\(\hat{z}\)</span> e passando
+      pelo plano-<span class="math inline">\(xy\)</span> na posição
+      <span class="math inline">\((x^{\prime}, y^{\prime})\)</span>. Vamos
+      considerar o problema atual como a soma dos campos devido à quatro fios
+      situados no plano-<span class="math inline">\(xy\)</span>, assim, vamos
+      adaptar os resultados obtidos no problema 1 para o caso presente.
+    </p>
+    <p>
+      Se temos um fio ao longo do eixo-<span class="math inline"
+        >\(\hat{y}\)</span
+      >, o campo produzido por este fio é obtido fazendo a troca
+      <span class="math inline">\(z\leftrightarrow y\)</span> na Eq. \eqref{campo:fio:finito}:
+      <span class="math display"
+        >\[\tag{6}\label{fio:yl} \vec{E}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f(y)\dfrac{\vec{\rho_{y}}}{\rho_{y}^{2}}+g(y)\hat{\mathbf{j}}\right],\qquad
+        \rho\neq0.\]</span
+      >
+    </p>
+    <p>
+      Na Eq. acima, definimos as seguintes quantidades:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{y}=(x-x^{\prime})\hat{\mathbf{i}}+(z-z^{\prime})\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned}
+        f(y)=\dfrac{y+l}{\sqrt{(y+l)^{2}+\rho_{y}^{2}}}-\dfrac{(y-l)}{\sqrt{(y-l)^{2}+\rho_{y}^{2}}}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned}
+        g(y)=\dfrac{1}{\sqrt{\rho_{y}^{2}+(y+l)^{2}}}-\dfrac{1}{\sqrt{\rho_{y}^{2}+(y-l)^{2}}},\end{aligned}\]</span
+      >
+      onde notamos que agora <span class="math inline">\(2l\)</span> é o
+      comprimento do fio.
+    </p>
+    <p>
+      Agora vamos considerar o caso em que o fio está ao longo do eixo-<span
+        class="math inline"
+        >\(\hat{x}\)</span
+      >. Neste caso, trocamos
+      <span class="math inline">\(x\leftrightarrow z\)</span> na Eq. \eqref{campo:fio:finito}:
+      <span class="math display"
+        >\[\tag{7} \label{fio:x} \vec{E}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[\dfrac{\vec{\rho_{x}}}{\rho_{x}^{2}}f(x)+g(x)\hat{\mathbf{i}}\right],\qquad
+        \rho\neq0.\]</span
+      >
+    </p>
+    <p>
+      Na Eq. acima, definimos as seguintes quantidades:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{x}=(y-y^{\prime})\hat{\mathbf{j}}+(z-z^{\prime})\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned}
+        f(x)=\dfrac{x+l}{\sqrt{(x+l)^{2}+\rho^{2}}}-\dfrac{(x-l)}{\sqrt{(x-l)^{2}+\rho^{2}}}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned}
+        g(x)=\dfrac{1}{\sqrt{\rho_{x}^{2}+(x+l)^{2}}}-\dfrac{1}{\sqrt{\rho_{x}^{2}+(x-l)^{2}}},\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      O quadrado pode ser considerado como sendo a composição de dois fios
+      paralelos ao eixo-<span class="math inline">\(\hat{y}\)</span> e outros
+      dois paralelos ao eixo-<span class="math inline">\(\hat{x}\)</span>. Seja
+      <span class="math inline">\(\vec{E}_{1}\)</span> e
+      <span class="math inline">\(\vec{E}_{2}\)</span> os campos devido à estes
+      dois pares de fios. O campo total será dado por:
+      <span class="math display"
+        >\[\begin{aligned} \label{tot:fios}
+        \vec{E}=\vec{E}_{1}+\vec{E}_{2}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Vamos calcular cada um destes campos separadamente. Para isso, começamos
+      com <span class="math inline">\(\vec{E}_{1}\)</span>:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}_{1}=\vec{E}_{1,a}+\vec{E}_{1,b}\end{aligned}\]</span
+      >
+      onde usamos os índices <span class="math inline">\(a\)</span> e
+      <span class="math inline">\(b\)</span> para denotar as contribuições dos
+      fios localizados em
+      <span class="math inline">\(\vec{r}^{\prime}=\pm d\hat{\mathbf{i}}\)</span
+      >, respectivamente. Assim, substituindo a expressão dada pela Eq. \eqref{fio:yl}, segue que:
+      <span class="math display"
+        >\[\vec{E}_{1}=
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f_{a}(y)\dfrac{\vec{\rho}_{y,a}}{\rho_{y,a}^{2}}+g_{a}(y)\hat{\mathbf{j}}\right]
+        \\+
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f_{b}(y)\dfrac{\vec{\rho}_{y,b}}{\rho_{y,b}^{2}}+g_{b}(y)\hat{\mathbf{j}}\right]\tag{8}\label{intermed:fio1v}\]</span
+      >
+      e considerando a localização dos fios e que,
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{y}=(x-x^{\prime})\hat{\mathbf{i}}+(z-z^{\prime})\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      temos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{y,a}=(0-l)\hat{\mathbf{i}}+(D-0)\hat{\mathbf{k}}=-l\hat{\mathbf{i}}+D\hat{\mathbf{k}}\\\quad\therefore\quad
+        \rho_{y,a}=\sqrt{l^{2}+D^{2}} 
+        \end{aligned}\]</span
+      >
+      e, da mesma forma:
+      <span class="math display"
+      >\[\begin{aligned}
+        \vec{\rho}_{y,b}=(0+l)\hat{\mathbf{i}}+(D-0)\hat{\mathbf{k}}=l\hat{\mathbf{i}}+D\hat{\mathbf{k}}\\\quad\therefore\quad
+        \rho_{y,b}=\sqrt{l^{2}+D^{2}}\end{aligned}\]</span
+      >
+      e também como a coordenada do ponto onde vamos calcular o campo está
+      situado em <span class="math inline">\(y=0\)</span>, temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{a}(0)=\dfrac{0+l}{\sqrt{(0+l)^{2}+\rho_{y,a}^{2}}}-\dfrac{(0-l)}{\sqrt{(0-l)^{2}+\rho_{y,a}^{2}}}\\=\dfrac{2l}{\sqrt{l^{2}+\rho_{y,a}^{2}}}\end{aligned}\]</span
+      >
+      e substituindo <span class="math inline">\(\rho_{y,a}\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{a}(0)=\dfrac{2l}{\sqrt{2l^{2}+D^{2}}}\end{aligned}\]</span
+      >
+      e, da mesma forma:
+      <span class="math display"
+        >\[\begin{aligned} g_{a}(0)=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Fazendo o mesmo para <span class="math inline">\(f_{b}(y)\)</span>,
+      obtemos:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{b}(0)=\dfrac{0+l}{\sqrt{(0+l)^{2}+\rho_{y,b}^{2}}}-\dfrac{(0-l)}{\sqrt{(0-l)^{2}+\rho_{y,b}^{2}}}\\=\dfrac{2l}{\sqrt{l^{2}+\rho_{y,b}^{2}}}\end{aligned}\]</span
+      >
+      e substituindo <span class="math inline">\(\rho_{y,b}\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{b}(0)=\dfrac{2l}{\sqrt{2l^{2}+D^{2}}},\end{aligned}\]</span
+      >
+      e, de modo análogo,
+      <span class="math display"
+        >\[\begin{aligned} g_{b}(0)=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se todas as expressões acima na Eq. \eqref{intermed:fio1v}, obtemos:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{1}=
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{2l}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \left[-l\hat{\mathbf{i}}+D\hat{\mathbf{k}} +
+        l\hat{\mathbf{i}}+D\hat{\mathbf{k}}\right]\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned}  \vec{E}_{1}=
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{4Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \hat{\mathbf{k}}.\end{aligned}\tag{9}\label{E1:fio}\]</span
+      >
+    </p>
+    <p>
+      Vamos agora considerar o cálculo do campo
+      <span class="math inline">\(\vec{E}_{2}\)</span> produzido pelos fios ao
+      longo do eixo-<span class="math inline">\(\hat{x}\)</span>. Neste caso,
+      segue da Eq. \eqref{fio:x}
+      que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{2}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f_{a}(x)\dfrac{\vec{\rho}_{x,a}}{\rho_{x,a}^{2}}+g_{a}(x)\hat{\mathbf{i}}\right]
+        \\+
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\left[f_{b}(x)\dfrac{\vec{\rho}_{x,b}}{\rho_{x,b}^{2}}+g_{b}(x)\hat{\mathbf{i}}\right]\end{aligned}\tag{10}\label{intermed:fio2}\]</span
+      >
+      e devemos determinar os elementos que aparecem na Eq. acima, assim, temos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{\rho}_{x,a}=(0-l)\hat{\mathbf{j}}+(D-0)\hat{\mathbf{k}}=-l\hat{\mathbf{j}}+D\hat{\mathbf{k}}\\\quad\therefore\quad
+        \rho_{x,a}=\sqrt{l^{2}+D^{2}} \\~\\
+        \vec{\rho}_{x,b}=(0+l)\hat{\mathbf{j}}+(D-0)\hat{\mathbf{k}}=l\hat{\mathbf{j}}+D\hat{\mathbf{k}}\\\quad\therefore\quad
+        \rho_{x,b}=\sqrt{l^{2}+D^{2}}\end{aligned}\]</span
+      >
+      e como o ponto onde vamos calcular o campo situa-se em
+      <span class="math inline">\(x=0\)</span>, então temos:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{a}(0)=\dfrac{0+l}{\sqrt{(0+l)^{2}+\rho_{x,a}^{2}}}-\dfrac{(0-l)}{\sqrt{(0-l)^{2}+\rho_{x,a}^{2}}}\\=\dfrac{2l}{\sqrt{l^{2}+\rho_{x,a}^{2}}}\end{aligned}\]</span
+      >
+      e usando a expressão para <span class="math inline">\(\rho_{x,a}\)</span>,
+      segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{a}(0)=\dfrac{2l}{\sqrt{2l^{2}+D^{2}}}.\end{aligned}\]</span
+      >
+      e também,
+      <span class="math display"
+        >\[\begin{aligned} g_{a}(0)=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Além disso, precisamos da expressão
+      <span class="math inline">\(f_{b}(x)\)</span> para
+      <span class="math inline">\(x=0\)</span>:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{b}(0)=\dfrac{0+l}{\sqrt{(0+l)^{2}+\rho_{x,b}^{2}}}-\dfrac{(0-l)}{\sqrt{(0-l)^{2}+\rho_{x,b}^{2}}}\\=\dfrac{2l}{\sqrt{l^{2}+\rho_{x,b}^{2}}}\end{aligned}\]</span
+      >
+      e usando a expressão para <span class="math inline">\(\rho_{x,b}\)</span>,
+      segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        f_{b}(0)=\dfrac{2l}{\sqrt{2l^{2}+D^{2}}}.\end{aligned}\]</span
+      >
+      e também
+      <span class="math display"
+        >\[\begin{aligned} g_{b}(0)=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se todas as expressões na Eq. \eqref{intermed:fio2}, obtemos:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{2}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{2l}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}[-l\hat{\mathbf{j}}+D\hat{\mathbf{k}}+l\hat{\mathbf{j}}+D\hat{\mathbf{k}}]\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned}  \vec{E}_{2}(\vec{r}) =
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{4Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}\hat{\mathbf{k}}.\end{aligned}\tag{11}\label{E2:fio}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se Eqs. \eqref{E1:fio} e \eqref{E2:fio} na equação para <span class="math inline">\(\vec{E}(\vec{r})\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})=
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{4Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \hat{\mathbf{k}} \\+
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{4Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \hat{\mathbf{k}}\end{aligned}\]</span
+      >
+    </p>
+    <p class="semparagraph">ou ainda,
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})=
+        \dfrac{\lambda}{4\pi\epsilon_{0}}\dfrac{8Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \hat{\mathbf{k}},\end{aligned}\]</span
+      >
+    </p>
+    <p class="semparagraph"> e, finalmente,
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}(\vec{r})= \dfrac{1}{\pi\epsilon_{0}}\dfrac{2\lambda
+        Dl}{\sqrt{2l^{2}+D^{2}}}\dfrac{1}{[l^{2}+D^{2}]}
+        \hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+    <p class="semparagraph">
+      <strong>5.</strong> <strong>Moysés, cap. 3, problema 7, pg. 38.</strong
+      > <em
+        >Uma carga puntiforme <span class="math inline">\(q\)</span> é colocada
+        numa caixa cúbica de aresta <span class="math inline">\(l\)</span>.
+        Calcule o fluxo do campo elétrico sobre cada uma das faces (a) se é
+        colocado num dos vértices e (b) se a carga ocupa o centro do cubo.</em
+      >
+    </p>
+    <p>(a) </p>
+    <p>
+      Neste caso, o campo elétrico produzido pela carga é dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{\vec{r}}{r^{3}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Em coordenadas retangulares, o vetor
+      <span class="math inline"
+        >\(\vec{r}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}}\)</span
+      >
+      e, com isso, temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \hat{r}=\dfrac{x}{r}\hat{\mathbf{i}}+\dfrac{y}{r}\hat{\mathbf{i}}+\dfrac{z}{r}\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      onde <span class="math inline">\(r=[x^{2}+y^{2}+z^{2}]^{1/2}\)</span>,
+      assim,
+      <span class="math display"
+        >\[\begin{aligned}\label{excampo:geral}
+        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{[x^{2}+y^{2}+z^{2}]^{3/2}}\right]\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      O fluxo do campo elétrico é dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E}=\int_{S}\vec{E}(\vec{r})\cdot\hat{n}~da.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Temos seis faces cujas normais são dadas por:
+      <span class="math display"
+        >\[\begin{aligned} \hat{n}_{1}=\hat{\mathbf{i}};\qquad
+        \hat{n}_{2}=-\hat{\mathbf{i}}; \\ \hat{n}_{3}=\hat{\mathbf{j}};\qquad
+        \hat{n}_{4}=-\hat{\mathbf{j}}; \\ \hat{n}_{5}=\hat{\mathbf{k}};\qquad
+        \hat{n}_{6}=-\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>Vamos então ao cálculo dos fluxos.</p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_1">
+      Fluxo sobre <span class="math inline">\(S_{1}\)</span>
+    </h4>
+    <p>
+      A superfície <span class="math inline">\(S_{1}\)</span> é aquela normal ao
+      eixo-<span class="math inline">\(\hat{x}\)</span>, assim, o fluxo é dado
+      por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,1}=\int_{S_{1}}\vec{E}_{1}\cdot\hat{n}_{1}~da_{1},\end{aligned}\]</span
+      >
+      onde
+      <span class="math display"
+        >\[
+        \vec{E}_{1}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{l\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{[l^{2}+y^{2}+z^{2}]^{3/2}}\right]\]</span
+      >
+      e como <span class="math inline">\(\hat{n}_{1}=\hat{\mathbf{i}}\)</span>,
+      temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,1}=\dfrac{q}{4\pi\epsilon_{0}}\int_{0}^{l}\int_{0}^{l}\dfrac{l}{[l^{2}+y^{2}+z^{2}]^{3/2}}~dy~dz\end{aligned}\]</span
+      >
+
+      
+
+    </p>
+    <p class="semparagraph"> e como <span class="math inline">\(l\)</span> é constante, temos:
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,1} =
+        \dfrac{ql}{4\pi\epsilon_{0}}\int_{0}^{l}\int_{0}^{l}\dfrac{1}{[l^{2}+y^{2}+z^{2}]^{3/2}}~dz~dy\end{aligned}\]</span>
+    </p>
+    <p class="semparagraph"> ou seja,
+      <span class="math display"
+        >\[\Phi_{E,1} =
+        \dfrac{2ql}{4\pi\epsilon_{0}}\int_{0}^{l}I(y)~dy\label{intermed:eqflux}\]</span
+      >
+      onde,
+      <span class="math display"
+        >\[\begin{aligned} \label{intermed:flux1}
+        I(y)=\int_{0}^{y}\dfrac{1}{[l^{2}+y^{2}+z^{2}]^{3/2}}~dz.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A integração acima já foi resolvida<a
+        href="#fn2"
+        class="footnote-ref"
+        id="fnref2"
+        role="doc-noteref"
+        ><sup>2</sup></a
+      >, assim, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \label{intermed:flux1b}
+        I(y)=\dfrac{1}{(l^{2}+y^{2})}\dfrac{y}{\sqrt{2y^{2}+l^{2}}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo este resultado na equação para <span class="math inline">\(\Phi_{E,1}\)</span>, obtemos:
+      <span class="math display"
+        >\[\begin{multline} \Phi_{E,1} =
+        \dfrac{ql}{2\pi\epsilon_{0}}\int_{0}^{l}\dfrac{1}{(l^{2}+y^{2})}\dfrac{y}{\sqrt{2y^{2}+l^{2}}}~dy
+        \\=
+        \dfrac{y(2y^{2}+l^{2})^{1/2}}{(y^{2}+l^{2})(2y^{2}+l^{2})}~dy\end{multline}\]</span
+      >
+      o que pode ser colocado na forma<a
+        href="#fn3"
+        class="footnote-ref"
+        id="fnref3"
+        role="doc-noteref"
+        ><sup>3</sup></a
+      >:
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,1} = \dfrac{q}{2\pi\epsilon_{0}l}[I_{1} -
+        I_{2}]\end{aligned}\]</span
+      >
+      onde definimos:
+      <span class="math display"
+        >\[
+        I_{1}=\int_{0}^{l}\dfrac{2y}{(2y^{2}+l^{2})^{1/2}}~dy,\]</span
+      >
+      e,
+      <span class="math display"
+        >\[
+        I_{2}=\int_{0}^{l}\dfrac{y(2y^{2}+l^{2})^{1/2}}{y^{2}+l^{2}}~dy.\]</span
+      >
+    </p>
+    <p>
+      A integral <span class="math inline">\(I_{1}\)</span> pode ser resolvida facilmente mediante a troca de variável
+      <span class="math inline">\(u=2y^{2}+l^{2}\)</span> tal que
+      <span class="math inline">\(du=4ydy\)</span>, assim, temos:
+      <span class="math display"
+        >\[\begin{aligned} \label{I1:def}
+        I_{1}=\dfrac{1}{2}\int_{l^{2}}^{3l^{2}}\dfrac{du}{u^{1/2}}~du=\left[u^{1/2}\right]_{l^{2}}^{3l^{2}}=l(\sqrt{3}-1).\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A integral <span class="math inline">\(I_{2}\)</span> pode ser escrita em
+      uma forma mais compacta por meio da substituição de variável
+      <span class="math inline">\(u=2y^{2}+l^{2}\)</span>, tal que
+      <span class="math inline">\(du=4ydy\)</span>, com isso escrevemos:
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=\dfrac{1}{4}\int_{u(0)}^{u(l)}\dfrac{u^{1/2}}{\dfrac{u-l^{2}}{2}+l^{2}}~du=\dfrac{1}{2}\int_{l^{2}}^{3l^{2}}\dfrac{u^{1/2}}{u+l^{2}}~du\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Agora faremos uma segunda substituição de variável
+      <span class="math inline">\(t=\sqrt{u}\)</span>, assim, temos que
+      <span class="math inline">\(du=2tdt\)</span>, o que nos permite escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=\dfrac{1}{2}\int_{l}^{l\sqrt{3}}\dfrac{t}{t^{2}+l^{2}}~2t~dt=\int_{l}^{l\sqrt{3}}\dfrac{t^{2}}{t^{2}+l^{2}}~dt\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=\int_{l}^{l\sqrt{3}}\left[1-\dfrac{l^{2}}{t^{2}+l^{2}}\right]~dt=\int_{l}^{l\sqrt{3}}dt-l^{2}\int_{l}^{l\sqrt{3}}\dfrac{dt}{t^{2}+l^{2}}\end{aligned}\]</span
+      >
+      e na segunda integração fazemos a substituição de variável
+      <span class="math inline">\(t=l\tan\phi\)</span>, o que nos permite
+      escrever <span class="math inline">\(dt=l\sec^{2}\phi~d\phi\)</span>,
+      assim temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=l(\sqrt{3}-1)-l^{2}\int_{\pi/4}^{\pi/3}\dfrac{l\sec^{2}\phi~d\phi}{l^{2}\tan^{2}\phi+l^{2}}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=l(\sqrt{3}-1)-l\int_{\pi/4}^{\pi/3}\dfrac{\sec^{2}\phi~d\phi}{\tan^{2}\phi+1}=l(\sqrt{3}-1)-l\left[\dfrac{\pi}{3}-\dfrac{\pi}{4}\right]\end{aligned}\]</span
+      >
+      ou seja,
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{2}=l\left[\sqrt{3}-1-\dfrac{\pi}{12}\right]\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se os valores obtidos para
+      <span class="math inline">\(I_{1}\)</span> e
+      <span class="math inline">\(I_{2}\)</span>, temos:
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,1} =
+        \dfrac{q}{2\pi\epsilon_{0}l}\left\{l(\sqrt{3}-1) -
+        l\left[\sqrt{3}-1-\dfrac{\pi}{12}\right]\right\}=\dfrac{q}{2\pi\epsilon_{0}l}\dfrac{\pi
+        l}{12},\end{aligned}\]</span
+      >
+      o que nos permite escrever, finalmente:
+      <span class="math display"
+        >\[\begin{aligned} \label{phi:E1}
+        \Phi_{E,1}=\dfrac{q}{24\epsilon_{0}}.\end{aligned}\]</span
+      >
+    </p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_2">
+      Fluxo sobre <span class="math inline">\(S_{2}\)</span>
+    </h4>
+    <p>
+      A superfície <span class="math inline">\(S_{2}\)</span> é aquela normal ao
+      eixo-<span class="math inline">\(\hat{x}\)</span>, assim, o fluxo é dado
+      por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,2}=\int_{S_{2}}\vec{E}_{2}\cdot\hat{n}_{2}~da_{2},\end{aligned}\]</span
+      >
+      onde <span class="math inline">\(\vec{E}_{2}\)</span> é o campo elétrico
+      determinado na superfície <span class="math inline">\(S_{2}\)</span>. Como
+      <span class="math inline">\(x=0\)</span> sobre
+      <span class="math inline">\(S_{2}\)</span>, temos que:
+      <span class="math display"
+        >\[\begin{aligned} 
+        \vec{E}_{2}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{0\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{[0^{2}+y^{2}+z^{2}]^{3/2}}\right]
+        =\dfrac{q}{4\pi\epsilon_{0}}\dfrac{(y\hat{\mathbf{j}}+z\hat{\mathbf{k}})}{[y^{2}+z^{2}]^{3/2}}\end{aligned}\]</span
+      >
+      e como <span class="math inline">\(\hat{n}_{2}=-\hat{\mathbf{i}}\)</span>,
+      temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{2}\cdot\hat{n}_{2}=0\end{aligned}\]</span
+      >
+      portanto,
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,2}=0.\end{aligned}\]</span
+      >
+    </p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_3">
+      Fluxo sobre <span class="math inline">\(S_{3}\)</span>
+    </h4>
+    <p>
+      Vamos considerar agora a superfície
+      <span class="math inline">\(S_{3}\)</span> cuja normal é
+      <span class="math inline">\(\hat{n}_{3}=\hat{\mathbf{j}}\)</span>, assim,
+      o fluxo elétrico é dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,3}=\int_{S_{3}}\vec{E}_{3}(\vec{r})\cdot\hat{n}_{3}~da_{3}\end{aligned}\]</span
+      >
+      onde o campo <span class="math inline">\(\vec{E}_{3}\)</span> é o campo
+      elétrico calculado na superfície
+      <span class="math inline">\(S_{3}\)</span>. Usando a Eq.
+      <a
+        href="#excampo:geral"
+        data-reference-type="eqref"
+        data-reference="excampo:geral"
+        >[excampo:geral]</a
+      >, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \label{E3}
+        \vec{E}_{3}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+l\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{[x^{2}+l^{2}+z^{2}]^{3/2}}\right]\end{aligned}\]</span
+      >
+      e assim, temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,3}=\dfrac{ql}{4\pi\epsilon_{0}}\int_{0}^{l}\int_{0}^{l}\left[\dfrac{1}{[x^{2}+l^{2}+z^{2}]^{3/2}}\right]~dx~dz,\end{aligned}\]</span
+      >
+      e vemos, portanto, que é o mesmo fluxo que passa pela superfície
+      <span class="math inline">\(S_{1}\)</span>, assim,
+      <span class="math display"
+        >\[\begin{aligned} \label{phi:E3}
+        \Phi_{E,3}=\dfrac{q}{24\epsilon_{0}}.\end{aligned}\]</span
+      >
+    </p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_4">
+      Fluxo sobre <span class="math inline">\(S_{4}\)</span>
+    </h4>
+    <p>
+      A superfície <span class="math inline">\(S_{4}\)</span> é aquela normal ao
+      eixo-<span class="math inline">\(\hat{y}\)</span>, assim, o fluxo é dado
+      por:
+      <span class="math display"
+        >\[
+        \Phi_{E,4}=\int_{S_{4}}\vec{E}_{4}\cdot\hat{n}_{4}~da_{4},\]</span
+      >
+      onde <span class="math inline">\(\vec{E}_{4}\)</span> é o campo elétrico
+      determinado na superfície <span class="math inline">\(S_{4}\)</span>. Como
+      <span class="math inline">\(y=0\)</span> sobre
+      <span class="math inline">\(S_{4}\)</span>, temos que:
+      <span class="math display"
+        >\[
+        \vec{E}_{4}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+0\hat{\mathbf{j}}+z\hat{\mathbf{k}}}{[x^{2}+0^{2}+z^{2}]^{3/2}}\right]
+        =\dfrac{q}{4\pi\epsilon_{0}}\dfrac{(x\hat{\mathbf{i}}+z\hat{\mathbf{k}})}{[x^{2}+z^{2}]^{3/2}}\]</span
+      >
+      e como <span class="math inline">\(\hat{n}_{4}=-\hat{\mathbf{j}}\)</span>,
+      temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{4}\cdot\hat{n}_{4}=0\end{aligned}\]</span
+      >
+      portanto,
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,4}=0.\end{aligned}\]</span
+      >
+    </p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_5">
+      Fluxo sobre <span class="math inline">\(S_{5}\)</span>
+    </h4>
+    <p>
+      Vamos considerar a superfície
+      <span class="math inline">\(S_{5}\)</span> cuja normal é
+      <span class="math inline">\(\hat{n}_{5}=\hat{\mathbf{k}}\)</span>, assim,
+      o fluxo elétrico é dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,5}=\int_{S_{5}}\vec{E}_{5}(\vec{r})\cdot\hat{n}_{5}~da_{5}.\end{aligned}\]</span
+      >
+      onde o campo <span class="math inline">\(\vec{E}_{5}\)</span> é o campo
+      elétrico calculado na superfície
+      <span class="math inline">\(S_{5}\)</span>. Usando a Eq.
+      <a
+        href="#excampo:geral"
+        data-reference-type="eqref"
+        data-reference="excampo:geral"
+        >[excampo:geral]</a
+      >, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \label{E5}
+        \vec{E}_{5}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+l\hat{\mathbf{k}}}{[x^{2}+y^{2}+l^{2}]^{3/2}}\right]\end{aligned}\]</span
+      >
+      e assim, temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,5}=\dfrac{ql}{4\pi\epsilon_{0}}\int_{0}^{l}\int_{0}^{l}\left[\dfrac{1}{[x^{2}+y^{2}+l^{2}]^{3/2}}\right]~dx~dy,\end{aligned}\]</span
+      >
+      e vemos, portanto, que é o mesmo fluxo que passa pela superfície
+      <span class="math inline">\(S_{1}\)</span>, assim,
+      <span class="math display"
+        >\[\begin{aligned} \label{phi:E5}
+        \Phi_{E,5}=\dfrac{q}{24\epsilon_{0}}.\end{aligned}\]</span
+      >
+    </p>
+    <h4 class="unnumbered" id="fluxo-sobre-s_6">
+      Fluxo sobre <span class="math inline">\(S_{6}\)</span>
+    </h4>
+    <p>
+      A superfície <span class="math inline">\(S_{6}\)</span> é aquela normal ao
+      eixo-<span class="math inline">\(\hat{z}\)</span>, assim, o fluxo é dado
+      por:
+      <span class="math display"
+        >\[
+        \Phi_{E,6}=\int_{S_{6}}\vec{E}_{6}\cdot\hat{n}_{6}~da_{6},\]</span
+      >
+      onde <span class="math inline">\(\vec{E}_{6}\)</span> é o campo elétrico
+      determinado na superfície <span class="math inline">\(S_{6}\)</span>. Como
+      <span class="math inline">\(z=0\)</span> sobre
+      <span class="math inline">\(S_{6}\)</span>, temos que:
+      <span class="math display"
+        >\[
+        \vec{E}_{6}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+0\hat{\mathbf{k}}}{[x^{2}+y^{2}+0^{2}]^{3/2}}\right]
+        =\dfrac{q}{4\pi\epsilon_{0}}\dfrac{(x\hat{\mathbf{i}}+y\hat{\mathbf{j}})}{[x^{2}+y^{2}]^{3/2}}\]</span
+      >
+      e como <span class="math inline">\(\hat{n}_{6}=-\hat{\mathbf{k}}\)</span>,
+      temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}_{6}\cdot\hat{n}_{6}=0,\end{aligned}\]</span
+      >
+      portanto,
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{E,6}=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      (b) <br />
+      O fluxo é o mesmo para todas as faces pois o centro do cubo é um ponto de
+      simetria e as linhas de carga são radiais. A posição da carga é dada por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{r}=\dfrac{l}{2}(\hat{\mathbf{i}}+\hat{\mathbf{j}}+\hat{\mathbf{k}})\end{aligned}\]</span
+      >
+      e vamos considerar o fluxo sobre a face superior do cubo, cuja normal
+      <span class="math inline">\(\hat{n}_{s}=\hat{\mathbf{k}}\)</span>. O campo
+      elétrico da carga puntual em um ponto qualquer
+      <span class="math inline">\((x, y, z)\)</span> é dado por:
+      <span class="math display"
+        >\[\begin{aligned} \label{excampo:gerals}
+        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{(x-l/2)\hat{\mathbf{i}}+(y-l/2)\hat{\mathbf{j}}+(z-l/2)\hat{\mathbf{k}}}{[(x-l/2)^{2}+(y-l/2)^{2}+(z-l/2)^{2}]^{3/2}}\right]\end{aligned}\]</span
+      >
+      e como estamos interessados no fluxo através da superfície superior do
+      cubo, então nesta face do cubo
+      <span class="math inline">\(z=l\)</span> para todos os ´pontos da
+      superfície, assim, temos que:
+      <span class="math display"
+        >\[
+        \vec{E}_{s}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{(x-l/2)\hat{\mathbf{i}}+(y-l/2)\hat{\mathbf{j}}+(l-l/2)\hat{\mathbf{k}}}{[(x-l/2)^{2}+(y-l/2)^{2}+(l-l/2)^{2}]^{3/2}}\right]\label{excampo:gerals1}\]</span
+      >
+      e reescrevendo, temos que:
+      <span class="math display"
+        >\[
+        \vec{E}_{s}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{(x-l/2)\hat{\mathbf{i}}+(y-l/2)\hat{\mathbf{j}}+l/2\hat{\mathbf{k}}}{[(x-l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}]^{3/2}}\right]\]</span
+      >
+    </p>
+    <p>
+      O fluxo do campo elétrico através da superfície superior é então dado por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,s}=\int_{S}\vec{E}_{s}(\vec{r})\cdot\hat{n}_{s}~da_{s},\end{aligned}\]</span
+      >
+      e substituindo-se as expressões prévias, obtemos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,s}=\dfrac{q}{4\pi\epsilon_{0}}\int_{s}\left[\dfrac{(x-l/2)\hat{\mathbf{i}}+(y-l/2)\hat{\mathbf{j}}+l/2\hat{\mathbf{k}}}{[(x-l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}]^{3/2}}\right]\cdot\hat{\mathbf{k}}~da_{s},\end{aligned}\]</span
+      >
+      ou seja,
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,s}=\dfrac{ql}{8\pi\epsilon_{0}}\int_{0}^{l}\left[\int_{0}^{l}\dfrac{1}{[(x-l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}]^{3/2}}~dx\right]dy\end{aligned}\]</span
+      >
+      e definindo
+      <span class="math inline">\(\rho^{2}=(y-l/2)^{2}+(l/2)^{2}\)</span>,
+      podemos escrever o fluxo na forma:
+      <span class="math display"
+        >\[\begin{aligned} \label{fluxo:s1}
+        \Phi_{E,s}=\dfrac{ql}{8\pi\epsilon_{0}}\int_{0}^{l}I_{s}(y)~dy\end{aligned}\]</span
+      >
+      onde,
+      <span class="math display"
+        >\[
+        I_{s}(y)=\int_{0}^{l}\dfrac{dx}{[(x-l/2)^{2}+\rho^{2}]^{3/2}}\]</span
+        >
+        <p class="semparagraph">ou ainda</p>
+        <span class="math display"
+        >\[
+        I_{s}=\int_{-l/2}^{+l/2}\dfrac{dv}{[v^{2}+\rho^{2}]^{3/2}}=2\int_{0}^{l/2}\dfrac{dv}{[v^{2}+\rho^{2}]^{3/2}},\]</span
+      >
+      onde fizemos a troca de variável
+      <span class="math inline">\(v=x-l/2\)</span> tal que
+      <span class="math inline">\(v(0)=-l/2\)</span> e
+      <span class="math inline">\(v(l)=+l/2\)</span>. Além disso, como o
+      integrando é uma função par, podemos restringir a integração no intervalo
+      de 0 a <span class="math inline">\(l\)</span> e multiplicar o resultado
+      por 2.
+    </p>
+    <p>
+      Usando os resultados prévios,
+      <span class="math display"
+        >\[\begin{aligned}
+        \int\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}=\dfrac{1}{\rho^{2}}\dfrac{u}{\sqrt{u^{2}+\rho^{2}}}+C,\end{aligned}\]</span
+      >
+      a integração se torna:
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{s}(y)=\dfrac{2}{\rho^{2}}\dfrac{(l/2)}{\sqrt{(l/2)^{2}+\rho^{2}}}\end{aligned}\]</span
+      >
+      e usando a definição da variável auxiliar
+      <span class="math inline">\(\rho\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{s}(y)=\dfrac{2}{[(y-l/2)^{2}+(l/2)^{2}]}\dfrac{(l/2)}{\sqrt{(l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}}}\end{aligned}\]</span
+      >
+      e substituindo este resultado na equação para o fluxo       <span class="math inline">\(\Phi_{E,s}\)</span>, segue que:
+      <span class="math display"
+        >\[\begin{multline}
+        \Phi_{E,s}\\=\dfrac{ql}{8\pi\epsilon_{0}}\int_{0}^{l}\left[\dfrac{2}{[(y-l/2)^{2}+(l/2)^{2}]}\dfrac{(l/2)}{\sqrt{(l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}}}\right]~dy\end{multline}\]</span
+      >
+      <span class="math display"
+        >\[\begin{multline}
+        \Phi_{E,s}\\=\dfrac{ql^{2}}{8\pi\epsilon_{0}}\int_{0}^{l}\left[\dfrac{1}{[(y-l/2)^{2}+(l/2)^{2}]}\dfrac{1}{\sqrt{(l/2)^{2}+(y-l/2)^{2}+(l/2)^{2}}}\right]~dy.\end{multline}\]</span
+      >
+    </p>
+    <p>
+      Novamente, efetuamos a troca de variáveis,
+      <span class="math inline">\(u=y-l/2\)</span>, tal que
+      <span class="math inline">\(u(0)=-l/2\)</span> e
+      <span class="math inline">\(u(l)=l/2\)</span>. Assim, temos que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,s}=\dfrac{ql^{2}}{8\pi\epsilon_{0}}\int_{-l/2}^{+l/2}\left[\dfrac{1}{[u^{2}+(l/2)^{2}]}\dfrac{1}{\sqrt{u^{2}+2(l/2)^{2}}}\right]~du\end{aligned}\]</span
+      >
+      e aqui, lançamos mão da variável auxiliar
+      <span class="math inline">\(h=l/2\)</span>, deste modo, podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{E,s}=\dfrac{qh^{2}}{2\pi\epsilon_{0}}\int_{-h}^{+h}\left[\dfrac{1}{[u^{2}+h^{2}]}\dfrac{1}{\sqrt{u^{2}+2h^{2}}}\right]~du\end{aligned}\]</span
+      >
+      e explorando o fato do integrando ser função par, temos ainda:
+      <span class="math display"
+        >\[\begin{multline} \Phi_{E,s} =
+        \dfrac{qh^{2}}{\pi\epsilon_{0}}\int_{0}^{h}\left[\dfrac{1}{[u^{2}+h^{2}]}\dfrac{1}{\sqrt{u^{2}+2h^{2}}}\right]~du
+        \\=
+        \dfrac{qh^{2}}{\pi\epsilon_{0}}\int_{0}^{h}\dfrac{\sqrt{u^{2}+2h^{2}}}{[u^{2}+h^{2}][u^{2}+2h^{2}]}~du\end{multline}\]</span
+      >
+      e definindo:
+      <span class="math display"
+        >\[\begin{aligned} \label{I3}
+        I_{3}=\int_{0}^{h}\dfrac{\sqrt{u^{2}+2h^{2}}}{u^{2}+h^{2}}~du,\end{aligned}\]</span
+      >
+      e,
+      <span class="math display"
+        >\[\begin{aligned} \label{I4}
+        I_{4}=\int_{0}^{h}\dfrac{\sqrt{u^{2}+2h^{2}}}{u^{2}+2h^{2}}~du=\int_{0}^{h}\dfrac{du}{\sqrt{u^{2}+2h^{2}}},\end{aligned}\]</span
+      >
+      podemos expressar o fluxo através da superfície superior da seguinte
+      forma:
+      <span class="math display"
+        >\[\begin{aligned} \label{phies:fin} \Phi_{E,s} =
+        \dfrac{q}{\pi\epsilon_{0}}[I_{3}-I_{4}].\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A integração <span class="math inline">\(I_{3}\)</span>, pode ser
+      reescrita usando a seguinte substituição:
+      <span class="math display"
+        >\[\begin{aligned} x=u^{2}+2h^{2}\qquad\therefore\qquad
+        dx=2udu\end{aligned}\]</span
+      >
+      de modo que
+      <span class="math inline">\(du=\dfrac{dx}{2(\sqrt{x-2h^{2}})}\)</span> e
+      também <span class="math inline">\(u^{2}+h^{2}=x-h^{2}\)</span>. Com isso,
+      podemos escrever <span class="math inline">\(I_{3}\)</span> na forma:
+      <span class="math display"
+        >\[\begin{multline} I_{3}
+        =\int_{2h^{2}}^{3h^{2}}\dfrac{\sqrt{x}}{2(x-h^{2})}\dfrac{dx}{(\sqrt{x-2h^{2}})}
+        \\=
+        \dfrac{1}{2}\int_{2h^{2}}^{3h^{2}}\dfrac{1}{(x-h^{2})}\left[\dfrac{x}{x-2h^{2}}\right]^{1/2}dx.\end{multline}\]</span
+      >
+    </p>
+    <p>
+      O próximo passo é efetuar uma segunda substituição,
+      <span class="math display"
+        >\[\begin{aligned} \dfrac{x}{x-2h^{2}}=t^{2}\qquad\therefore\qquad
+        x=2h^{2}\dfrac{t^{2}}{t^{2}-1}\end{aligned}\]</span
+      >
+      o que nos permite escrever,
+      <span class="math display"
+        >\[\begin{aligned}
+        dx=2h^{2}\dfrac{[2t(t^{2}-1)-2tt^{2}]}{(t^{2}-1)^{2}}~dt=-2h^{2}\dfrac{2t}{(t^{2}-1)^{2}}~dt\end{aligned}\]</span
+      >
+      e,
+      <span class="math display"
+        >\[\begin{multline}
+        x-h^{2}=2h^{2}\dfrac{t^{2}}{t^{2}-1}-h^{2}=h^{2}\left[\dfrac{2t^{2}}{t^{2}-1}-1\right]\\=h^{2}\left[\dfrac{2t^{2}-t^{2}+1}{t^{2}-1}\right]\end{multline}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned}
+        x-h^{2}=h^{2}\left[\dfrac{t^{2}+1}{t^{2}-1}\right].\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se estes dados, podemos escrever:
+      <span class="math display"
+        >\[\begin{multline} I_{3} = -\dfrac{1}{2}\int_{\infty}^{\sqrt{3}}
+        \dfrac{1}{h^{2}}\left[\dfrac{t^{2}-1}{t^{2}+1}\right]t2h^{2}\dfrac{2t}{(t^{2}-1)^{2}}~dt
+        \\= 2\int_{\sqrt{3}}^{\infty} \dfrac{t^{2}}{(t^{2}-1)(t^{2}+1)}~dt =
+        \int_{\sqrt{3}}^{\infty}\left[
+        \dfrac{1}{t^{2}-1}+\dfrac{1}{t^{2}+1}\right]~dt\end{multline}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{multline}
+        \int_{\sqrt{3}}^{\infty}\dfrac{dt}{t^{2}-1}=\lim_{R\rightarrow\infty}\left[\int_{\sqrt{3}}^{R}\dfrac{dt}{t^{2}-1}\right]
+        \\=
+        \lim_{R\rightarrow\infty}\left[\int_{\sqrt{3}}^{R}\dfrac{dt}{(t-1)(t+1)}\right]
+        \\=
+        \dfrac{1}{2}\lim_{R\rightarrow\infty}\left[\int_{\sqrt{3}}^{R}\dfrac{dt}{t-1}-\int_{\sqrt{3}}^{R}\dfrac{dt}{t+1}\right]\end{multline}\]</span
+      >
+    </p>
+    <p class="semparagraph"> cada uma das integrais acima pode ser resolvida diretamente:
+      <span class="math display"
+        >\[\begin{aligned}
+        \int_{\sqrt{3}}^{R}\dfrac{dt}{t-1}=\ln\left|\dfrac{R-1}{\sqrt{3}-1}\right|=\ln|R-1|-\ln|\sqrt{3}-1|
+        \\
+        \int_{\sqrt{3}}^{R}\dfrac{dt}{t+1}=\ln\left|\dfrac{R+1}{\sqrt{3}+1}\right|=\ln|R+1|-\ln|\sqrt{3}+1|\end{aligned}\]</span
+      >
+      e assim,
+      <span class="math display"
+        >\[\begin{multline}
+        \int_{\sqrt{3}}^{\infty}\dfrac{dt}{t^{2}-1}=\dfrac{1}{2}[\ln|\sqrt{3}+1|-\ln|\sqrt{3}-1|]=\dfrac{1}{2}\ln\left|\dfrac{\sqrt{3}+1}{\sqrt{3}-1}\right|
+        \\=
+        \dfrac{1}{2}\ln\left|\dfrac{\sqrt{3}+1}{\sqrt{3}-1}\left(\dfrac{\sqrt{3}+1}{\sqrt{3}+1}\right)\right|
+        =
+        \dfrac{1}{2}\ln\left|\dfrac{(\sqrt{3}+1)^{2}}{3-1}\right|\end{multline}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned} \int_{\sqrt{3}}^{\infty}\dfrac{dt}{t^{2}-1}&amp; =
+        \ln\left|\dfrac{\sqrt{3}+1}{\sqrt{2}}\right|\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A outra integração pode ser resolvida por meio da substituição
+      <span class="math inline">\(t=\tan\alpha\)</span>, assim, segue que:
+      <span class="math display"
+        >\[\begin{aligned}
+        \int_{\sqrt{3}}^{\infty}\dfrac{dt}{t^{2}+1}=\int_{\pi/3}^{\pi/2}\dfrac{\sec^{2}\alpha}{\tan^{2}\alpha+1}~d\alpha
+        = \dfrac{\pi}{2}-\dfrac{\pi}{3}=\dfrac{\pi}{6}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned}
+        I_{3}=\ln\left|\dfrac{\sqrt{3}+1}{\sqrt{2}}\right|+\dfrac{\pi}{6}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Agora vamos determinar a integral
+      <span class="math inline">\(I_{4}\)</span>
+      por meio da substituição de variável
+      <span class="math inline">\(u=\sqrt{2}h\tan\theta\)</span>, assim:
+      <span class="math display"
+        >\[\begin{aligned} I_{4}=\int_{0}^{h}\dfrac{du}{\sqrt{u^{2}+2h^{2}}} =
+        \int_{0}^{\theta(h)}\dfrac{\sqrt{2}h\sec^{2}\theta}{\sqrt{2}h\sqrt{1+\tan^{2}\theta}}~d\theta
+      \end{aligned}\]</span
+      >
+      <p>e, simplificando, segue que:
+        <span class="math display">\[I_{4}=\int_{0}^{\theta(h)}\sec\theta~d\theta,\]</span>
+      </p>
+      que pode ser resolvida por meio da substituição abaixo:
+      <span class="math display"
+        >\[\begin{aligned} I_{4}=
+        \int_{0}^{\theta(h)}\dfrac{(\sec\theta+\tan\theta)}{\sec\theta+\tan\theta}\sec\theta~d\theta
+        =
+        \int_{0}^{\theta(h)}\dfrac{d(\sec\theta+\tan\theta)}{\sec\theta+\tan\theta}
+        \\=
+        \left[\ln|\sec\theta+\tan\theta|\right]_{0}^{\theta(h)}=\ln\left|\dfrac{[2h^{2}+u^{2}]^{1/2}}{\sqrt{2}h}+\dfrac{u}{\sqrt{2}h}\right|_{0}^{h}\end{aligned}\]</span>
+    </p>
+
+    <p>
+      <span class="math display"
+        >\[\begin{aligned} I_{4}=
+        \ln\left|\sqrt{\dfrac{3}{2}}+\dfrac{1}{\sqrt{2}}\right| -
+        \ln\left|\dfrac{[2h^{2}+0^{2}]^{1/2}}{\sqrt{2}h}+\dfrac{0}{\sqrt{2}h}\right|
+        \end{aligned}\]</span
+      >
+    </p>
+    <p class="semparagraph">o que resulta em,
+      <span class="math display"
+      >\[\begin{aligned} I_{4}
+      = \ln\left|\dfrac{\sqrt{3}+1}{\sqrt{2}}\right|\end{aligned}\]</span
+    >
+    </p> 
+    <p>
+      Usando os valores de <span class="math inline">\(I_{3}\)</span> e
+      <span class="math inline">\(I_{4}\)</span> podemos determinar o fluxo do camp o elétrico:
+      <span class="math display"
+        >\[\begin{aligned} \label{phies:fin2} \Phi_{E,s} =
+        \dfrac{q}{\pi\epsilon_{0}}\left[\ln\left|\dfrac{\sqrt{3}+1}{\sqrt{2}}\right|+\dfrac{\pi}{6}-\ln\left|\dfrac{\sqrt{3}+1}{\sqrt{2}}\right|\right]\end{aligned}\]</span
+      >
+      ou seja,
+      <span class="math display"
+        >\[\begin{aligned} \label{phies:fin3} \Phi_{E,s} =
+        \dfrac{q}{6\epsilon_{0}}.\end{aligned}\]</span
+      >
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+    <h2 id="condisocondutores-e-isolantes">
+      <span id="condiso" label="condiso"></span>Condutores e Isolantes
+    </h2>
+    <p>
+      Antes de prosseguir com o estudo da eletrostática, é importante fazer uma
+      observação a respeito dos tipos diferentes de materiais em relação à sua
+      resposta a um campo elétrico. Neste sentido, podemos identificar dois
+      tipos de materiais que denominamos como condutores e isolantes
+      (dielétricos). Os condutores são materiais caracterizados por terem
+      elétrons fracamente ligados aos átomos da rede e, com isso, podem se
+      deslocar quase livremente pelo material. Como resultado, a presença do
+      campo elétrico produz uma corrente elétrica pelo material. Os isolantes,
+      por outro lado, têm seus elétrons fortemente presos aos átomos e o campo
+      elétrico introduz apenas um pequeno reordenamento das cargas em tornos dos
+      íons. Assim, a resposta elétrica de materiais isolantes e condutores são
+      completamente diferentes. No momento, vamos nos concentrar nos materiais
+      condutores que são mais simples de serem tratados e, futuramente,
+      consideraremos os materiais isolantes. A razão para os condutores serem
+      mais simples está relacionado à mobilidade das cargas. Uma vez que um
+      condutor é submetido a um campo elétrico constante no tempo, as cargas
+      elétricas passam a se moverem no condutor até que uma situação de
+      equilíbrio se estabeleça onde as forças resultantes sobre todas as cargas
+      são iguais a zero. No equilíbrio, o interior do condutor apresenta um
+      campo elétrico nulo, pois do contrário, haveriam forças e as cargas se
+      moveriam o que é claramente uma situação de não-equilíbrio. No caso de uma
+      carga ser transferida para um condutor, ou seja, um condutor com uma carga
+      líquida em seu interior, estas cargas irão interagir entre si de maneira
+      que a situação de equilíbrio será estabelecida com as cargas depositadas
+      sobre a superfície deste condutor.
+    </p>
+    <h2 id="a-lei-de-gauss">A Lei de Gauss</h2>
+    <p>
+      Já mostramos que um carga puntual localizada na origem, apresenta um campo
+      elétrico que é proporcional ao módulo da carga e que varia com o inverso
+      do quadrado da distância da mesma. O campo elétrico produzido por esta
+      carga apresenta uma orientação radial, ou seja, em cada ponto do espaço
+      podíamos atribuir um vetor com orientação radial cujo sentido era saindo
+      ou entrando na carga elétrica dependendo se esta era positiva ou negativa.
+      Uma maneira alternativa de ilustrar o campo elétrico é por meio das linhas
+      de campo que são trajetórias no espaço tangente ao vetor campo elétrico. É
+      importante notar que essas linhas nunca se cruzam pois em cada ponto do
+      espaço temos apenas um, e somente um, valor para o campo elétrico. Além de
+      ilustrar a orientação do campo elétrico no espaço, também podemos
+      expressar a intensidade do campo elétrico por meio da densidade do número
+      de linhas de campo. Com efeito, o número de linhas de campo que atravessam
+      uma área <span class="math inline">\(S\)</span> perpendicular às mesmas é
+      proporcional à intensidade do campo elétrico. Para ilustrar, imagine que
+      temos uma superfície esférica envolvendo uma carga elétrica positiva
+      localizada na origem do sistema de coordenadas. Neste caso, se temos
+      <span class="math inline">\(N\)</span> linhas atravessando esta
+      superfície, o campo elétrico é proporcional à
+      <span class="math inline">\(N/A\)</span> onde
+      <span class="math inline">\(A=4\pi R^{2}\)</span> é a área da superfície
+      esférica. Como o número de linhas é fixo, então
+      <span class="math inline">\(E\propto N/4\pi R^{2}\)</span> e é
+      proporcional ao inverso do quadrado da distância da carga, o que está de
+      acordo com a Eq. \eqref{campo:eletrico}. Além disso, como o número de linhas de campo é proporcional à carga
+      elétrica, então, <span class="math inline">\(N\propto q\)</span> o que nos
+      permite escrever
+      <span class="math inline">\(E\propto q/4\pi R^{2}\)</span>. De fato a Eq. \eqref{campo:eletrico}
+      nos fornece
+      <span class="math inline">\(E=q/4\pi\epsilon_{0}R^{2}\)</span> o que nos
+      mostra que o raciocínio baseado nas linhas campo é consistente.
+    </p>
+    <p>
+      Antes de discutir propriamente a Lei de Gauss, precisamos da definição do
+      fluxo de um campo vetorial. Para um dado campo qualquer
+      <span class="math inline">\(\vec{B}\)</span>, o fluxo deste campo é
+      definido da seguinte forma:
+      <span class="math display"
+        >\[\begin{aligned} \label{fluxo:aberto}
+        \Phi_{\vec{B}}=\int_{S}\vec{B}\cdot\hat{n}~da\end{aligned}\]</span
+      >
+      onde <span class="math inline">\(S\)</span> é uma superfície aberta com
+      normal <span class="math inline">\(\hat{n}\)</span>. Note que o fluxo nada
+      mais é que a projeção do vetor
+      <span class="math inline">\(\vec{B}\)</span> na direção de
+      <span class="math inline">\(\hat{n}\)</span> o que nos diz que só temos
+      fluxo quando as linhas de campo de
+      <span class="math inline">\(\vec{B}\)</span> atravessam a superfície
+      <span class="math inline">\(S\)</span>. O fluxo é máximo quando essas
+      linhas incidem perpendicularmente à superfície. Podemos também considerar
+      o fluxo do campo vetorial
+      <span class="math inline">\(\vec{B}\)</span> encerrado por uma superfície
+      fechada <span class="math inline">\(S\)</span>, onde escrevemos:
+      <span class="math display"
+        >\[
+        \Phi_{\vec{B}}=\oint_{S}\vec{B}\cdot\hat{n}~da.\label{fluxo:fechado}\tag{12}\]</span
+      >
+    </p>
+    <p>
+      Vamos agora considerar novamente a nossa carga puntual centrada na origem
+      do sistema de coordenadas. Considerando uma superfície esférica e fechada
+      em torno da carga elétrica, então o fluxo do campo elétrico através desta
+      superfície é determinado adaptando a definição dada pela Eq. \eqref{fluxo:fechado}. Além disso, o campo elétrico é dado pela Eq. \eqref{campo:eletrico}
+      fazendo <span class="math inline">\(\lambda=\sigma=\rho=0\)</span> nas
+      integrais e no somatório <span class="math inline">\(N=1\)</span>,
+      <span class="math inline">\(\vec{r}_{j}=0\)</span>, e assim, temos:
+      <span class="math display"
+        >\[\begin{aligned}
+        \Phi_{\vec{E}}=\oint_{S}\vec{E}\cdot\hat{n}~da=\oint_{S}E\hat{r}\cdot\hat{r}~da\end{aligned}\]</span
+      >
+      e considerando que o módulo do campo elétrico é constante na superfície,
+      segue que:
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{\vec{E}}=E\oint_{S}\hat{r}\cdot\hat{r}~da=E4\pi
+        r^{2}\end{aligned}\]</span
+      >
+      e substituindo módulo do campo elétrico da Eq. \eqref{campo:eletrico}, obtemos finalmente:
+      <span class="math display"
+        >\[\begin{aligned} \Phi_{\vec{E}}=\dfrac{q}{4\pi\epsilon_{0}r^{2}}4\pi
+        r^{2}\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned} \label{PhiE}
+        \Phi_{\vec{E}}=\dfrac{q}{\epsilon_{0}}.\end{aligned}\]</span
+      >
+    </p>
+    <figure class="img">
+      <embed src=".images/gausslinhasss.png" id="fig1" height=270/>
+      <figcaption aria-hidden="true">
+        <span id="fig1" label="fig1">Fig. 1.4.</span> Exemplo de várias superfícies
+        fechadas envolvendo uma carga elétrica. O fluxo elétrico calculado por
+        meio destas superfícies é o mesmo para todas elas.
+      </figcaption>
+    </figure>
+    <p>
+      Vemos então que o fluxo elétrico depende apenas da carga elétrica
+      encerrada pela superfície. Além disso, isso evidencia que o fluxo
+      independe do raio da superfície bem como a sua forma. Na Fig.
+      <a href="#fig1" data-reference-type="ref" data-reference="fig1">1.4</a>
+      temos vários exemplos de superfície envolvendo a carga elétrica e todas
+      são atravessadas pelo mesmo número de linhas de campo, o que pode ser
+      verificado contando-se o número de linhas que atravessam as superfícies.
+      Damos um destaque especial à superfície
+      <span class="math inline">\(S^{\prime\prime\prime}\)</span> que é uma
+      superfície com uma reentrância onde podemos contar 14 linhas saindo da
+      mesma e 2 entrando o que resulta em um fluxo de 12 linhas como as demais.
+    </p>
+    <p>
+      O fato de que qualquer superfície fechada encerra o mesmo fluxo, nos
+      permite a liberdade de escolher a superfície mais conveniente para o
+      cálculo do fluxo elétrico. Desta forma, chamamos de superfície Gaussiana a
+      superfície mais simples que carrega a simetria da distribuição de cargas.
+      De fato, tudo o que foi discutido vale para qualquer distribuição de
+      cargas que esteja encerrada pela superfície Gaussiana desde uma número
+      discreto de cargas à distribuições lineares, superficiais ou volumétricas
+      de carga. Portanto, a igualdade expressa pela Eq.
+      <a href="#PhiE" data-reference-type="eqref" data-reference="PhiE"
+        >[PhiE]</a
+      >, calculada por uma única carga pontual, vale para qualquer carga
+      <span class="math inline">\(q\)</span> que esteja no interior da
+      superfície Gaussiana e podemos expressar isso pela chamada
+      <em><strong>Lei de Gauss</strong></em
+      >:
+      <span class="math display"
+        >\[
+        \oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}\qquad\text{(Lei
+        de Gauss)}.\tag{13} \label{leideGauss}\]</span
+      >
+    </p>
+    <p>
+      A Eq. \eqref{leideGauss}
+      é um dos pilares fundamentais da teoria eletromagnética e é uma das
+      equações de Maxwell do eletromagnetismo.
+    </p>
+    <h2 id="exemplos-resolvidos-1">Exemplos Resolvidos</h2>
+    <p>
+      Vamos aplicar a lei de Gauss à alguns casos simples para ilustrar o seu
+      uso e sua simplicidade no cálculo do campo elétrico devido a algumas
+      distribuições de carga.
+    </p>
+    <p>
+      <strong
+        >1. <em
+          >Casca esférica de raio <span class="math inline">\(R\)</span> e
+          densidade superficial de carga
+          <span class="math inline">\(\sigma\)</span>.</em
+        ></strong
+      >
+      Já discutimos o cálculo do potencial elétrico produzido por uma casca
+      esférica por meio de integração direta. Agora vamos considerar o campo
+      elétrico por meio da Lei de Gauss.
+    </p>
+    <p>
+      Vamos considerar primeiramente o caso em que o ponto de interesse no
+      cálculo do campo elétrico é um ponto
+      <span class="math inline">\(\vec{r}=r\hat{r}\)</span>, tal que
+      <span class="math inline">\(r&lt;R\)</span> (ou seja, no interior da casca
+      esférica). A forma geral da Lei de Gauss é dada por:
+      <span class="math display"
+        >\[\begin{aligned}
+        \oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}\end{aligned}\]</span
+      >
+      onde <span class="math inline">\(q\)</span> é carga no interior da
+      superfície gaussiana. No caso da casca, também consideramos uma superfície
+      gaussiana esférica de raio <span class="math inline">\(r\)</span>. Assim,
+      o vetor normal é <span class="math inline">\(\hat{r}\)</span> para fora da
+      casca. No interior da casca esférica não temos nenhuma carga livre e
+      assim, podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \oint_{S}E_{r}\hat{r}\cdot\hat{r}~da=\dfrac{0}{\epsilon_{0}}=0\end{aligned}\]</span
+      >
+      o que nos permite escrever
+      <span class="math display"
+        >\[\begin{aligned} E_{r}\oint_{S}~da=0\qquad\therefore\qquad
+        E_{r}=0.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Assim, podemos escrever que
+      <span class="math display"
+        >\[\begin{aligned} \vec{E}=0,\qquad r&lt;R.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Agora vamos considerar o caso em que temos um ponto fora da casca
+      esférica, ou seja, <span class="math inline">\(r&gt;R\)</span>. Com isso,
+      podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}\end{aligned}\]</span
+      >
+      e considerando que a carga da casca esférica é
+      <span class="math inline">\(Q\)</span>, então a superfície gaussiana
+      esférica de raio <span class="math inline">\(r&gt;R\)</span> envolve toda
+      a carga. Com isso, podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \oint_{S}E_{r}\hat{r}\cdot\hat{r}~da=\dfrac{Q}{\epsilon_{0}},\qquad
+        E_{r}\oint da=\dfrac{Q}{\epsilon_{0}}\end{aligned}\]</span
+      >
+      com isso, chegamos a
+      <span class="math display"
+        >\[\begin{aligned} E_{r}4\pi
+        r^{2}=\dfrac{Q}{\epsilon_{0}}\end{aligned}\]</span
+      >
+      o que nos permite escrever
+      <span class="math display"
+        >\[\begin{aligned}
+        E_{r}=\dfrac{Q}{4\pi\epsilon_{0}r^{2}}\end{aligned}\]</span
+      >
+      ou ainda na forma vetorial
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{E}(r)=\dfrac{Q}{4\pi\epsilon_{0}r^{2}}\hat{r},\qquad
+        r&gt;R.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <strong
+        >2. <em
+          >Fio retilíneo infinito com densidade linear de cargas
+          <span class="math inline">\(\lambda\)</span>.</em
+        ></strong
+      >
+      Vamos considerar uma superfície gaussiana de forma cilíndrica em torno do
+      fio. Assim, como o campo elétrico tem simetria radial, podemos escrever
+      <span class="math inline">\(\vec{E}=E\hat{r}\)</span>, onde o versor
+      <span class="math inline">\(\hat{r}\)</span> é definido no plano
+      <span class="math inline">\(xy\)</span> e o fio está dirigido ao longo do
+      eixo <span class="math inline">\(z\)</span>.
+    </p>
+    <figure class="img">
+      <embed src=".images/gausscilinder.png" id="fioinf" height=100/>
+      <figcaption aria-hidden="true">
+        <span id="fioinf" label="fioinf">Fig.1.5. </span>Fio infinito de cargas
+        de densidade linear <span class="math inline">\(\lambda\)</span> e a
+        superfície gaussiana cilíndrica de raio
+        <span class="math inline">\(r\)</span> em seu entorno.
+      </figcaption>
+    </figure>
+    <p>
+      Assim, podemos escrever
+      <span class="math display"
+        >\[\begin{aligned}
+        \oint_{S}\vec{E}\cdot\hat{n}~da=\dfrac{q}{\epsilon_{0}}\end{aligned}\]</span
+      >
+      e particularizando para o caso do fio, segue que:
+      <span class="math display"
+        >\[\begin{multline}
+        \int_{S_{1}}\vec{E}\cdot\hat{n}_{1}~da+\int_{S_{2}}\vec{E}\cdot\hat{n}_{2}~da\\+\int_{S_{3}}\vec{E}\cdot\hat{n}_{3}~da
+        =
+        \dfrac{1}{\epsilon_{0}}\int_{\text{fio}}\lambda~dl\end{multline}\]</span
+      >
+      onde as superfícies <span class="math inline">\(S_{1}\)</span> e
+      <span class="math inline">\(S_{2}\)</span> são as tampas do cilindro com
+      normais <span class="math inline">\(\hat{\mathbf{k}}\)</span> e
+      <span class="math inline">\(-\hat{\mathbf{k}}\)</span>. As contribuições
+      destas superfícies são nulas porque o campo elétrico é radial, e portanto,
+      perpendicular ao eixo <span class="math inline">\(z\)</span>. Resta ainda
+      a superfície <span class="math inline">\(S_{3}\)</span> que é a área
+      lateral do cilindro com normal
+      <span class="math inline">\(\hat{n}_{3}=\hat{\rho}\)</span>. Com isso,
+      podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned} \int_{\text{lateral}}E_{r}\hat{r}\cdot\hat{r}~da =
+        \dfrac{1}{\epsilon_{0}}\int_{\text{fio}}\lambda~dl\end{aligned}\]</span
+      >
+      o que pode ser escrito na forma
+      <span class="math display"
+        >\[\begin{aligned}
+        \int_{0}^{2\pi}\int_{-\infty}^{+\infty}E_{r}\hat{r}\cdot\hat{r}~rd\phi
+        dz =
+        \dfrac{1}{\epsilon_{0}}\int_{-\infty}^{\infty}\lambda~dz\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      <span class="math display"
+        >\[\begin{aligned} 2\pi r E_{r}\int_{-L/2}^{+L/2}~ dz =
+        \dfrac{\lambda}{\epsilon_{0}}\int_{-L/2}^{L/2}~dz\end{aligned}\]</span
+      >
+      onde consideramos uma superfície Gaussiana de comprimento
+      <span class="math inline">\(L\)</span>. Simplificando, obtemos o resultado
+      final:
+      <span class="math display"
+        >\[\begin{aligned} \vec{E} = \dfrac{\lambda}{2\pi
+        \epsilon_{0}r}\hat{r}.\end{aligned}\]</span
+      >
+      lembrando que <span class="math inline">\(\hat{r}\)</span> neste caso foi
+      definido como um versor no plano-<span class="math inline">\(xy\)</span>,
+      portanto, denota que o campo elétrico está direcionado perpendicularmente
+      ao comprimento do fio.<br/>
+      </p>
+      <p>
+      <strong>3. <em>Campo elétrico de um plano infinito de cargas negativas.</em
+        ></strong>
+      Aqui novamente consideramos uma superfície gaussiana cilíndrica. Neste
+      caso, o campo elétrico é perpendicular ao plano infinito de modo que este
+      é normal às tampas do cilindro e assim, a contribuição da superfície
+      lateral é nula pois o campo elétrico é perpendicular a esta superfície.
+      Com isso, podemos escrever:
+    </p>
+    <figure class="img">
+      <embed height=350 src=".images/gaussplane.png"/>
+      <figcaption aria-hidden="true">
+        <span id="planoinf" label="planoinf"> Fig. 1.6. </span>Plano infinito de
+        cargas densidade <span class="math inline">\(\sigma\)</span> e a
+        superfície gaussiana cilíndrica.
+      </figcaption>
+    </figure>
+    <p>
+      <span class="math display"
+        >\[\begin{multline}
+        \int_{S_{P}}\vec{E}_{P}\cdot\hat{n}_{P}~da+\int_{S_{P^{\prime}}}\vec{E}_{P^{\prime}}\cdot\hat{n}_{P^{\prime}}~da\\+\int_{S_{l}}\vec{E}
+        \cdot\hat{n}_{l}~da =
+        \dfrac{\sigma}{\epsilon_{0}}\int_{\text{plano}}~da\end{multline}\]</span
+      >
+      e como o campo elétrico tem a mesma intensidade nos pontos
+      <span class="math inline">\(P\)</span> e
+      <span class="math inline">\(P^{\prime}\)</span> (ambos na mesma distância
+      <span class="math inline">\(r\)</span> do plano) fazemos
+      <span class="math inline">\(E_{P}=E_{P^{\prime}}=E\)</span>, assim, segue
+      que:
+      <span class="math display"
+        >\[\begin{multline}
+        \int_{S_{P}}E(\hat{\mathbf{k}})\cdot(\hat{\mathbf{k}})~da+\int_{S_{P^{\prime}}}E(-\hat{\mathbf{k}})\cdot(-\hat{\mathbf{k}})~da
+        \\=
+        \dfrac{\sigma}{\epsilon_{0}}\int_{\text{plano}}~da\end{multline}\]</span
+      >
+    </p>
+    <p class="semparagraph"> ou seja, 
+      <span class="math display"
+        >\[\begin{aligned} E\pi \rho^{2}+E\pi \rho^{2} =
+        \dfrac{\sigma}{\epsilon_{0}}\pi \rho^{2}\qquad\therefore\qquad
+        E=\dfrac{\sigma}{2\epsilon_{0}}\end{aligned}\]</span
+      >
+      que pode ser escrito na forma:
+      <span class="math display"
+        >\[\begin{aligned} \label{E:planodecargas}
+        \vec{E}=\dfrac{\sigma}{2\epsilon_{0}}\hat{n}\end{aligned}\]</span
+      >
+      onde absorvemos o sinal da densidade de cargas no sinal da normal ao
+      plano. Note que o campo elétrico gerado pelo plano infinito é independente
+      da distância do ponto ao plano. Com efeito, perto do plano o campo
+      elétrico é oriundo das cargas do plano, próximas ao ponto considerado. As
+      contribuições de regiões no plano distantes do ponto tem componentes do
+      campo aproximadamente paralelas e assim, as componentes perpendiculares
+      destes pontos são desprezíveis. No caso em que o ponto está longe do
+      plano, as contribuições das cargas longe do ponto considerado têm
+      componentes praticamente perpendiculares a ele o que ajuda a compensar a
+      redução da intensidade do campo elétrico devido às regiões próximas à
+      projeção do ponto no plano. No final das contas, a intensidade do campo
+      elétrico permanece constante.
+    </p>
+    <section class="footnotes" role="doc-endnotes">
+      <hr />
+      <ol>
+        <li id="fn1" role="doc-endnote">
+          <p>
+            De fato, fazendo
+            <span class="math inline">\(u=\rho\tan\theta\)</span>, podemos
+            escrever:
+            <span class="math display"
+              >\[\begin{multline}
+              \int\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}=\dfrac{\rho\sec^{2}\theta~d\theta}{[\rho^{2}+\rho^{2}\tan^{2}\theta]^{3/2}}
+              \\=
+              \dfrac{1}{\rho^{2}}\int\dfrac{\sec^{2}\theta~d\theta}{[1+\tan^{2}\theta]^{3/2}}=\dfrac{1}{\rho^{2}}\sin\theta=\dfrac{1}{\rho^{2}}\dfrac{u}{\sqrt{u^{2}+\rho^{2}}}+C,\end{multline}\]</span
+            >
+            onde <span class="math inline">\(C\)</span> é a constante de
+            integração.<a
+              href="#fnref1"
+              class="footnote-back"
+              role="doc-backlink"
+              >↩︎</a
+            >
+          </p>
+        </li>
+        <li id="fn2" role="doc-endnote">
+          <p>
+            <span class="math display"
+              >\[\begin{aligned}
+              \int\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}=\dfrac{1}{\rho^{2}}\dfrac{u}{\sqrt{u^{2}+\rho^{2}}}+C,\end{aligned}\]</span
+            ><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a>
+          </p>
+        </li>
+        <li id="fn3" role="doc-endnote">
+          <p>
+            Aqui usamos a decomposição em frações parciais:
+            <span class="math display"
+              >\[\begin{aligned}
+              \dfrac{1}{(y^{2}+l^{2})(2y^{2}+l^{2})}=\dfrac{1}{l^{2}}\left[\dfrac{2}{2y^{2}+l^{2}}-\dfrac{1}{y^{2}+l^{2}}\right]\end{aligned}\]</span
+            >
+            isso nos permite escrever o integrando na forma:
+            <span class="math display"
+              >\[\begin{multline}
+              \dfrac{y(2y^{2}+l^{2})^{1/2}}{(y^{2}+l^{2})(2y^{2}+l^{2})} \\=
+              \dfrac{1}{l^{2}}\left[\dfrac{2y(2y^{2}+l^{2})^{1/2}}{2y^{2}+l^{2}}-\dfrac{y(2y^{2}+l^{2})^{1/2}}{y^{2}+l^{2}}\right]
+              \\=
+              \dfrac{1}{l^{2}}\left[\dfrac{2y}{(2y^{2}+l^{2})^{1/2}}-\dfrac{y(2y^{2}+l^{2})^{1/2}}{y^{2}+l^{2}}\right]\end{multline}\]</span
+            ><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+  </body>
+</html>

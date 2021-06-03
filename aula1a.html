@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+      type="text/javascript"
+    ></script>
+
+    <title>Aula #1 - Lei de Coulomb</title>
+  </head>
+
+  <body>
+    <header id="title-block-header">
+      <h1 class="title">Lei de Coulomb</h1>
+    </header>
+
+    <p>
+      Neste capítulo damos o início ao estudo da teoria eletromagnética, para
+      isso, consideramos primeiramente o conceito de carga elétrica. Quando
+      esfregamos um bastão de borracha em um pedaço de lã, percebemos que estes
+      materiais ficam carregados. Neste processo, ocorre uma transferência de
+      cargas elétricas de um material para o outro através do atrito dos
+      materiais, estas cargas estão associadas à partículas elementares,
+      especificamente a elétrons. É importante notar que esta transferência de
+      elétrons não implica na criação ou destruição de cargas, ou seja, antes e
+      após o processo de transferência a soma das cargas permanece a mesma. Com
+      efeito, parte dos elétrons da lã são transferidas para o bastão de
+      borracha deixando este negativamente carregado (com excesso de elétrons) e
+      a lã positivamente carregada (com falta de elétrons). Existem dois tipos
+      de carga elétrica, que denominamos positiva e negativa. A carga em si é
+      uma propriedade intrínseca da matéria e está associada à partículas
+      elementares. A matéria é constituída por prótons, elétrons e nêutrons. Os
+      prótons são positivamente carregados e os elétrons possuem carga negativa.
+      Os nêutrons, por outro lado, não apresentam carga. Assim, desde que estas
+      partículas são os constituintes dos átomos, a matéria é dotada de uma
+      grande quantidade de cargas positiva e negativa. A despeito deste fato,
+      não observamos efeitos de tais cargas desde que a quantidade de cargas
+      positiva e negativa é aproximadamente igual e assim, nenhum efeito
+      macroscópico é observado.
+    </p>
+    <p>
+      Para fixar as nomenclaturas a serem usadas ao longo do curso, quando nos
+      referimos à carga elétrica do ponto de vista macroscópico, estamos nos
+      referindo à carga líquida, i.e, à quantidade de carga elétrica
+      descompensada ou excesso de carga elétrica. Este excesso pode ser tanto de
+      elétrons (carga negativa) ou de prótons (carga negativa).
+    </p>
+    <h2 id="lei-de-coulomb">Lei de Coulomb</h2>
+    <p class="semparagraph">
+      As experiências com cargas elétricas no final do século 18 podem ser
+      resumidas em três afirmativas:
+    </p>
+    <ol type="a">
+      <li>
+        <p class="semparagraph">
+          Existem duas e somente duas espécies de cargas elétricas, hoje
+          denominadas positiva e negativa;
+        </p>
+      </li>
+      <li>
+        <p class="semparagraph">
+          Duas cargas puntuais exercem, entre si, forças que atuam ao longo da
+          linha que as une e que são inversamente proporcionais ao quadrado da
+          distância entre elas;
+        </p>
+      </li>
+      <li>
+        <p class="semparagraph">
+          Estas forças são também proporcionais ao produto das cargas sendo
+          repulsivas para cargas de mesmo sinal e atrativas para cargas de
+          sinais opostos.
+        </p>
+      </li>
+    </ol>
+    <p>
+      As afirmações acima são hoje conhecidas como
+      <strong><em>Lei de Coulomb</em></strong> em homenagem à C. A. Coulomb um
+      dos pioneiros no estudo da Eletricidade. Seguindo a notação vetorial que
+      desenvolvemos no capítulo anterior, podemos escrever a lei de Coulomb da
+      seguinte maneira:
+      <span class="math display"
+        >\[\tag{1}\label{coulomb}
+        \vec{F}_{1}=C\dfrac{q_{1}q_{2}}{r^{2}_{12}}\dfrac{\vec{r}_{12}}{r_{12}},\]
+      </span>
+      com
+      <span class="math display"
+        >\[\tag{2}\label{vetor:r12}\vec{r}_{12}=\vec{r}_{1}-\vec{r}_{2}.\]
+      </span>
+    </p>
+    <p>
+      Na Eq. \eqref{coulomb}, <span class="math inline">\(\vec{F}_{1}\)</span> é
+      a força sobre a carga <span class="math inline">\(q_{1}\)</span> exercida
+      pela carga <span class="math inline">\(q_{2}\)</span>. As cargas
+      <span class="math inline">\(q_{1}\)</span> e
+      <span class="math inline">\(q_{2}\)</span> estão localizadas no espaço nas
+      posições indicadas pelos vetores
+      <span class="math inline">\(\vec{r}_{1}\)</span> e
+      <span class="math inline">\(\vec{r}_{2}\)</span> cuja diferença nos
+      fornece a distância entre as cargas. Com efeito,
+      <span class="math inline">\(\vec{r}_{12}\)</span> é o vetor que vai de
+      <span class="math inline">\(q_{2}\)</span> a
+      <span class="math inline">\(q_{1}\)</span> cujo módulo é denotado por
+      <span class="math inline">\(r_{12}\)</span>. Note que
+      <span class="math inline">\(\vec{r}_{12}/r_{12}=\hat{r}_{12}\)</span> é um
+      vetor de módulo unitário cujo objetivo é apenas denotar a direção e
+      sentido da força que atua sobre a carga. Vemos então que a força atua em
+      uma direção definida por uma linha que conecta as duas cargas, em
+      conformidade com a segunda afirmação decorrente do experimento.
+    </p>
+    <p>
+      Para encontrar a força sobre a partícula 2 devido à partícula 1, basta
+      apenas permutar os índices 1 e 2. É importante entender todos os elementos
+      da Eq. \eqref{coulomb} pois a notação será largamente utilizada
+      futuramente. Além disso, é importante notar que a Eq. \eqref{coulomb} é
+      aplicada a cargas puntuais, o que é aplicável em sistemas macroscópicos
+      tão logo a distribuição de cargas tenha dimensão muito menor comparada com
+      a escala de comprimento do sistema. A constante de proporcionalidade
+      <span class="math inline">\(C\)</span> depende do sistema de unidades
+      usado, no caso presente, vamos utilizar o sistema internacional de
+      unidades onde a constante é dada por
+      <span class="math display"
+        >\[\begin{aligned} \label{constante} C=\dfrac{1}{4\pi\epsilon_{0}},
+        \qquad\epsilon_{0}=8,854\times10^{-12}~\text{C}^{2}/\text{N.m}^{2}\end{aligned}\]</span
+      >
+      onde <span class="math inline">\(\epsilon_{0}\)</span> é a chamada
+      permissividade elétrica do vácuo.
+    </p>
+    <p>
+      A Eq. \eqref{coulomb} pode ser generalizada para
+      <span class="math inline">\(N\)</span> partículas onde, por exemplo, a
+      força sobre a <span class="math inline">\(i\)</span>-ésima carga devido às
+      demais é dada por:
+      <span class="math display"
+        >\[\tag{3}\label{coulomb2} \vec{F}_{i}=q_{i}\sum_{j\neq
+        i}^{N}\dfrac{q_{j}}{4\pi\epsilon_{0}}\dfrac{\vec{r}_{ij}}{r^{3}_{ij}},\]</span
+      >
+      onde
+      <span class="math inline">\(\vec{r}_{ij}=\vec{r}_{i}-\vec{r}_{j}\)</span>.
+      Este é simplesmente o princípio de superposição das forças que nos diz que
+      a força total sobre uma determinada partícula é a soma vetorial de todas
+      as forças que atuam sobre ela.
+    </p>
+    <p>
+      A expressão dada pela Eq. \eqref{coulomb2} pode ser escrita em uma forma
+      mais “prática” escrevendo o vetor,
+      <span class="math inline">\(\vec{r}_{ij}\)</span>, explicitamente. Assim,
+      temos que:
+      <span class="math display"
+        >\[\tag{4} \label{coulomb3} \vec{F}_{i}=q_{i}\sum_{j\neq
+        i}^{N}\dfrac{q_{j}}{4\pi\epsilon_{0}}\dfrac{(\vec{r}_{i}-\vec{r}_{j})}{|\vec{r}_{i}-\vec{r}_{j}|^{3}}.\]</span
+      >
+    </p>
+    <h2 id="exemplos-resolvidos">Exemplos Resolvidos</h2>
+    <p class="semparagraph">
+      <strong>Exemplo 1, Moysés, cap. 2, pg. 8.</strong> <em
+        >Duas cargas puntiformes, <span class="math inline">\(+q\)</span> e
+        <span class="math inline">\(-q\)</span>, estão situadas no vácuo,
+        separadas por uma distância <span class="math inline">\(2d\)</span>. Com
+        que força atuam sobre uma terceira carga
+        <span class="math inline">\(q^{\prime}\)</span>, situada sobre a
+        mediatriz do segmento que liga as duas cargas, a uma distância
+        <span class="math inline">\(D\)</span> do ponto médio deste
+        segmento?</em
+      >
+    </p>
+    <figure class="img">
+      <embed src=".images/forcaCoulomb.png" id="ex1:fig1" />
+      <figcaption aria-hidden="true">
+        <span id="ex1:fig1" label="ex1:fig1"></span>Fig. 1.1. Veja exemplo 1.
+      </figcaption>
+    </figure>
+    <div class="img">
+      <p><strong>Solução</strong></p>
+    </div>
+    <p>
+      A força <span class="math inline">\(\vec{F}_{q^{\prime}}\)</span> é dada
+      pela soma das forças exercidas por
+      <span class="math inline">\(+q\)</span> e
+      <span class="math inline">\(-q\)</span>. Assim, se
+      <span class="math inline">\(\vec{r}_{+}\)</span> e
+      <span class="math inline">\(\vec{r}_{-}\)</span> são os vetores-posição
+      das cargas <span class="math inline">\(+q\)</span> e
+      <span class="math inline">\(-q\)</span>, respectivamente, e
+      <span class="math inline">\(\vec{r}_{q^{\prime}}\)</span> é a posição da
+      carga <span class="math inline">\(q^{\prime}\)</span>, então a Eq.
+      \eqref{coulomb3} nos permite escrever:
+      <span class="math display"
+        >\[\begin{aligned} \label{fqprime}
+        \vec{F}_{q^{\prime}}=\vec{F}_{q^{\prime}q_{+}}+\vec{F}_{q^{\prime}q_{-}}\end{aligned}\]</span
+      >
+      e assim,
+      <span class="math display"
+        >\[\begin{aligned} \label{fqprime2} \vec{F}_{q^{\prime}} =
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}\dfrac{\vec{r}_{q^{\prime}}-\vec{r}_{+}}{|\vec{r}_{q^{\prime}}-\vec{r}_{+}|^{3}}
+        -
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}\dfrac{(\vec{r}_{q^{\prime}}-\vec{r}_{-})}{|\vec{r}_{q^{\prime}}-\vec{r}_{-}|^{3}}\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned} \label{fqprime3} \vec{F}_{q^{\prime}} =
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}\left[
+        \dfrac{\vec{r}_{q^{\prime}}-\vec{r}_{+}}{|\vec{r}_{q^{\prime}}-\vec{r}_{+}|^{3}}
+        -
+        \dfrac{(\vec{r}_{q^{\prime}}-\vec{r}_{-})}{|\vec{r}_{q^{\prime}}-\vec{r}_{-}|^{3}}\right].\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Precisamos determinar as formas dos vetores
+      <span class="math inline">\(\vec{r}_{q^{\prime}}\)</span>,
+      <span class="math inline">\(\vec{r}_{+}\)</span> e
+      <span class="math inline">\(\vec{r}_{-}\)</span>. Da figura
+      <a href="#ex1:fig1" data-reference-type="ref" data-reference="ex1:fig1"
+        >1.1</a
+      >, temos que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{r}_{q^{\prime}}&amp;=D\hat{\mathbf{j}}, \\
+        \vec{r}^{+}&amp;=-d\hat{\mathbf{i}}, \\
+        \vec{r}_{-}&amp;=+d\hat{\mathbf{i}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      E considerando os vetores acima, podemos determinar as seguintes
+      expressões:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{r}_{q^{\prime}}-\vec{r}_{+}&amp;=D\hat{\mathbf{j}}-(-d\hat{\mathbf{i}})=d\hat{\mathbf{i}}+D\hat{\mathbf{j}},
+        \quad\text{e}\quad
+        |\vec{r}_{q^{\prime}}-\vec{r}_{+}|=\sqrt{D^{2}+d^{2}}, \\
+        \vec{r}_{q^{\prime}}-\vec{r}_{-}&amp;=D\hat{\mathbf{j}}-(d\hat{\mathbf{i}})=-d\hat{\mathbf{i}}+D\hat{\mathbf{j}},
+        \quad\text{e}\quad
+        |\vec{r}_{q^{\prime}}-\vec{r}_{-}|=\sqrt{D^{2}+d^{2}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo estes dados na expressão para
+      <span class="math inline">\(\vec{F}_{q^{\prime}}\)</span>, obtemos:
+      <span class="math display"
+        >\[\begin{aligned} \vec{F}_{q^{\prime}} =
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}\dfrac{(d\hat{\mathbf{i}}+D\hat{\mathbf{j}})}{[D^{2}+d^{2}]^{3/2}}
+        -
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}\dfrac{(-d\hat{\mathbf{i}}+D\hat{\mathbf{j}})}{[D^{2}+d^{2}]^{3/2}}\end{aligned}\]</span
+      >
+      e simplificando a expressão, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{F}_{q^{\prime}} =
+        \dfrac{q^{\prime}q}{4\pi\epsilon_{0}}
+        \dfrac{2d}{[D^{2}+d^{2}]^{3/2}}\hat{\mathbf{i}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      A força está direcionada na horizontal e é resultado do fato das cargas
+      terem o mesmo valor em módulo e estão eqüidistantes de
+      <span class="math inline">\(q^{\prime}\)</span>.
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+    <p>
+      Até aqui, fizemos apenas uma extensão da fórmula de Coulomb para
+      <span class="math inline">\(N\)</span> cargas puntuais mas ainda não
+      dissemos nada a respeito do valor desta carga. A carga elementar, medida
+      em Coulombs no sistema internacional de unidades, vale 1,602<span
+        class="math inline"
+        >\(\times10^{-19}\)</span
+      > C. Este é um valor extremamente pequeno de modo que macroscopicamente
+      não iremos perceber a granularidade da carga. Mesmo uma quantidade
+      macroscopicamente pequena de carga contém ainda muitos elétrons de modo
+      que é possível considerar a extensão da Eq. \eqref{coulomb2} para uma
+      distribuição contínua de cargas, em analogia ao que usualmente fazemos
+      quando passamos a discutir a dinâmica de corpos rígidos em Mecânica.
+      Assim, considerando esta situação em que estamos longe do limite atômico,
+      podemos definir as densidades lineares, superficiais e volumétricas de
+      carga, conforme segue:
+      <span class="math display"
+        >\[\begin{aligned} \label{lambda} \lambda=\lim_{\Delta
+        l\rightarrow0}\dfrac{\Delta q}{\Delta l}, \qquad(\text{densidade linear
+        de carga}),\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned} \label{sigma} \sigma=\lim_{\Delta
+        S\rightarrow0}\dfrac{\Delta q}{\Delta S}, \qquad(\text{densidade
+        superficial de carga}).\end{aligned}\]</span
+      >
+      <span class="math display"
+        >\[\begin{aligned} \label{rho} \rho=\lim_{\Delta
+        V\rightarrow0}\dfrac{\Delta q}{\Delta V}, \qquad(\text{densidade
+        volumétrica de carga}),\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Notamos que as densidades de carga são referentes à carga líquida ou
+      excesso de carga. Agora considere que temos uma carga
+      <span class="math inline">\(q\)</span> na presença de uma distribuição
+      volumétrica <span class="math inline">\(\rho\)</span>, uma densidade
+      superficial de carga caracterizada por
+      <span class="math inline">\(\sigma\)</span>, uma densidade linear de carga
+      <span class="math inline">\(\lambda\)</span> e ainda sob influência de um
+      conjunto discreto de cargas. Aplicando o princípio da superposição, a
+      força total exercida sobre uma carga
+      <span class="math inline">\(q\)</span>, localizada na posição
+      <span class="math inline">\(\vec{r}\)</span>, é dada por:
+      <span class="math display"
+        >\[\begin{multline}  \vec{F}_{q}(\vec{r})=
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{V}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\rho(\vec{r}^{\prime})~dV^{\prime}
+        \\+
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{S}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\sigma(\vec{r}^{\prime})~da^{\prime}
+        \\+
+        \dfrac{q}{4\pi\epsilon_{0}}\int_{C}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\lambda(\vec{r}^{\prime})~dl^{\prime}
+        + 
+        \dfrac{q}{4\pi\epsilon_{0}}\sum_{j\neq
+        i}^{N}q_{j}\dfrac{(\vec{r}-\vec{r}_{j})}{|\vec{r}-\vec{r}_{j}|^{3}}.\end{multline}\tag{5}\label{forca:distribuicao}\]</span
+      >
+    </p>
+    <p>
+      A Eq. \eqref{forca:distribuicao}
+      permite determinar a força sobre um carga
+      <span class="math inline">\(q\)</span> no caso mais geral possível
+      envolvendo qualquer tipo de distribuição de carga.
+    </p>
+    <p class="semparagraph">
+      <strong>Exemplo 2, Moysés, cap. 2, pg. 10.</strong> <em
+        >Uma carga <span class="math inline">\(Q\)</span> está distribuída
+        uniformemente sobre um anel circular vertical de raio
+        <span class="math inline">\(\rho\)</span> e de espessura desprezível.
+        Qual é a força exercida sobre uma carga puntiforme
+        <span class="math inline">\(q\)</span> situada sobre o eixo horizontal
+        que passa pelo centro do anel, a uma distância
+        <span class="math inline">\(D\)</span> do seu plano?</em
+      >
+      <figure class="img">
+        <embed src=".images/anelCoulomb.png" id="ex2:fig" height="700" />
+        <figcaption aria-hidden="true">
+          <span id="ex2:fig" label="ex2:fig">Fig. 1.2.</span> Veja exemplo 2.
+        </figcaption>
+      </figure>
+    </p>
+    <div class="img">
+      <p><strong>Solução</strong></p>
+    </div>
+    <p>
+      A força sobre a carga <span class="math inline">\(q\)</span> é dada pela
+      Eq. \eqref{coulomb3}:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{F}_{q}=\dfrac{q}{4\pi\epsilon_{0}}\int_{C}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}\lambda(\vec{r}^{\prime})~dl^{\prime},\end{aligned}\]</span
+      >
+      e devemos determinar cada elemento que aparece na integral.
+    </p>
+    <p>
+      Vamos partir da densidade linear de carga. Desde que a carga está
+      distribuída uniformemente sobre o anel, então a densidade linear de carga
+      é dada por:
+      <span class="math display"
+        >\[\begin{aligned} \lambda=\dfrac{Q}{2\pi\rho}\end{aligned}\]</span
+      >
+      lembrando que <span class="math inline">\(\rho\)</span> é o raio do anel.
+    </p>
+    <p>
+      Os vetores <span class="math inline">\(\vec{r}\)</span> e
+      <span class="math inline">\(\vec{r}^{\prime}\)</span> aponta para a
+      posição da carga <span class="math inline">\(q^{\prime}\)</span> e para a
+      distribuição, respectivamente. Assim, tomando o eixo-<span
+        class="math inline"
+        >\(\hat{z}\)</span
+      >
+      no eixo do anel, segue que:
+      <span class="math display"
+        >\[\begin{aligned} \vec{r}=D\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      e seguindo a convenção dos eixos, o anel está no plano-<span
+        class="math inline"
+        >\(xy\)</span
+      >, assim, podemos escrever o vetor
+      <span class="math inline">\(\vec{r}^{\prime}\)</span> na forma:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{r}^{\prime}=x^{\prime}\hat{\mathbf{i}}+y^{\prime}\hat{\mathbf{j}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      O vetor <span class="math inline">\(\vec{r}^{\prime}\)</span> aponta para
+      a distribuição de carga, especificamente, para um elemento de carga,
+      <span class="math inline">\(dq^{\prime}=\lambda dl^{\prime}\)</span>. Como
+      devemos somar as contribuições de todos os elementos de carga, então, é
+      mais conveniente utilizar variáveis que permitem explorar a simetria da
+      distribuição. Neste sentido, escrevemos
+      <span class="math inline">\(\vec{r}^{\prime}\)</span>, na forma:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{r}^{\prime}=\rho\cos\phi^{\prime}\hat{\mathbf{i}}+\rho\sin\phi^{\prime}\hat{\mathbf{j}}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Combinando-se <span class="math inline">\(\vec{r}^{\prime}\)</span> com
+      <span class="math inline">\(\vec{r}\)</span>, podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        |\vec{r}-\vec{r}^{\prime}|=|D\hat{\mathbf{k}}-\rho\cos\phi^{\prime}\hat{\mathbf{i}}-\rho\sin\phi^{\prime}\hat{\mathbf{j}}|=\sqrt{\rho^{2}+D^{2}}\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Além disso, o elemento de comprimento
+      <span class="math inline">\(dl^{\prime}\)</span> é dado pela definição do
+      ângulo em radianos. Assim, segue que:
+      <span class="math display"
+        >\[\begin{aligned} dl^{\prime}=\rho d\phi^{\prime}.\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      Substituindo-se todos estes elementos, podemos escrever:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{F}_{q}=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{Q}{2\pi\rho}\int_{0}^{2\pi}\dfrac{(D\hat{\mathbf{k}}-\rho\cos\phi^{\prime}\hat{\mathbf{i}}-\rho\sin\phi^{\prime}\hat{\mathbf{j}})}{[\rho^{2}+D^{2}]^{3/2}}\rho~d\phi^{\prime}\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{F}_{q}=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{Q}{2\pi\rho}\dfrac{\rho}{[\rho^{2}+D^{2}]^{3/2}}
+        \int_{0}^{2\pi}(D\hat{\mathbf{k}}-\rho\cos\phi^{\prime}\hat{\mathbf{i}}-\rho\sin\phi^{\prime}\hat{\mathbf{j}})~d\phi^{\prime}\end{aligned}\]</span
+      >
+      ou ainda,
+      <span class="math display"
+        >\[\begin{multline*}
+        \vec{F}_{q}=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{Q}{2\pi\rho}\dfrac{\rho}{[\rho^{2}+D^{2}]^{3/2}}
+        \left[\int_{0}^{2\pi}D\hat{\mathbf{k}}~d\phi^{\prime}\right.\\\left.-\rho\int_{0}^{2\pi}\cos\phi^{\prime}~d\phi^{\prime}\hat{\mathbf{i}}-\rho\int_{0}^{2\pi}\sin\phi^{\prime}\hat{\mathbf{j}}~d\phi^{\prime}\right]\end{multline*}\]</span
+      >
+      e considerando que a integração sobre o cosseno e seno são nulas, então
+      resta apenas a integração sobre o eixo
+      <span class="math inline">\(\hat{z}\)</span>:
+      <span class="math display"
+        >\[\begin{aligned}
+        \vec{F}_{q}&amp;=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{Q}{2\pi\rho}\dfrac{\rho}{[\rho^{2}+D^{2}]^{3/2}}D\hat{\mathbf{k}}\int_{0}^{2\pi}~d\phi^{\prime}
+        \\
+        &amp;=\dfrac{q}{4\pi\epsilon_{0}}\dfrac{Q}{2\pi\rho}\dfrac{2\pi\rho}{[\rho^{2}+D^{2}]^{3/2}}D\hat{\mathbf{k}}\end{aligned}\]</span
+      >
+      o que nos leva ao resultado final:
+      <span class="math display"
+        >\[\tag{6}\label{ex2:for}
+        \vec{F}_{q}=\dfrac{qQ}{4\pi\epsilon_{0}}\dfrac{D}{[\rho^{2}+D^{2}]^{3/2}}\hat{\mathbf{k}}.\]</span
+      >
+    </p>
+    <p>
+      Observe que para <span class="math inline">\(D\gg\rho\)</span>, podemos
+      expandir a expressão dada pela Eq. \eqref{ex2:for} em série de Taylor:
+      <span class="math display"
+        >\[\begin{aligned}
+        \dfrac{1}{[D^{2}+\rho^{2}]^{3/2}}=\dfrac{1}{D^{3}}-\dfrac{3}{2}\dfrac{\rho^{2}}{D^{5}}+\cdots\end{aligned}\]</span
+      >
+    </p>
+    <p>
+      E assim, a expressão dada pela Eq. \eqref{ex2:for}, vamos obter:
+      <span class="math display"
+        >\[\begin{aligned} \label{ex2:for2}
+        \vec{F}_{q}&amp;=\dfrac{qQ}{4\pi\epsilon_{0}}D\left[\dfrac{1}{D^{3}}-\dfrac{3}{2}\dfrac{\rho^{2}}{D^{5}}+\cdots\right]\hat{\mathbf{k}}.\end{aligned}\]</span
+      >
+      e para <span class="math inline">\(D\gg\rho\)</span>, podemos reter apenas
+      o primeiro termo da série, assim,
+      <span class="math display"
+        >\[\begin{aligned} \vec{F}_{q}=\dfrac{qQ}{4\pi\epsilon_{0}}
+        \dfrac{1}{D^{2}}\hat{\mathbf{k}},\end{aligned}\]</span
+      >
+      assim, quando nos afastamos do anel, recuperamos a expressão da carga
+      puntual.
+    </p>
+    <div class="img">
+      <p>********</p>
+    </div>
+  </body>
+</html>
