@@ -60,7 +60,7 @@
       >, é dada por:
       <span class="math display"
         >\begin{align}\label{trabalho} 
-        \Delta U=-\int_{P_{1}}^{P_{2}}\vec{F}(\vec{r})\cdot d\vec{l}\end{align}</span
+        \Delta U=-\displaystyle\int_{P_{1}}^{P_{2}}\vec{F}(\vec{r})\cdot d\vec{l}\end{align}</span
       >
     </p>
     <figure>
@@ -219,111 +219,9 @@
     </p>
     <h2 id="exemplos-resolvidos">Exemplos Resolvidos</h2>
     
-      <strong>1.</strong> <em
-        >Calcule o campo elétrico para um disco carregado como no exemplo 2 já
-        discutido no capítulo
-        <a
-          href="#coulomb:chap"
-          data-reference-type="ref"
-          data-reference="coulomb:chap"
-          >[coulomb:chap]</a
-        >
-        (<strong> Moysés, cap. 3, Exemplo 4, pg. 19.</strong>). Neste caso,
-        obtenha o potencial do anel e então determine
-        <span class="math inline">\(\vec{E}\)</span> a partir da Eq.
-        <a
-          href="#campo:eletrico:grad"
-          data-reference-type="eqref"
-          data-reference="campo:eletrico:grad"
-          >[campo:eletrico:grad]</a
-        >.</em
-      >
-    </p>
-    <div class="center">
-      <p><strong>Solução</strong></p>
-    </div>
+
     <p>
-      Aqui aproveitamos o potencial do anel que obtivemos no exemplo anterior
-      pois consideramos o disco composto por infinitos anéis de espessura
-      infinitesimal concêntricos. Assim, um anel de área
-      <span class="math inline">\(da=2\pi\rho d\rho\)</span> e densidade de
-      carga <span class="math inline">\(\sigma\)</span> contém uma carga
-      <span class="math inline">\(dQ=\sigma2\pi\rho d\rho\)</span>. O potencial
-      <span class="math inline">\(d\varphi\)</span> deste anel é então dado por:
-      <span class="math display"
-        >\[\begin{aligned} d\varphi(\vec{r})=
-        \dfrac{dQ}{4\pi\epsilon_{0}}\dfrac{1}{[z^{2}+\rho^{2}]^{1/2}}.\end{aligned}\]</span
-      >
-    </p>
-    <p>
-      Substituindo o valor da carga <span class="math inline">\(dQ\)</span>,
-      obtemos:
-      <span class="math display"
-        >\[\begin{aligned} d\varphi(\vec{r})=
-        \dfrac{\sigma}{4\pi\epsilon_{0}}\dfrac{2\pi\rho
-        d\rho}{[z^{2}+\rho^{2}]^{1/2}} =
-        \dfrac{\sigma}{2\epsilon_{0}}\dfrac{\rho
-        d\rho}{[z^{2}+\rho^{2}]^{1/2}}\end{aligned}\]</span
-      >
-    </p>
-    <p>
-      O potencial é dado pela soma de todos os anéis, assim segue que:
-      <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r}) =
-        \dfrac{\sigma}{2\epsilon_{0}}\int_{0}^{R}\dfrac{\rho
-        }{[z^{2}+\rho^{2}]^{1/2}}d\rho\end{aligned}\]</span
-      >
-      e fazendo a troca de variável
-      <span class="math inline">\(u=z^{2}+\rho^{2}\)</span> tal que
-      <span class="math inline">\(du=2\rho d\rho\)</span> e
-      <span class="math inline">\(u(0)=z^{2}\)</span> e
-      <span class="math inline">\(u(R)=z^{2}+R^{2}\)</span>
-      <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r}) =
-        \dfrac{\sigma}{2\epsilon_{0}}\dfrac{1}{2}\int_{z^{2}}^{z^{2}+R^{2}}\dfrac{du}{u^{1/2}}
-        =
-        \dfrac{\sigma}{2\epsilon_{0}}\left[\sqrt{z^{2}}-\sqrt{z^{2}+R^{2}}\right]\end{aligned}\]</span
-      >
-    </p>
-    <p>
-      <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r}) =
-        \dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right].\end{aligned}\]</span
-      >
-    </p>
-    <p>
-      Usando a expressão acima, podemos determinar o campo elétrico como fizemos
-      no exemplo anterior:
-      <span class="math display"
-        >\[\begin{aligned}
-        \vec{E}(\vec{r})=\hat{\mathbf{i}}\dfrac{\partial}{\partial
-        x}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]
-        + \hat{\mathbf{j}}\dfrac{\partial}{\partial
-        y}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]
-        + \hat{\mathbf{k}}\dfrac{\partial}{\partial
-        z}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]\end{aligned}\]</span
-      >
-    </p>
-    <p>
-      <span class="math display"
-        >\[\begin{aligned} \vec{E}(\vec{r})=\dfrac{\sigma}{2\epsilon_{0}}
-        \hat{\mathbf{k}}\dfrac{\partial}{\partial
-        z}\left[|z|-\sqrt{z^{2}+R^{2}}\right] = \dfrac{\sigma}{2\epsilon_{0}}
-        \left[\dfrac{z}{|z|}-\dfrac{z}{\sqrt{z^{2}+R^{2}}}\right]\hat{\mathbf{k}}\end{aligned}\]</span
-      >
-      e no caso de <span class="math inline">\(z&gt;0\)</span>, podemos
-      escrever:
-      <span class="math display"
-        >\[\begin{aligned} \vec{E}(\vec{r})= \dfrac{\sigma}{2\epsilon_{0}}
-        \left[1-\dfrac{z}{\sqrt{z^{2}+R^{2}}}\right]\hat{\mathbf{k}},\end{aligned}\]</span
-      >
-      que é o campo obtido no exemplo 2.
-    </p>
-    <div class="center">
-      <p>********</p>
-    </div>
-    <p>
-      <strong>3.</strong> <strong> Moysés, cap. 4, Problema 1, pg. 73.</strong
+      <strong>1.</strong> <strong> Moysés, cap. 4, Problema 1, pg. 73.</strong
       > <em
         >Um par de cargas puntiformes <span class="math inline">\(+2q\)</span> e
         <span class="math inline">\(-q\)</span> estão separadas por uma
@@ -333,7 +231,7 @@
         o seu raio.</em
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p><strong>Solução</strong></p>
     </div>
     <p>
@@ -346,13 +244,7 @@
       <span class="math inline">\(y_{1}=-l\)</span> e
       <span class="math inline">\(y_{2}=+l\)</span>, respectivamente. Deste
       modo, podemos escrever potencial calculado em um ponto qualquer do espaço
-      por meio da Eq.
-      <a
-        href="#potencialeletrico:geral"
-        data-reference-type="eqref"
-        data-reference="potencialeletrico:geral"
-        >[potencialeletrico:geral]</a
-      >:
+      por meio da Eq. \eqref{potencialeletrico:geral}:
       <span class="math display"
         >\[\begin{aligned} \varphi(\vec{r})=
         \dfrac{1}{4\pi\epsilon_{0}}\sum_{j=1}^{2}\dfrac{q_{i}}{|\vec{r}-\vec{r}_{j}|}.\end{aligned}\]</span
@@ -376,9 +268,9 @@
       >
       e substituindo-se estes dados na equação para o potencial, segue que:
       <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r})=
-        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{2q}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}-\dfrac{1}{4\pi\epsilon_{0}}\dfrac{q}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}
-        }.\end{aligned}\]</span
+        >\begin{multline*} \varphi(\vec{r})=
+        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{2q}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}\\-\dfrac{1}{4\pi\epsilon_{0}}\dfrac{q}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}
+        }.\end{multline*}</span
       >
     </p>
     <p>
@@ -386,14 +278,14 @@
       Vamos considerar agora que
       <span class="math inline">\(\varphi(\vec{r})=0\)</span>, assim, temos que:
       <span class="math display"
-        >\[\begin{aligned} 0=
-        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{2q}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}-\dfrac{1}{4\pi\epsilon_{0}}\dfrac{q}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}
-        }.\end{aligned}\]</span
+        >\begin{multline*} 0=
+        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{2q}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}\\-\dfrac{1}{4\pi\epsilon_{0}}\dfrac{q}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}
+        }.\end{multline*}</span
       >
       o que pode ser escrito na forma:
       <span class="math display"
-        >\[\begin{aligned} 0=
-        \dfrac{2}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}-\dfrac{1}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}},\end{aligned}\]</span
+        >\begin{multline*} 0=
+        \dfrac{2}{[x^{2}+(y+l/2)^{2}+z^{2}]^{1/2}}\\-\dfrac{1}{[x^{2}+(y-l/2)^{2}+z^{2}]^{1/2}},\end{multline*}</span
       >
     </p>
     <p>
@@ -408,26 +300,21 @@
       >
       e tomando o quadrado de ambos os membros, segue que:
       <span class="math display"
-        >\[\begin{aligned} \label{int:potex3}
-        4[x^{2}+(y-l/2)^{2}+z^{2}]=[x^{2}+(y+l/2)^{2}+z^{2}]\qquad\therefore\qquad
-        3x^{2}+4(y-l/2)^{2}-(y+l/2)^{2}+3z^{2}=0,\end{aligned}\]</span
+        >\[\begin{multline} \label{int:potex3}
+        4[x^{2}+(y-l/2)^{2}+z^{2}]=[x^{2}+(y+l/2)^{2}+z^{2}]\\\qquad\therefore\qquad
+        3x^{2}+4(y-l/2)^{2}-(y+l/2)^{2}+3z^{2}=0,\end{multline}\]</span
       >
       e reescrevendo o termo central envolvendo a coordenada
       <span class="math inline">\(y\)</span>,
       <span class="math display"
-        >\[\begin{aligned}
-        4(y-l/2)^{2}-(y+l/2)^{2}&amp;=4y^{2}-4ly+l^{2}-y^{2}-yl-\dfrac{l^{2}}{4}=3y^{2}-5ly+\dfrac{3}{4}l^{2}=3\left(y^{2}-\dfrac{5}{3}ly\right)+\dfrac
+        >\begin{multline}
+        4(y-l/2)^{2}-(y+l/2)^{2}\\=4y^{2}-4ly+l^{2}-y^{2}-yl-\dfrac{l^{2}}{4}\\=3y^{2}-5ly+\dfrac{3}{4}l^{2}=3\left(y^{2}-\dfrac{5}{3}ly\right)+\dfrac
         {3}{4}l^{2} \\
-        &amp;=3\left(y-\dfrac{5}{6}l\right)^{2}+\dfrac{3}{4}l^{2}-3\times\dfrac{25}{36}l^{2}=3\left(y-\dfrac{5}{6}l\right)^{2}-\dfrac{4}{3}l^{2}.\end{aligned}\]</span
+       \\=3\left(y-\dfrac{5}{6}l\right)^{2}+\dfrac{3}{4}l^{2}-3\times\dfrac{25}{36}l^{2}\\=3\left(y-\dfrac{5}{6}l\right)^{2}-\dfrac{4}{3}l^{2}.\end{multline}</span
       >
     </p>
     <p>
-      Substituindo este último resultado na Eq. <a
-        href="#int:potex3"
-        data-reference-type="eqref"
-        data-reference="int:potex3"
-        >[int:potex3]</a
-      >, podemos escrever:
+      Substituindo este último resultado na Eq. \eqref{int:potex3}, podemos escrever:
       <span class="math display"
         >\[\begin{aligned}
         3x^{2}+3\left(y-\dfrac{5}{6}l\right)^{2}+3z^{2}-\dfrac{4}{3}l^{2}=0.\end{aligned}\]</span
@@ -439,8 +326,8 @@
       >
       ou ainda,
       <span class="math display"
-        >\[\begin{aligned} \label{int:potex5}
-        x^{2}+\left(y-\dfrac{5}{6}l\right)^{2}+z^{2}=\dfrac{4}{9}l^{2}.\end{aligned}\]</span
+        >\begin{align} \label{int:potex5}
+        x^{2}+\left(y-\dfrac{5}{6}l\right)^{2}+z^{2}=\dfrac{4}{9}l^{2}.\end{align}</span
       >
     </p>
     <p>
@@ -452,13 +339,7 @@
         >\[\begin{aligned}
         (x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2}=R^{2},\end{aligned}\]</span
       >
-      e, portanto, a Eq.
-      <a
-        href="#int:potex5"
-        data-reference-type="eqref"
-        data-reference="int:potex5"
-        >[int:potex5]</a
-      >
+      e, portanto, a Eq. \eqref{int:potex5}
       é a equação de uma esfera centrada nas coordenadas
       <span class="math inline">\(x=0\)</span>,
       <span class="math inline">\(y=5/6\)</span>,
@@ -469,11 +350,11 @@
         R=\sqrt{\dfrac{4}{9}l^{2}}=\dfrac{2}{3}l.\end{aligned}\]</span
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p>********</p>
     </div>
     <p>
-      <strong>4.</strong> <em
+      <strong>2.</strong> <em
         >Determine o potencial eletrostático gerado por uma casca esférica de
         raio <span class="math inline">\(R\)</span>, carregada com uma carga
         <span class="math inline">\(q\)</span> distribuída uniformemente sobre
@@ -481,7 +362,7 @@
         <span class="math inline">\(\sigma\)</span>.</em
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p><strong>Solução</strong></p>
     </div>
     <p>
@@ -539,8 +420,8 @@
       e, o cateto <span class="math inline">\(r=R\sin\theta\)</span>. Assim,
       temos que:
       <span class="math display"
-        >\[\begin{aligned}
-        d^{2}=R^{2}\sin^{2}\theta+(z-R\cos\theta)^{2}=R^{2}\sin^{2}\theta+z^{2}-2zR\cos\theta+R^{2}\cos^{2}\theta\end{aligned}\]</span
+        >\begin{multline}
+        d^{2}=R^{2}\sin^{2}\theta+(z-R\cos\theta)^{2}\\=R^{2}\sin^{2}\theta+z^{2}-2zR\cos\theta+R^{2}\cos^{2}\theta\end{multline}</span
       >
       ou ainda,
       <span class="math display"
@@ -593,10 +474,10 @@
       <span class="math inline">\(du=2zR\sin\theta d\theta\)</span>. Com isso,
       podemos escrever:
       <span class="math display"
-        >\[\begin{aligned} \varphi(z\hat{\mathbf{k}})= \dfrac{2\pi
+        >\[\begin{multline} \varphi(z\hat{\mathbf{k}})= \dfrac{2\pi
         R^{2}\sigma}{4\pi\epsilon_{0}}\dfrac{1}{2zR}\int_{(z-R)^{2}}^{(z+R)^{2}}\dfrac{du}{\sqrt{u}}
-        = \dfrac{2\pi
-        R^{2}\sigma}{4\pi\epsilon_{0}}\dfrac{2}{2zR}[\sqrt{(z+R)^{2}}-\sqrt{(z-R)^{2}}]\end{aligned}\]</span
+        \\= \dfrac{2\pi
+        R^{2}\sigma}{4\pi\epsilon_{0}}\dfrac{2}{2zR}[\sqrt{(z+R)^{2}}-\sqrt{(z-R)^{2}}]\end{multline}\]</span
       >
     </p>
     <p>
@@ -606,10 +487,10 @@
       >
       e aqui temos duas possibilidades:
       <span class="math display"
-        >\[\begin{aligned} \varphi(z\hat{\mathbf{k}})= \dfrac{\sigma
-        R}{2\epsilon_{0}z}[z+R-z+R]=\dfrac{QR}{4\pi
+        >\[\begin{multline*} \varphi(z\hat{\mathbf{k}})= \dfrac{\sigma
+        R}{2\epsilon_{0}z}[z+R-z+R]\\=\dfrac{QR}{4\pi
         R^{2}}\dfrac{2R}{2\epsilon_{0}z}=\dfrac{Q}{4\pi\epsilon_{0}z}, \qquad
-        z&gt;R\end{aligned}\]</span
+        z&gt;R\end{multline*}\]</span
       >
       que é o potencial elétrico fora da casca.
     </p>
@@ -617,11 +498,11 @@
       Vamos considerar o potencial elétrico no interior da casca esférica, i.e.,
       <span class="math inline">\(z&lt;R\)</span>. Neste caso, obtemos:
       <span class="math display"
-        >\[\begin{aligned} \varphi(z\hat{\mathbf{k}})= \dfrac{\sigma
+        >\begin{multline}\varphi(z\hat{\mathbf{k}})= \dfrac{\sigma
         R}{2\epsilon_{0}z}[z+R+z-R|]=\dfrac{\sigma
-        R}{2\epsilon_{0}z}2z=\dfrac{\sigma
+        R}{2\epsilon_{0}z}2z\\=\dfrac{\sigma
         R}{\epsilon_{0}}=\dfrac{Q}{4\pi\epsilon_{0}R}, \qquad
-        z&lt;R.\end{aligned}\]</span
+        z&lt;R.\end{multline}</span
       >
     </p>
     <p>
@@ -641,24 +522,12 @@
       e dentro da casca o potencial é constante. Este comportamento é idêntico
       ao observado para o caso de um campo gravitacional, veja Moysés, vol. 2.
     </p>
-    <div class="center">
+    <div class="img">
       <p>********</p>
     </div>
     <p>
-      Nos exemplos acima mostramos como determinar o potencial pela Eq.
-      <a
-        href="#potencialeletrico:geral"
-        data-reference-type="eqref"
-        data-reference="potencialeletrico:geral"
-        >[potencialeletrico:geral]</a
-      >, no entanto, ainda não mostramos como determinar o campo elétrico a
-      partir do potencial. A Eq.
-      <a
-        href="#potencial"
-        data-reference-type="eqref"
-        data-reference="potencial"
-        >[potencial]</a
-      >
+      Nos exemplos acima mostramos como determinar o potencial pela Eq. \eqref{potencialeletrico:geral}, no entanto, ainda não mostramos como determinar o campo elétrico a
+      partir do potencial. A Eq. \eqref{potencial}
       nos dá uma pista pois constitui uma relação entre essas duas quantidades.
       De fato, ali temos o inverso, ou seja, dado um campo elétrico
       <span class="math inline">\(\vec{E}(\vec{r})\)</span>, determinamos o
@@ -701,8 +570,8 @@
         >\(d\vec{r}=dx\hat{\mathbf{i}}+dy\hat{\mathbf{j}}+dz\hat{\mathbf{k}}\)</span
       >, temos que:
       <span class="math display"
-        >\[\begin{aligned} \label{diferencial:grad} dg=\nabla g(\vec{r})\cdot
-        d\vec{r}.\end{aligned}\]</span
+        >\begin{align} \label{diferencial:grad} dg=\nabla g(\vec{r})\cdot
+        d\vec{r}.\end{align}</span
       >
     </p>
     <p>
@@ -714,13 +583,7 @@
       perpendicular aos pontos onde a função
       <span class="math inline">\(g(\vec{r})\)</span> é constante. Com efeito,
       se <span class="math inline">\(g(\vec{r})\)</span> é constante então
-      <span class="math inline">\(dg=0\)</span> e da Eq.
-      <a
-        href="#diferencial:grad"
-        data-reference-type="eqref"
-        data-reference="diferencial:grad"
-        >[diferencial:grad]</a
-      >
+      <span class="math inline">\(dg=0\)</span> e da Eq. \eqref{diferencial:grad}
       implica em
       <span class="math inline">\(\nabla g(\vec{r})\cdot d\vec{r}=0\)</span>, e
       considerando que o vetor <span class="math inline">\(d\vec{r}\)</span> é
@@ -735,54 +598,30 @@
       Relacionando o campo elétrico com o gradiente do potencial
     </h2>
     <p>
-      Na Eq.
-      <a
-        href="#potencial"
-        data-reference-type="eqref"
-        data-reference="potencial"
-        >[potencial]</a
-      >, a diferença de potencial no lado esquerdo é dada pela integral sobre
+      Na Eq. \eqref{potencial}, a diferença de potencial no lado esquerdo é dada pela integral sobre
       variações infinitesimais do potencial. Deste modo, podemos escrever:
       <span class="math display"
-        >\[\begin{aligned} \label{potencial2} \Delta
+        >\begin{align} \label{potencial2} \Delta
         \varphi=\int_{P_{1}}^{P_{2}}~d\varphi=-\int_{P_{1}}^{P_{2}}\vec{E}(\vec{r})\cdot
-        d\vec{r},\end{aligned}\]</span
+        d\vec{r},\end{align}</span
       >
       e, comparando ambos os lados, obtemos:
       <span class="math display"
-        >\[\begin{aligned} \label{potencial3} d\varphi=-\vec{E}(\vec{r})\cdot
-        d\vec{r},\end{aligned}\]</span
+        >\begin{align} \label{potencial3} d\varphi=-\vec{E}(\vec{r})\cdot
+        d\vec{r},\end{align}</span
       >
       que relaciona a variação do potencial com o campo elétrico. Esta relação é
       oriunda do trabalho realizado pela força elétrica sobre uma carga-teste
       colocada em um campo elétrico qualquer. Também podemos escrever uma
-      segunda relação utilizando a Eq.
-      <a
-        href="#diferencial:grad"
-        data-reference-type="eqref"
-        data-reference="diferencial:grad"
-        >[diferencial:grad]</a
-      >:
+      segunda relação utilizando a Eq. \eqref{diferencial:grad}:
       <span class="math display"
-        >\[\begin{aligned} \label{potencial4}
-        d\varphi=\nabla\varphi(\vec{r})\cdot d\vec{r}.\end{aligned}\]</span
+        >\[\begin{align} \label{potencial4}
+        d\varphi=\nabla\varphi(\vec{r})\cdot d\vec{r}.\end{align}\]</span
       >
     </p>
     <p>
-      Comparando as Eqs.
-      <a
-        href="#potencial3"
-        data-reference-type="eqref"
-        data-reference="potencial3"
-        >[potencial3]</a
-      >
-      e
-      <a
-        href="#potencial4"
-        data-reference-type="eqref"
-        data-reference="potencial4"
-        >[potencial4]</a
-      >, segue que:
+      Comparando as Eqs. \eqref{potencial3} e
+\eqref{potencial4}, segue que:
       <span class="math display"
         >\[\begin{aligned} -\vec{E}(\vec{r})\cdot
         d\vec{r}=\nabla\varphi(\vec{r})\cdot d\vec{r}\end{aligned}\]</span
@@ -897,18 +736,117 @@
         \vec{E}(\vec{r})=\dfrac{Q}{4\pi\epsilon_{0}}\dfrac{z}{[z^{2}+R^{2}]^{3/2}}\hat{\mathbf{k}}.\end{aligned}\]</span
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p>********</p>
     </div>
+    <strong>2.</strong> <em
+    >Calcule o campo elétrico para um disco carregado como no exemplo 2 já
+    discutido no capítulo
+    <a
+      href="aula1a.html"
+      data-reference-type="ref"
+      data-reference="coulomb:chap"
+      >anterior</a
+    >
+    <strong> (Moysés, cap. 3, Exemplo 4, pg. 19.)</strong>. Neste caso,
+    obtenha o potencial do anel e então determine
+    <span class="math inline">\(\vec{E}\)</span> a partir da Eq.\eqref{campo:eletrico:grad}.</em
+  >
+</p>
+<div class="img">
+  <p><strong>Solução</strong></p>
+</div>
+<p>
+  Aqui aproveitamos o potencial do anel que obtivemos no exemplo anterior
+  pois consideramos o disco composto por infinitos anéis de espessura
+  infinitesimal concêntricos. Assim, um anel de área
+  <span class="math inline">\(da=2\pi\rho d\rho\)</span> e densidade de
+  carga <span class="math inline">\(\sigma\)</span> contém uma carga
+  <span class="math inline">\(dQ=\sigma2\pi\rho d\rho\)</span>. O potencial
+  <span class="math inline">\(d\varphi\)</span> deste anel é então dado por:
+  <span class="math display"
+    >\[\begin{aligned} d\varphi(\vec{r})=
+    \dfrac{dQ}{4\pi\epsilon_{0}}\dfrac{1}{[z^{2}+\rho^{2}]^{1/2}}.\end{aligned}\]</span
+  >
+</p>
+<p>
+  Substituindo o valor da carga <span class="math inline">\(dQ\)</span>,
+  obtemos:
+  <span class="math display"
+    >\[\begin{aligned} d\varphi(\vec{r})=
+    \dfrac{\sigma}{4\pi\epsilon_{0}}\dfrac{2\pi\rho
+    d\rho}{[z^{2}+\rho^{2}]^{1/2}} =
+    \dfrac{\sigma}{2\epsilon_{0}}\dfrac{\rho
+    d\rho}{[z^{2}+\rho^{2}]^{1/2}}\end{aligned}\]</span
+  >
+</p>
+<p>
+  O potencial é dado pela soma de todos os anéis, assim segue que:
+  <span class="math display"
+    >\[\begin{aligned} \varphi(\vec{r}) =
+    \dfrac{\sigma}{2\epsilon_{0}}\int_{0}^{R}\dfrac{\rho
+    }{[z^{2}+\rho^{2}]^{1/2}}d\rho\end{aligned}\]</span
+  >
+  e fazendo a troca de variável
+  <span class="math inline">\(u=z^{2}+\rho^{2}\)</span> tal que
+  <span class="math inline">\(du=2\rho d\rho\)</span> e
+  <span class="math inline">\(u(0)=z^{2}\)</span> e
+  <span class="math inline">\(u(R)=z^{2}+R^{2}\)</span>
+  <span class="math display"
+    >\[\begin{aligned} \varphi(\vec{r}) =
+    \dfrac{\sigma}{2\epsilon_{0}}\dfrac{1}{2}\int_{z^{2}}^{z^{2}+R^{2}}\dfrac{du}{u^{1/2}}
+    =
+    \dfrac{\sigma}{2\epsilon_{0}}\left[\sqrt{z^{2}}-\sqrt{z^{2}+R^{2}}\right]\end{aligned}\]</span
+  >
+</p>
+<p>
+  <span class="math display"
+    >\[\begin{aligned} \varphi(\vec{r}) =
+    \dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right].\end{aligned}\]</span
+  >
+</p>
+<p>
+  Usando a expressão acima, podemos determinar o campo elétrico como fizemos
+  no exemplo anterior:
+  <span class="math display"
+    >\[\begin{aligned}
+    \vec{E}(\vec{r})=\hat{\mathbf{i}}\dfrac{\partial}{\partial
+    x}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]
+    \\+ \hat{\mathbf{j}}\dfrac{\partial}{\partial
+    y}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]
+    \\+ \hat{\mathbf{k}}\dfrac{\partial}{\partial
+    z}\left[\dfrac{\sigma}{2\epsilon_{0}}\left[|z|-\sqrt{z^{2}+R^{2}}\right]\right]\end{aligned}\]</span
+  >
+</p>
+<p>
+  <span class="math display"
+    >\[\begin{multline} \vec{E}(\vec{r})=\dfrac{\sigma}{2\epsilon_{0}}
+    \hat{\mathbf{k}}\dfrac{\partial}{\partial
+    z}\left[|z|-\sqrt{z^{2}+R^{2}}\right] \\= \dfrac{\sigma}{2\epsilon_{0}}
+    \left[\dfrac{z}{|z|}-\dfrac{z}{\sqrt{z^{2}+R^{2}}}\right]\hat{\mathbf{k}}\end{multline}\]</span
+  >
+  e no caso de <span class="math inline">\(z&gt;0\)</span>, podemos
+  escrever:
+  <span class="math display"
+    >\[\begin{aligned} \vec{E}(\vec{r})= \dfrac{\sigma}{2\epsilon_{0}}
+    \left[1-\dfrac{z}{\sqrt{z^{2}+R^{2}}}\right]\hat{\mathbf{k}},\end{aligned}\]</span
+  >
+  que é o campo obtido no exemplo 2.
+</p>
+<div class="img">
+  <p>********</p>
+</div>
+
+
+
+
+
     <p>
     <h2 id="o-potencial-em-materiais-condutores">
       O potencial em materiais condutores
     </h2>
     <p>
-      Na seção
-      <a href="#condiso" data-reference-type="ref" data-reference="condiso"
-        >[condiso]</a
-      >, discutimos a distinção entre condutores e isolantes. Os materiais
+      No capítulo anterior, discutimos a distinção entre condutores e isolantes. Os materiais
       condutores são caracterizados pela presença de cargas livres em seu
       interior. Quando um condutor é submetido a um campo elétrico constante no
       tempo, as força elétrica devido a este campo gera uma redistribuição
@@ -918,23 +856,17 @@
       força elétrica não-nula no interior do condutor e as cargas se moveriam.
       Seja <span class="math inline">\(P_{1}\)</span> e
       <span class="math inline">\(P_{2}\)</span> dois pontos quaisquer dentro do
-      condutor. Então, da Eq.
-      <a
-        href="#potencial"
-        data-reference-type="eqref"
-        data-reference="potencial"
-        >[potencial]</a
-      >
+      condutor. Então, da Eq. \eqref{potencial}
       <span class="math display"
-        >\[\begin{aligned} \Delta
+        >\[\begin{align} \Delta
         \varphi=\varphi(P_{2})-\varphi(P_{1})=-\int_{P_{1}}^{P_{2}}\vec{0}\cdot
-        d\vec{r}=0\end{aligned}\]</span
+        d\vec{r}=0\end{align}\]</span
       >
       ou seja,
       <span class="math display"
-        >\[\begin{aligned} \label{condutor}
-        \varphi(P_{2})=\varphi(P_{1})=\text{constante},\qquad\qquad
-        \text{(interior de um condutor).}\end{aligned}\]</span
+        >\[\begin{align} \label{condutor}
+        \varphi(P_{2})=\varphi(P_{1})=\text{constante},\quad
+        \end{align}\]</span
       >
       e como os pontos <span class="math inline">\(P_{1}\)</span> e
       <span class="math inline">\(P_{2}\)</span> são arbitrários, então
@@ -985,24 +917,18 @@
       >
       de onde tiramos a relação importante:
       <span class="math display"
-        >\[\begin{aligned} \label{carga:rel1}
-        \dfrac{q_{1}^{\prime}}{r_{1}}=\dfrac{q_{2}^{\prime}}{r_{2}}.\end{aligned}\]</span
+        >\[\begin{align}\label{carga:rel1}
+        \dfrac{q_{1}^{\prime}}{r_{1}}=\dfrac{q_{2}^{\prime}}{r_{2}}.\end{align}\]</span
       >
     </p>
     <p>
       E considerando que a carga total também pode ser escrita como
       <span class="math inline">\(q=q^{\prime}_{1}+q^{\prime}_{2}\)</span>,
-      então combinando com a Eq.
-      <a
-        href="#carga:rel1"
-        data-reference-type="eqref"
-        data-reference="carga:rel1"
-        >[carga:rel1]</a
-      >, segue que:
+      então combinando com a Eq. \eqref{carga:rel1}, segue que:
       <span class="math display"
-        >\[\begin{aligned} \label{carga:rel2}
+        >\[\begin{align} \label{carga:rel2}
         q^{\prime}_{1}=\dfrac{r_{1}}{r_{1}+r_{2}}\qquad\text{e,}\qquad
-        q^{\prime}_{2}=\dfrac{r_{2}}{r_{1}+r_{2}}.\end{aligned}\]</span
+        q^{\prime}_{2}=\dfrac{r_{2}}{r_{1}+r_{2}}.\end{align}\]</span
       >
     </p>
     <p>
@@ -1021,72 +947,38 @@
         >\[\begin{aligned}
         \dfrac{\sigma_{1}}{\sigma_{2}}=\dfrac{q^{\prime}_{1}}{q^{\prime}_{2}}\dfrac{r^{2}_{2}}{r^{2}_{1}}\end{aligned}\]</span
       >
-      e usando a razão das cargas por meio da Eq.
-      <a
-        href="#carga:rel2"
-        data-reference-type="eqref"
-        data-reference="carga:rel2"
-        >[carga:rel2]</a
-      >, segue que:
+      e usando a razão das cargas por meio da Eq. \eqref{carga:rel2}, segue que:
       <span class="math display"
-        >\[\begin{aligned} \label{razao:sigmas}
-        \dfrac{\sigma_{1}}{\sigma_{2}}=\dfrac{r_{2}}{r_{1}}.\end{aligned}\]</span
+        >\[\begin{align} \label{razao:sigmas}
+        \dfrac{\sigma_{1}}{\sigma_{2}}=\dfrac{r_{2}}{r_{1}}.\end{align}\]</span
       >
     </p>
     <p>
       Quando estudamos a lei de Gauss, vimos que um plano de cargas tem um campo
-      dado pela Eq.
-      <a
-        href="#E:planodecargas"
-        data-reference-type="eqref"
-        data-reference="E:planodecargas"
-        >[E:planodecargas]</a
-      >:
+      dado pela Eq. \eqref{E:planodecargas}:
       <span class="math display"
-        >\[\begin{aligned}
-        \vec{E}=\dfrac{\sigma}{2\epsilon_{0}}\hat{n},\end{aligned}\]</span
+        >\[\begin{align}\label{E:planodecargas}
+        \vec{E}=\dfrac{\sigma}{2\epsilon_{0}}\hat{n}.\end{align}\]</span
       >
-      qualquer condutor apresenta um campo dado pela Eq.
-      <a
-        href="#E:planodecargas"
-        data-reference-type="eqref"
-        data-reference="E:planodecargas"
-        >[E:planodecargas]</a
-      >
-      quando nos aproximamos suficientemente do plano. De fato, mostramos isso
+      </p>
+      <p>
+      Qualquer condutor apresenta um campo dado pela Eq. \eqref{E:planodecargas}
+      quando nos aproximamos suficientemente do mesmo. De fato, mostramos isso
       para um disco carregado e verificamos que a equação que descreve o campo
-      se reduz àquela do plano carregado quando a distância do disco é muito
-      menor que seu raio (veja o final do exemplo 2 na pg. ). Considerando a Eq.
-      <a
-        href="#E:planodecargas"
-        data-reference-type="eqref"
-        data-reference="E:planodecargas"
-        >[E:planodecargas]</a
-      >, podemos expressar a densidade superficial de carga em termos do módulo
+      se reduz à Eq. \eqref{E:planodecargas} do plano carregado quando a distância do disco é muito
+      menor que seu raio (veja o final do exemplo 2 no capítulo <a href="aula2a.html">anterior</a>). Considerando a Eq. \eqref{E:planodecargas}, podemos expressar a densidade superficial de carga em termos do módulo
       do campo elétrico:
       <span class="math display"
         >\[\begin{aligned} \sigma=2\epsilon_{0}E,\end{aligned}\]</span
       >
-      e com isso, podemos escrever a Eq.
-      <a
-        href="#razao:sigmas"
-        data-reference-type="eqref"
-        data-reference="razao:sigmas"
-        >[razao:sigmas]</a
-      >
-      em termos do campo elétrico:
+      e com isso, podemos escrever a Eq. \eqref{razao:sigmas} em termos do campo elétrico:
       <span class="math display"
-        >\[\begin{aligned} \label{razao:fields}
-        \dfrac{E_{1}}{E_{2}}=\dfrac{r_{2}}{r_{1}}.\end{aligned}\]</span
+        >\[\begin{align} \label{razao:fields}
+        \dfrac{E_{1}}{E_{2}}=\dfrac{r_{2}}{r_{1}}.\end{align}\]</span
       >
     </p>
     <p>
-      A Eq. <a
-        href="#razao:fields"
-        data-reference-type="eqref"
-        data-reference="razao:fields"
-        >[razao:fields]</a
-      >
+      A Eq. \eqref{razao:fields}
       é um resultado importante e nos mostra que a intensidade do campo elétrico
       é inversamente proporcional ao raio de curvatura da superfície. Isso
       significa que em regiões onde a superfície é pontiaguda, o campo elétrico
@@ -1117,13 +1009,7 @@
       <span class="math inline">\(l\)</span>. Conforme ilustrado na Fig.
       <a href="#dipolo" data-reference-type="ref" data-reference="dipolo">1.3</a
       >, podemos determinar o potencial elétrico produzido pela associação das
-      duas cargas por meio da Eq.
-      <a
-        href="#potencialeletrico:geral"
-        data-reference-type="eqref"
-        data-reference="potencialeletrico:geral"
-        >[potencialeletrico:geral]</a
-      >
+      duas cargas por meio da Eq. \eqref{potencialeletrico:geral} 
       considerando que a carga positiva está na posição
       <span class="math inline">\(\vec{r}^{\prime}+\vec{l}\)</span> e a carga
       negativa está na posição
@@ -1132,25 +1018,19 @@
       <span class="math inline">\(\vec{r}\)</span>. Com esta configuração,
       podemos escrever:
       <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r})=
+        >\[\begin{multline} \varphi(\vec{r})=
         \dfrac{1}{4\pi\epsilon_{0}}\sum_{j=1}^{2}\dfrac{q_{i}}{|\vec{r}-\vec{r}_{j}|}
-        =
-        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-(\vec{r}^{\prime}+\vec{l})|}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right]\end{aligned}\]</span
+        \\=
+        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-(\vec{r}^{\prime}+\vec{l})|}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right]\end{multline}\]</span
       >
       ou ainda,
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:intermed1} \varphi(\vec{r})=
-        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right].\end{aligned}\]</span
+        >\[\begin{align} \label{dipolo:intermed1} \varphi(\vec{r})=
+        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right].\end{align}\]</span
       >
     </p>
     <p>
-      A Eq.
-      <a
-        href="#dipolo:intermed1"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed1"
-        >[dipolo:intermed1]</a
-      >
+      A Eq. \eqref{dipolo:intermed1}
       é a equação que permite determinar o potencial gerado pelo dipolo em
       qualquer ponto no espaço. Porém, estamos interessados em uma aproximação
       de dipolo puntual, ou seja, em uma situação onde a distância entre o ponto
@@ -1163,33 +1043,21 @@
       potencial característico que vamos derivar a seguir.
     </p>
     <p>
-      Começamos reescrevendo o primeiro termo do colchete que aparece na Eq.
-      <a
-        href="#dipolo:intermed1"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed1"
-        >[dipolo:intermed1]</a
-      >:
+      Começamos reescrevendo o primeiro termo do colchete que aparece na Eq. \eqref{dipolo:intermed1}:
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:intermed2}
+        >\[\begin{align} \label{dipolo:intermed2}
         \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|} =
-        \dfrac{1}{[(\vec{r}-\vec{r}^{\prime}-\vec{l})\cdot(\vec{r}-\vec{r}^{\prime}-\vec{l})]^{1/2}},\end{aligned}\]</span
+        \dfrac{1}{[(\vec{r}-\vec{r}^{\prime}-\vec{l})\cdot(\vec{r}-\vec{r}^{\prime}-\vec{l})]^{1/2}},\end{align}\]</span
       >
       onde nos utilizamos do produto escalar de um vetor qualquer
       <span class="math inline">\(\vec{a}\)</span> por ele mesmo, ou seja,
       <span class="math inline">\(\vec{a}\cdot\vec{a}=aa\cos0º=a^{2}\)</span> e,
       portanto, o módulo do vetor pode ser escrito como
       <span class="math inline">\(a=\sqrt{\vec{a}\cdot\vec{a}}\)</span>.
-      Retomando a Eq.
-      <a
-        href="#dipolo:intermed2"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed2"
-        >[dipolo:intermed2]</a
-      >, segue que:
+      Retomando a Eq. \eqref{dipolo:intermed2}, segue que:
       <span class="math display"
-        >\[\begin{aligned} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|} =
-        \dfrac{1}{[(\vec{r}-\vec{r}^{\prime})\cdot(\vec{r}-\vec{r}^{\prime})-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+\vec{l}\cdot\vec{l}]^{1/2}},\end{aligned}\]</span
+        >\[\begin{multline*} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}\\=
+        \dfrac{1}{[(\vec{r}-\vec{r}^{\prime})\cdot(\vec{r}-\vec{r}^{\prime})-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+\vec{l}\cdot\vec{l}]^{1/2}},\end{multline*}\]</span
       >
       onde lançamos mão da propriedade distributiva do produtor escalar. Notando
       que
@@ -1200,8 +1068,8 @@
       <span class="math inline">\(l^{2}=\vec{l}\cdot\vec{l}\)</span>, podemos
       escrever a equação acima como:
       <span class="math display"
-        >\[\begin{aligned} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|} =
-        \dfrac{1}{[|\vec{r}-\vec{r}^{\prime}|^{2}-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+l^{2}]^{1/2}}=[|\vec{r}-\vec{r}^{\prime}|^{2}-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+l^{2}]^{-1/2}.\end{aligned}\]</span
+        >\[\begin{multline} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|} =
+        \dfrac{1}{[|\vec{r}-\vec{r}^{\prime}|^{2}-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+l^{2}]^{1/2}}\\=[|\vec{r}-\vec{r}^{\prime}|^{2}-2\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})+l^{2}]^{-1/2}.\end{multline}\]</span
       >
     </p>
     <p>
@@ -1211,25 +1079,19 @@
       <span class="math inline">\(|\vec{r}-\vec{r}^{\prime}|\)</span> em
       evidência na equação acima, assim, temos,
       <span class="math display"
-        >\[\begin{aligned} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}
-        &amp;=\left\{|\vec{r}-\vec{r}^{\prime}|^{2}\left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]\right\}^{-1/2}\end{aligned}\]</span
+        >\[\begin{multline*} \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}
+        \\=\left\{|\vec{r}-\vec{r}^{\prime}|^{2}\left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]\right\}^{-1/2}\end{multline*}\]</span
       >
       e usando a propriedade
       <span class="math inline">\((ab)^{-1/2}=a^{-1/2}b^{-1/2}\)</span>, temos
       ainda:
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:intermed3}
-        \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}&amp;=|\vec{r}-\vec{r}^{\prime}|^{-1}\left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]^{-1/2}.\end{aligned}\]</span
+        >\[\begin{multline} \label{dipolo:intermed3}
+        \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}\\=|\vec{r}-\vec{r}^{\prime}|^{-1}\left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]^{-1/2}.\end{multline}\]</span
       >
     </p>
     <p>
-      O termo entre colchetes na Eq.
-      <a
-        href="#dipolo:intermed3"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed3"
-        >[dipolo:intermed3]</a
-      >
+      O termo entre colchetes na Eq. \eqref{dipolo:intermed3}
       está escrito na forma <span class="math inline">\((1+x)^{n}\)</span>, onde
       o expoente <span class="math inline">\(n=-1/2\)</span> e o termo
       envolvendo <span class="math inline">\(x\)</span> é dado por
@@ -1246,12 +1108,12 @@
       <span class="math inline">\(n\)</span> e
       <span class="math inline">\(x\)</span>, temos então que:
       <span class="math display"
-        >\[\begin{aligned}
+        >\[\begin{multline}
         \left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]^{-1/2}
-        &amp;\approx
+        \\\approx
         1-\dfrac{1}{2}\left[-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]
         \\
-        &amp;\approx1+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}-\dfrac{1}{2}\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\end{aligned}\]</span
+        \approx1+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}-\dfrac{1}{2}\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\end{multline}\]</span
       >
     </p>
     <p>
@@ -1264,71 +1126,46 @@
         \left[1-2\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}+\dfrac{l^{2}}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]^{-1/2}
         &amp;\approx1+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}},\end{aligned}\]</span
       >
-      e, substituindo esta aproximação na Eq.
-      <a
-        href="#dipolo:intermed3"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed3"
-        >[dipolo:intermed3]</a
-      >, segue que:
+      e, substituindo esta aproximação na Eq. \eqref{dipolo:intermed3}, segue que:
       <span class="math display"
         >\[\begin{aligned}
         \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}&amp;\approx|\vec{r}-\vec{r}^{\prime}|^{-1}\left[1+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{2}}\right]\end{aligned}\]</span
       >
       ou seja,
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:intermed4}
-        \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}&amp;\approx\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}},\end{aligned}\]</span
+        >\[\begin{align} \label{dipolo:intermed4}
+        \dfrac{1}{|\vec{r}-\vec{r}^{\prime}-\vec{l}|}&amp;\approx\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}},\end{align}\]</span
       >
       que é uma aproximação para
       <span class="math inline"
         >\(|\vec{r}-\vec{r}^{\prime}-\vec{l}|^{-1}\)</span
       >
       para <span class="math inline">\(l\ll|\vec{r}-\vec{r}^{\prime}|\)</span>.
-      Substituindo-se Eq.
-      <a
-        href="#dipolo:intermed4"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed4"
-        >[dipolo:intermed4]</a
-      >
-      na Eq.
-      <a
-        href="#dipolo:intermed1"
-        data-reference-type="eqref"
-        data-reference="dipolo:intermed1"
-        >[dipolo:intermed1]</a
-      >, obtemos o potencial no
+      Substituindo-se Eq.\eqref{dipolo:intermed4} na Eq. \eqref{dipolo:intermed1}, obtemos o potencial no
       <span class="math inline">\(\vec{r}\)</span> produzido por um dipolo
       puntual situado na posição
       <span class="math inline">\(\vec{r}^{\prime}\)</span>:
       <span class="math display"
-        >\[\begin{aligned} \varphi(\vec{r})=
-        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right].\end{aligned}\]</span
+        >\[\begin{align} \varphi(\vec{r})=
+        \dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}+\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}-\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|}\right].\end{align}\]</span
       >
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:intermed5} \varphi(\vec{r})=
-        \dfrac{q}{4\pi\epsilon_{0}}\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}},\end{aligned}\]</span
+        >\[\begin{align} \label{dipolo:intermed5} \varphi(\vec{r})=
+        \dfrac{q}{4\pi\epsilon_{0}}\dfrac{\vec{l}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}},\end{align}\]</span
       >
       e definindo o momento de dipolo como sendo
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:mom:def}
-        \vec{p}=q\vec{l}\end{aligned}\]</span
+        >\[\begin{align} \label{dipolo:mom:def}
+        \vec{p}=q\vec{l}\end{align}\]</span
       >
       obtemos finalmente:
       <span class="math display"
-        >\[\begin{aligned} \label{dipolo:puntual} \varphi(\vec{r})=
-        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}.\end{aligned}\]</span
+        >\[\begin{align} \label{dipolo:puntual} \varphi(\vec{r})=
+        \dfrac{1}{4\pi\epsilon_{0}}\dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}.\end{align}\]</span
       >
     </p>
     <p>
-      A Eq.
-      <a
-        href="#dipolo:puntual"
-        data-reference-type="eqref"
-        data-reference="dipolo:puntual"
-        >[dipolo:puntual]</a
-      >
+      A Eq.\eqref{dipolo:puntual}
       permite determinar o potencial gerado por um dipolo puntual, localizado em
       uma posição <span class="math inline">\(\vec{r}^{\prime}\)</span>, em um
       ponto qualquer do espaço <span class="math inline">\(\vec{r}\)</span>. O
@@ -1343,11 +1180,11 @@
         ><sup>1</sup></a
       >:
       <span class="math display"
-        >\[\begin{aligned} \label{campo:dipolo}
+        >\[\begin{align} \label{campo:dipolo}
         \vec{E}(\vec{r})=\dfrac{1}{4\pi\epsilon_{0}}\left[
         \dfrac{3(\vec{r}-\vec{r}^{\prime})\cdot\vec{p}}{|\vec{r}-\vec{r}^{\prime}|^{5}}(\vec{r}-\vec{r}^{\prime})
         -
-        \dfrac{\vec{p}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right].\end{aligned}\]</span
+        \dfrac{\vec{p}}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right].\end{align}\]</span
       >
     </p>
     <h2 id="a-energia-eletrostática">A Energia Eletrostática</h2>
@@ -1382,8 +1219,8 @@
       <span class="math inline">\(\mathcal{W}_{2}\)</span> realizado pelo agente
       externo é então dado por:
       <span class="math display"
-        >\[\begin{aligned} \label{epot:W2}
-        \mathcal{W}_{2}=q_{2}\varphi_{21}.\end{aligned}\]</span
+        >\[\begin{align} \label{epot:W2}
+        \mathcal{W}_{2}=q_{2}\varphi_{21}.\end{align}\]</span
       >
     </p>
     <p>
@@ -1404,9 +1241,9 @@
       Podemos generalizar e considerar qual seria o trabalho para trazer a
       <span class="math inline">\(m\)</span>-ésima carga do infinito:
       <span class="math display"
-        >\[\begin{aligned} \label{epot:Wm}
-        \mathcal{W}_{m}=q_{m}[\varphi_{m,m-1}+\varphi_{m,m-2}+\cdots+\varphi_{m3}+\varphi_{m2}+\varphi_{m1}]
-        = q_{m}\sum_{i=1}^{m-1}\varphi_{mi}.\end{aligned}\]</span
+        >\[\begin{align}\nonumber
+        \mathcal{W}_{m}&=q_{m}[\varphi_{m,m-1}+\varphi_{m,m-2}+\cdots+\varphi_{m3}+\varphi_{m2}+\varphi_{m1}]
+        \\\label{epot:Wm}&= q_{m}\sum_{i=1}^{m-1}\varphi_{mi}.\end{align}\]</span
       >
     </p>
     <p>
@@ -1416,22 +1253,16 @@
       <span class="math inline">\(N\)</span> cargas do infinito até o espaço
       onde se encontra a distribuição. Deste modo, podemos escrever:
       <span class="math display"
-        >\[\begin{aligned} \label{energia}
-        U=\mathcal{W}=\mathcal{W}_{1}+\mathcal{W}_{2}+\cdots+\mathcal{W}_{N}=\sum_{m=1}^{N}\mathcal{W}_{m}\end{aligned}\]</span
+        >\[\begin{align} \label{energia}
+        U=\mathcal{W}=\mathcal{W}_{1}+\mathcal{W}_{2}+\cdots+\mathcal{W}_{N}=\sum_{m=1}^{N}\mathcal{W}_{m}\end{align}\]</span
       >
     </p>
     <p>
-      Substituindo-se Eq.
-      <a href="#epot:Wm" data-reference-type="eqref" data-reference="epot:Wm"
-        >[epot:Wm]</a
-      >
-      na Eq.
-      <a href="#energia" data-reference-type="eqref" data-reference="energia"
-        >[energia]</a
-      >, obtemos:
+      Substituindo-se Eq. \eqref{epot:Wm}
+      na Eq. \eqref{energia}, obtemos:
       <span class="math display"
-        >\[\begin{aligned} \label{energia:2}
-        U=\sum_{m=1}^{N}\sum_{i=1}^{m-1}q_{m}\varphi_{mi},\end{aligned}\]</span
+        >\[\begin{align} \label{energia:2}
+        U=\sum_{m=1}^{N}\sum_{i=1}^{m-1}q_{m}\varphi_{mi},\end{align}\]</span
       >
       que é a equação que permite determinar a energia potencial do sistema de
       <span class="math inline">\(N\)</span> cargas.
@@ -1440,17 +1271,10 @@
       Vemos que o limite superior da soma interna depende da segunda soma em
       <span class="math inline">\(m\)</span>. Podemos reescrever esta soma na
       forma mais simples somando sobre todas as partículas e dividindo o
-      resultado por 2, assim, escrevemos a Eq.
-      <a
-        href="#energia:2"
-        data-reference-type="eqref"
-        data-reference="energia:2"
-        >[energia:2]</a
-      >
-      na forma:
+      resultado por 2, assim, escrevemos a Eq. \eqref{energia:2} na forma:
       <span class="math display"
-        >\[\begin{aligned} \label{energia:3}
-        U=\dfrac{1}{2}\sum_{m=1}^{N}\sum_{i=1}^{N}q_{m}\varphi_{mi},\end{aligned}\]</span
+        >\[\begin{align} \label{energia:3}
+        U=\dfrac{1}{2}\sum_{m=1}^{N}\sum_{i=1}^{N}q_{m}\varphi_{mi},\end{align}\]</span
       >
       e reconhecendo o potencial total resolvido na posição da carga
       <span class="math inline">\(q_{m}\)</span> devido às demais
@@ -1462,8 +1286,8 @@
       >
       podemos escrever:
       <span class="math display"
-        >\[\begin{aligned} \label{energia:4}
-        U=\dfrac{1}{2}\sum_{m=1}^{N}q_{m}\varphi_{m},\end{aligned}\]</span
+        >\[\begin{align} \label{energia:4}
+        U=\dfrac{1}{2}\sum_{m=1}^{N}q_{m}\varphi_{m},\end{align}\]</span
       >
       que é a energia eletrostática contida em uma distribuição discreta de
       cargas.
@@ -1476,13 +1300,7 @@
       <span class="math inline">\(\Delta q_{m}=\rho_{m}\Delta V\)</span> tal que
       o número de elementos de carga é dado por
       <span class="math inline">\(V/\Delta V\)</span>. A energia potencial é
-      então dada pela Eq.
-      <a
-        href="#energia:4"
-        data-reference-type="eqref"
-        data-reference="energia:4"
-        >[energia:4]</a
-      >
+      então dada pela Eq. \eqref{energia:4}
       adapatada para este caso:
       <span class="math display"
         >\[\begin{aligned} \label{energia:5} U=\dfrac{1}{2}\sum_{m=1}^{V/\Delta
@@ -1498,24 +1316,18 @@
       <span class="math inline">\(dV\)</span>. Assim, a soma se transforma em
       uma integral sobre o volume <span class="math inline">\(V\)</span>:
       <span class="math display"
-        >\[\begin{aligned} \label{energia:vol}
-        U=\dfrac{1}{2}\int_{V}\rho(\vec{r})\varphi(\vec{r})~dV\end{aligned}\]</span
+        >\[\begin{align} \label{energia:vol}
+        U=\dfrac{1}{2}\int_{V}\rho(\vec{r})\varphi(\vec{r})~dV\end{align}\]</span
       >
       que é a energia eletrostática contida em uma distribuição contínua de
       cargas de volume <span class="math inline">\(V\)</span>.
     </p>
     <p>
-      No caso de uma distribuição superficial de carga, podemos adaptar a Eq.
-      <a
-        href="#energia:vol"
-        data-reference-type="eqref"
-        data-reference="energia:vol"
-        >[energia:vol]</a
-      >
+      No caso de uma distribuição superficial de carga, podemos adaptar a Eq. \eqref{energia:vol}
       para o caso superficial:
       <span class="math display"
-        >\[\begin{aligned} \label{energia:sup}
-        U=\dfrac{1}{2}\int_{S}\sigma(\vec{r})\varphi(\vec{r})~da.\end{aligned}\]</span
+        >\[\begin{align} \label{energia:sup}
+        U=\dfrac{1}{2}\int_{S}\sigma(\vec{r})\varphi(\vec{r})~da.\end{align}\]</span
       >
     </p>
     <h2 id="exemplos-resolvidos-1">Exemplos Resolvidos</h2>
@@ -1528,21 +1340,15 @@
         sobre a área da esfera.</em
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p><strong>Solução</strong></p>
     </div>
     <p>
-      A energia potencial <span class="math inline">\(U\)</span> é dada pela Eq.
-      <a
-        href="#energia:sup"
-        data-reference-type="eqref"
-        data-reference="energia:sup"
-        >[energia:sup]</a
-      >
+      A energia potencial <span class="math inline">\(U\)</span> é dada pela Eq. \eqref{energia:sup}
       e, assim, escrevemos:
       <span class="math display"
-        >\[\begin{aligned} \label{intermed:U}
-        U=\dfrac{\sigma}{2}\int_{S}\varphi(\vec{r})~da\end{aligned}\]</span
+        >\[\begin{align} \label{intermed:U}
+        U=\dfrac{\sigma}{2}\int_{S}\varphi(\vec{r})~da\end{align}\]</span
       >
       onde já fatoramos a densidade de carga
       <span class="math inline">\(\sigma=Q/(4\pi R^{2})\)</span> que é uniforme
@@ -1564,29 +1370,16 @@
         >\[\begin{aligned}
         \varphi(\vec{r})=\dfrac{Q}{4\pi\varepsilon_{0}R}\end{aligned}\]</span
       >
-      que é constante sobre a área da esfera, assim, a Eq.
-      <a
-        href="#intermed:U"
-        data-reference-type="eqref"
-        data-reference="intermed:U"
-        >[intermed:U]</a
-      >
+      que é constante sobre a área da esfera, assim, a Eq. \eqref{intermed:U}
       se torna:
       <span class="math display"
-        >\[\begin{aligned} \label{intermed:U2}
+        >\[\begin{align} \label{intermed:U2}
         U=\dfrac{\sigma}{2}\dfrac{Q}{4\pi\varepsilon_{0}R}\int_{S}~da =
         \dfrac{\sigma}{2}\dfrac{Q}{4\pi\varepsilon_{0}R}4\pi
-        R^{2}\end{aligned}\]</span
+        R^{2}\end{align}\]</span
       >
       e levando em conta que
-      <span class="math inline">\(Q=4\pi R^{2}\sigma\)</span>, então a Eq.
-      <a
-        href="#intermed:U2"
-        data-reference-type="eqref"
-        data-reference="intermed:U2"
-        >[intermed:U2]</a
-      >
-      obtemos:
+      <span class="math inline">\(Q=4\pi R^{2}\sigma\)</span>, então a Eq. \eqref{intermed:U2} obtemos:
       <span class="math display"
         >\[\begin{aligned} \label{intermed:U3} U=
         \dfrac{Q^{2}}{8\pi\varepsilon_{0}R}\end{aligned}\]</span
@@ -1608,7 +1401,7 @@
         <span class="math inline">\(R\)</span> uniformemente carregada.</em
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p><strong>Solução</strong></p>
     </div>
     <p>
@@ -1655,7 +1448,7 @@
         U=\dfrac{3}{5}\dfrac{Q^{2}}{4\pi\epsilon_{0}R}.\end{aligned}\]</span
       >
     </p>
-    <div class="center">
+    <div class="img">
       <p>********</p>
     </div>
     <section class="footnotes" role="doc-endnotes">
@@ -1676,12 +1469,12 @@
               >\(g=1/4\pi\epsilon_{0}|\vec{r}-\vec{r}^{\prime}|^{3}\)</span
             >. Assim, temos que:
             <span class="math display"
-              >\[\begin{aligned} \label{foot:eq1}
+              >\[\begin{multline} \label{foot:eq1}
               \nabla\left(\dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
-              =
+              \\=
               \dfrac{1}{4\pi\epsilon_{0}|\vec{r}-\vec{r}^{\prime}|^{3}}\nabla[\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})]
               +
-              \dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}}\nabla\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right].\end{aligned}\]</span
+              \dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}}\nabla\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right].\end{multline}\]</span
             >
           </p>
           <p>
@@ -1694,7 +1487,7 @@
             <span class="math display"
               >\[\begin{gathered}
               \nabla[\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})=\hat{\mathbf{i}}\dfrac{\partial[p_{x}(x-x^{\prime})+p_{y}(y-y^{\prime})+p_{z}(z-z^{\prime})]}{\partial
-              x} +
+              x} \\+
               \hat{\mathbf{j}}\dfrac{\partial[p_{x}(x-x^{\prime})+p_{y}(y-y^{\prime})+p_{z}(z-z^{\prime})]}{\partial
               y} \\+
               \hat{\mathbf{k}}\dfrac{\partial[p_{x}(x-x^{\prime})+p_{y}(y-y^{\prime})+p_{z}(z-z^{\prime})]}{\partial
@@ -1711,45 +1504,33 @@
           <p>
             O segundo gradiente que aparece é dado por:
             <span class="math display"
-              >\[\begin{gathered}
+              >\[\begin{multline}
               \nabla\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right] =
               \nabla\left[\dfrac{1}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}\right]
-              = \hat{\mathbf{i}}\dfrac{\partial}{\partial
+              \\= \hat{\mathbf{i}}\dfrac{\partial}{\partial
               x}\left[\dfrac{1}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}\right]
               \\+ \hat{\mathbf{j}}\dfrac{\partial}{\partial
               y}\left[\dfrac{1}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}\right]
-              + \hat{\mathbf{k}}\dfrac{\partial}{\partial
-              z}\left[\dfrac{1}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}\right]\end{gathered}\]</span
+              \\+ \hat{\mathbf{k}}\dfrac{\partial}{\partial
+              z}\left[\dfrac{1}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}\right]\end{multline}\]</span
             >
             <span class="math display"
-              >\[\begin{aligned}
+              >\[\begin{multline*}
               \nabla\left[\dfrac{1}{|\vec{r}-\vec{r}^{\prime}|^{3}}\right] =
-              -\dfrac{3}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{5/2}}\left[(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}+(z-z^{\prime}
+              -\dfrac{3}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{5/2}}\\\times\left[(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}+(z-z^{\prime}
               )\hat{\mathbf{k}}\right] =
-              -3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5/2}}\end{aligned}\]</span
+              -3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5/2}}\end{multline*}\]</span
             >
-            e combinando estes dois resultados na Eq.
-            <a
-              href="#foot:eq1"
-              data-reference-type="eqref"
-              data-reference="foot:eq1"
-              >[foot:eq1]</a
-            >, obtemos:
+            e combinando estes dois resultados na Eq. \eqref{foot:eq1}, obtemos:
             <span class="math display"
-              >\[\begin{aligned} \label{foot:eq1}
+              >\[\begin{align} \label{foot:eq2}
               \nabla\left(\dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}|\vec{r}-\vec{r}^{\prime}|^{3}}\right)
               = \dfrac{1}{4\pi\epsilon_{0}|\vec{r}-\vec{r}^{\prime}|^{3}}\vec{p}
               -
-              \dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}}3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5/2}},\end{aligned}\]</span
+              \dfrac{\vec{p}\cdot(\vec{r}-\vec{r}^{\prime})}{4\pi\epsilon_{0}}3\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{5/2}},\end{align}\]</span
             >
             e recordando que o campo elétrico é o negativo do gradiente do
-            potencial, obtemos a Eq.
-            <a
-              href="#campo:dipolo"
-              data-reference-type="eqref"
-              data-reference="campo:dipolo"
-              >[campo:dipolo]</a
-            >.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
+            potencial, obtemos a Eq. \eqref{campo:dipolo}.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
           </p>
         </li>
         <li id="fn2" role="doc-endnote">
