@@ -263,11 +263,13 @@ ul.task-list {
   }
 
   #fioinf{
-    width: 50%;
+    text-align: center;
+    height: 100px;
   }
 
 }
 
 #fioinf{
   text-align: center;
+  max-height:150px;
 }
