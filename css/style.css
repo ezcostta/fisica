@@ -265,11 +265,18 @@ ul.task-list {
   #fioinf{
     text-align: center;
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   }
 
 }
 
 #fioinf{
   text-align: center;
-  max-height:150px;
+  max-height:130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
