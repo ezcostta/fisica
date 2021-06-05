@@ -141,13 +141,13 @@
         \vec{r}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+z\hat{\mathbf{k}},\end{aligned}\]</div
       >
       o que nos permite formar os vetores:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{multline}
         \vec{r}-\vec{r}_{+}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z-d)\hat{\mathbf{k}}\quad\therefore\quad
         |\vec{r}-\vec{r}_{+}|=\sqrt{x^{2}+y^{2}+(z-d)^{2}}\end{multline}\]</div
       >
       e,
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{multline}
         \vec{r}-\vec{r}_{-}=x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z+d)\hat{\mathbf{k}}\quad\therefore\quad
         |\vec{r}-\vec{r}_{-}|=\sqrt{x^{2}+y^{2}+(z+d)^{2}}.\end{multline}\]</div
@@ -155,11 +155,13 @@
     </p>
     <p>
       Substituindo-se estes dados na Eq. \eqref{campo:eletrico}, obtemos:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{multline}
-        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z-d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}}-\left(\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z+d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z+d)^{2}]^{3/2}}\right)\right]\end{multline}\]</div
+        \vec{E}(\vec{r})=\dfrac{q}{4\pi\epsilon_{0}}\left[\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z-d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}}-\left(\dfrac{x\hat{\mathbf{i}}+y\hat{\mathbf{j}}+(z+d)\hat{\mathbf{k}}}{[x^{2}+y^{2}+(z+d)^{2}]^{3/2}}\right)\right].\end{multline}\]</div
       >
-      o que pode ser escrito na forma:
+
+
+      <p>Aqui é conveniente separar as componentes do campo do que estão no plano-\(xy\) daquela que está ao longo do eixo-\(z\). Deste modo, temos que:</p> 
       <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{multline} \vec{E}(x, y, z)=\dfrac{q}{4\pi\epsilon_{0}}
         \left[\dfrac{1}{[x^{2}+y^{2}+(z-d)^{2}]^{3/2}} -
@@ -171,16 +173,15 @@
       que é a expressão para o campo elétrico.
     </p>
     <p>
-      No plano-<span class="math inline">\(xy\)</span>, o campo elétrico é
-      obtido fazendo <span class="math inline">\(z=0\)</span> na expressão
+      Para se obter o campo no plano-<span class="math inline">\(xy\)</span> basta fazer <span class="math inline">\(z=0\)</span> na expressão
       acima:
       <div class="math display"
-        >\[\begin{aligned} \vec{E}(x, y, 0)=-\dfrac{1}{4\pi\epsilon_{0}}
-        \dfrac{2qd}{[x^{2}+y^{2}+d^{2}]^{3/2}}\hat{\mathbf{k}}\end{aligned}\]</div
+        >\[\begin{align} \vec{E}(x, y, 0)=-\dfrac{1}{4\pi\epsilon_{0}}
+        \dfrac{2qd}{[x^{2}+y^{2}+d^{2}]^{3/2}}\hat{\mathbf{k}},\end{align}\]</div
       >
       mostrando que o campo está dirigido ao longo da direção
       <span class="math inline">\(\hat{z}\)</span>. Por outro lado, sabemos que
-      o campo é radial quando muito próximo das cargas. Usando a expressão geral obtida acima é possível mostrar que as linhas de
+      o campo é radial quando muito próximo das cargas. Usando a expressão geral para <span class="math inline">\(\vec{E}(x, y, z)\) </span> obtida acima é possível mostrar que as linhas de
       força têm a forma mostrada na Fig.
       <a href="#fig1m" data-reference-type="ref" data-reference="fig1m">1.2</a
       >(a).
@@ -267,7 +268,7 @@
       >
       e integrando sobre <span class="math inline">\(\rho\)</span>, somamos as
       contribuições de todos os anéis que compõem o disco:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[
         \vec{E}(\vec{r})=\dfrac{\sigma
         D}{2\epsilon_{0}}\hat{\mathbf{k}}\int_{0}^{a}\dfrac{\rho
@@ -288,7 +289,7 @@
         D}{2\epsilon_{0}}\hat{\mathbf{k}}\dfrac{1}{2}\int_{u(0)}^{u(a)}\dfrac{du}{u^{3/2}}\end{aligned}\]</div
       >
       ou ainda,
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{align} \vec{E}(\vec{r})=\dfrac{\sigma
         D}{2\epsilon_{0}}\hat{\mathbf{k}}\dfrac{1}{2}\left[-\dfrac{2}{u^{1/2}}\right]_{u(0)}^{u(a)}
         =\dfrac{\sigma
@@ -296,7 +297,7 @@
       >
       e substituindo as funções <span class="math inline">\(u\)</span>, segue
       que:
-      <div class="math display"
+      <div class="math display" 
         >\[\begin{aligned} \vec{E}(\vec{r})&amp;=\dfrac{\sigma
         D}{2\epsilon_{0}}\hat{\mathbf{k}}\left[\dfrac{1}{D}-\dfrac{1}{\sqrt{a^{2}+D^{2}}}\right]\end{aligned}\]</div
       >
@@ -317,7 +318,7 @@
         \dfrac{D}{\sqrt{a^{2}+D^{2}}}\sim1-\dfrac{1}{2}\dfrac{a^{2}}{D^{2}},\end{aligned}\]</div
       >
       e substituindo na equação acima:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})&amp;\sim\dfrac{\sigma}{2\epsilon_{0}}\left[1-\left(1-\dfrac{1}{2}\dfrac{a^{2}}{D^{2}}\right)\right]\hat{\mathbf{k}}
         =
@@ -379,7 +380,7 @@
         \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(\vec{r}-\vec{r}^{\prime})}{|\vec{r}-\vec{r}^{\prime}|^{3}}~dl^{\prime}\end{aligned}\]</div
       >
       o que nos permite escrever:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}+(z-z^{\prime})\hat{\mathbf{k}}}{[(x-x^{\prime})^{2}+(y-y^{\prime})^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\label{campo:exemplo}\tag{4}\]</div
       >
@@ -406,15 +407,15 @@
         \vec{\rho}=(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}\end{aligned}\]</div
       >
       e assim, o campo elétrico pode ser escrito na forma:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})=\dfrac{\lambda}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{\vec{\rho}+(z-z^{\prime})\hat{\mathbf{k}}}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\]</div
       >
-      o que pode ser escrito na forma:
-      <div class="math display"
+      e separando as componentes do campo no plano-\(xy\) da componente ao longo do eixo-\(z\), podemos reescrever a expressão anterior na forma:
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})=\dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{dz^{\prime}}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}
-        \\+
+        +
         \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{-d}^{+d}\dfrac{(z-z^{\prime})}{[\rho^{2}+(z-z^{\prime})^{2}]^{3/2}}~dz^{\prime}\end{aligned}\]</div
       >
       e fazendo a troca de variável,
@@ -424,18 +425,18 @@
       >
       com os limites dados por:
       <div class="math display"
-        >\[\begin{aligned} u(d)=z-d\qquad\text{and}\qquad
+        >\[\begin{aligned} u(d)=z-d\quad\text{e}\quad
         u(-d)=z+d,\end{aligned}\]</div
       >
       segue que:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})=-\dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{z+d}^{z-d}\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}
         -
         \dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\int_{z+d}^{z-d}\dfrac{u}{[\rho^{2}+u^{2}]^{3/2}}~du\end{aligned}\]</div
       >
       <p class="semparagraph"></p>e, invertendo a ordem dos limites de integração, podemos escrever ainda:</p>
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned} \vec{E}(\vec{r})=
         \dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\int_{z-d}^{z+d}\dfrac{du}{[\rho^{2}+u^{2}]^{3/2}}
         +
@@ -453,7 +454,7 @@
       >
       enquanto que a segunda é facilmente resolvida mediante substituição:
       <span class="math inline">\(v=\rho^{2}+u^{2}\)</span>. Assim, temos que:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\vec{E}(\vec{r}) =
         \dfrac{\lambda\vec{\rho}}{4\pi\epsilon_{0}}\dfrac{1}{\rho^{2}}\left[\dfrac{u}{\sqrt{u^{2}+\rho^{2}}}\right]_{z-d}^{z+d}
         +
@@ -484,14 +485,11 @@
         >\[\begin{aligned}
         \vec{\rho}=(x-x^{\prime})\hat{\mathbf{i}}+(y-y^{\prime})\hat{\mathbf{j}}\end{aligned}\]</div
       >
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
-        f(z)=\dfrac{z+d}{\sqrt{(z+d)^{2}+\rho^{2}}}-\dfrac{(z-d)}{\sqrt{(z-d)^{2}+\rho^{2}}}\end{aligned}\]</div
-      >
-      e,
-      <div class="math display"
-        >\[\begin{aligned}
-        g(z)=\dfrac{1}{\sqrt{\rho^{2}+(z+d)^{2}}}-\dfrac{1}{\sqrt{\rho^{2}+(z-d)^{2}}},\end{aligned}\]</div
+        f(z)&=\dfrac{z+d}{\sqrt{(z+d)^{2}+\rho^{2}}}-\dfrac{(z-d)}{\sqrt{(z-d)^{2}+\rho^{2}}}\\
+        g(z)&=\dfrac{1}{\sqrt{\rho^{2}+(z+d)^{2}}}-\dfrac{1}{\sqrt{\rho^{2}+(z-d)^{2}}}
+        \end{aligned}\]</div
       >
       lembrando que <span class="math inline">\(d=l/2\)</span> é a metade do
       comprimento do fio.
@@ -512,7 +510,7 @@
         \dfrac{du}{u^{2}}\end{align}\]</div
       >
       ou ainda,
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{E}(\vec{r})=\dfrac{\lambda\hat{\mathbf{k}}}{4\pi\epsilon_{0}}\left[\dfrac{1}{z-d}-\dfrac{1}{z+d}\right]
         =
@@ -604,7 +602,7 @@
     <p>
       Vejamos as posições dos fios fixadas pelo vetor
       <span class="math inline">\(\vec{\rho}\)</span>:
-      <div class="math display"
+      <div class="math display" style="background-color: lightblue; overflow-x: scroll !important;white-space: nowrap;"
         >\[\begin{aligned}
         \vec{\rho}_{-}=x\hat{\mathbf{i}}+\left(y-\dfrac{b}{2}\right)\hat{\mathbf{j}}\quad\therefore\quad
         \rho_{-}=\left[x^{2}+\left(y-\dfrac{b}{2}\right)^{2}\right]^{1/2} \\
@@ -631,9 +629,9 @@
       simples:
       <div class="math display"
         >\[\begin{aligned}
-        \vec{\rho}_{-}=-\rho\hat{\mathbf{j}}=-\dfrac{b}{2}\hat{\mathbf{j}}\qquad\therefore\qquad
+        \vec{\rho}_{-}=-\rho\hat{\mathbf{j}}=-\dfrac{b}{2}\hat{\mathbf{j}}\quad\therefore\quad
         \rho_{-}=\rho=\dfrac{b}{2}, \\
-        \vec{\rho}_{+}=\rho\hat{\mathbf{j}}=\dfrac{b}{2}\hat{\mathbf{j}}\qquad\therefore\qquad
+        \vec{\rho}_{+}=+\rho\hat{\mathbf{j}}=+\dfrac{b}{2}\hat{\mathbf{j}}\quad\therefore\quad
         \rho_{+}=\rho=\dfrac{b}{2}.\end{aligned}\]</div
       >
     </p>
