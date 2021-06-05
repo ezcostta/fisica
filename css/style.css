@@ -215,6 +215,9 @@ ul.task-list {
   font-size: 12px;
 }
 
+
+
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -225,6 +228,11 @@ ul.task-list {
     "fig1 fig2"
     "legenda legenda";
 }
+
+#figunica{
+    height:550px;
+}
+
 
 #fig1 {
   grid-area: fig1;
@@ -238,6 +246,7 @@ ul.task-list {
   grid-area: legenda;
 }
 
+
 @media screen and (max-width:750px) {
   .gallery {
     grid-template-columns: 1fr;
@@ -247,4 +256,10 @@ ul.task-list {
     "fig2" 
     "legenda";
   }
+
+  #figunica{
+      height:450px;
+  }
+
 }
+
