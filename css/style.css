@@ -217,3 +217,9 @@ ul.task-list {
 .footnotes{
     font-size: 12px;
 }
+
+.display{
+    background-color: lightblue;
+    overflow-x: scroll !important;
+    white-space: nowrap;
+}
