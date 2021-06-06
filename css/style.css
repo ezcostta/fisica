@@ -297,24 +297,24 @@ ul.task-list {
     margin-right: auto;
   }
 
-#fig1{
+#cap1fig1{
     max-height: 150px ;
   }
 
-#fig2{
-   max-height: 350px;
-    text-align: center;
+#cap1fig2{
+  max-height: 350px;
+  text-align: center;
   }
 
 }
 
 
-#fig1{
+#cap1fig1{
   height: 300px;
   text-align: center;
 }
 
-#fig2{
+#cap1fig2{
   height: 500px;
   text-align: center;
 }
