@@ -279,7 +279,6 @@ ul.task-list {
     "legenda";
   }
 
-
 #figunica{
       height: 400px;
       text-align: center;
@@ -298,6 +297,26 @@ ul.task-list {
     margin-right: auto;
   }
 
+#fig1{
+    max-height: 200px ;
+  }
+
+#fig2{
+   max-height: 350px;
+    text-align: center;
+  }
+
+}
+
+
+#fig1{
+  height: 300px;
+  text-align: center;
+}
+
+#fig2{
+  height: 500px;
+  text-align: center;
 }
 
 #fioinf{
