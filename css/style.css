@@ -7,7 +7,7 @@ html {
 
 body {
   background-image: url("../images/maze.png");
-  margin:auto;
+  margin: auto;
   max-width: 46em;
   padding-left: 50px;
   padding-right: 50px;
@@ -57,13 +57,13 @@ p {
   text-indent: 50px;
 }
 
-a {
+/*a {
   color: #1a1a1a;
-}
+}*/
 
-a:visited {
+/*a:visited {
   color: #1a1a1a;
-}
+}*/
 
 img {
   max-width: 100%;
@@ -163,16 +163,16 @@ td {
 }
 
 header {
-  padding:5%;
-  border:lightblue;
-  background-color:lightblue;
+  padding: 5%;
+  border: lightblue;
+  background-color: lightblue;
   text-align: center;
-  color:black;
-  margin-bottom: 0;  
+  /*color: black;*/
+  margin-bottom: 0;
 }
 
-.moldura{
-  margin-top: 2%;
+.moldura {
+  margin-top: 5%;
   box-shadow: 2px 0px 15px 0px #1a1a1a;
   padding: 5%;
   background-color: #fff;
@@ -225,10 +225,6 @@ ul.task-list {
   font-size: 12px;
 }
 
-
-
-
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -240,10 +236,9 @@ ul.task-list {
     "legenda legenda";
 }
 
-#figunica{
-    height:550px;
+#figunica {
+  height: 550px;
 }
-
 
 #fig1 {
   grid-area: fig1;
@@ -257,13 +252,80 @@ ul.task-list {
   grid-area: legenda;
 }
 
+.menunav {
+  box-shadow: 2px 0px 15px 0px #1a1a1a;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 
-@media screen and (max-width:750px){
-  body{
+
+
+
+nav {
+  background: #1a1a1a;
+  padding: 1%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 1%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  top: 100%;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 15px 0px #1a1a1a;
+  background: #1a1a1a;
+  visibility: hidden;
+  top: -10%;
+  transition: 0.7s;
+}
+
+nav ul li:hover {
+  background: lightblue;
+  color: #000;
+}
+
+nav ul li:hover .dropdown {
+  visibility: visible;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 750px) {
+  body {
     background-image: url("#");
   }
 
-  .moldura{
+  .moldura {
     margin-top: 2%;
     box-shadow: 0px 0px 0px 0px #fff;
     padding: 3%;
@@ -272,60 +334,58 @@ ul.task-list {
   .gallery {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.2fr;
-    grid-template-areas: 
-    "fig1" 
-    "fig2" 
-    "legenda";
+    grid-template-areas:
+      "fig1"
+      "fig2"
+      "legenda";
   }
 
-#figunica{
-      height: 400px;
-      text-align: center;
+  #figunica {
+    height: 400px;
+    text-align: center;
   }
 
-#fioinf{
+  #fioinf {
     text-align: center;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
   }
 
-#planoinf{
+  #planoinf {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
-#cap1fig1{
-    max-height: 150px ;
+  #cap1fig1 {
+    max-height: 150px;
   }
 
-#cap1fig2{
-  max-height: 350px;
-  text-align: center;
+  #cap1fig2 {
+    max-height: 350px;
+    text-align: center;
   }
-
 }
 
-
-#cap1fig1{
+#cap1fig1 {
   height: 300px;
   text-align: center;
 }
 
-#cap1fig2{
+#cap1fig2 {
   height: 500px;
   text-align: center;
 }
 
-#fioinf{
+#fioinf {
   text-align: center;
   max-height: 170px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#planoinf{
+#planoinf {
   text-align: center;
   height: 450px;
   margin-left: auto;
