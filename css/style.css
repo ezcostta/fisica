@@ -347,7 +347,7 @@ nav ul li:hover .homedropdown {
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .moldura {
@@ -392,8 +392,12 @@ nav ul li:hover .homedropdown {
     text-align: center;
   }
 /*Aqui vai a configuração da barra de menu para cel.*/
+nav{
+  height: 50px;
+}
+
 nav .homelogo {
-  float: none;
+  float: left;
   width: auto;
   justify-content: center;
 }
@@ -404,7 +408,7 @@ nav .homelinks {
   z-index: 5;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 50px;
   bottom: 100%;
   background-color:lightblue;
   flex-direction: column;
@@ -420,6 +424,7 @@ nav .homelinks a {
 
 nav .home-icon-burger {
   display: block;
+  float: right;
 }
 
 nav :checked ~ .homelinks {
