@@ -392,54 +392,54 @@ nav ul li:hover .homedropdown {
     text-align: center;
   }
 /*Aqui vai a configuração da barra de menu para cel.*/
-nav{
-  height: 50px;
-  width: auto;
-}
+  nav{
+    height: 50px;
+    width: auto;
+  }
 
-nav .homelogo {
-  float: left;
-  width: auto;
-  justify-content: center;
-}
+  nav .homelogo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
 
-nav .homelinks {
-  float: none;
-  position: fixed;
-  z-index: 5;
-  left: 0;
-  right: 0;
-  top: 50px;
-  bottom: 100%;
-  background-color:lightblue;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-}
+  nav .homelinks {
+    float: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 100%;
+    background-color:lightblue;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
 
-nav .homelinks a {
-  font-size: 20px;
-}
+  nav .homelinks a {
+    font-size: 20px;
+  }
 
-nav .home-icon-burger {
-  display: block;
-  float: right;
-}
+  nav .home-icon-burger {
+    display: block;
+    float: right;
+  }
 
-nav :checked ~ .homelinks {
-  bottom: 0;
-}
+  nav :checked ~ .homelinks {
+    bottom: 0;
+  }
 
-nav ul li:hover .homedropdown {
-  visibility: visible;
-  background: lightblue;
-  position: relative;
-  width: auto;
-  height: auto;
-  color: #101010;
-}
+  nav ul li:hover .homedropdown {
+    visibility: visible;
+    background: lightblue;
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #101010;
+  }
 
 }
 
