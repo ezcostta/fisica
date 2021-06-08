@@ -398,7 +398,7 @@ nav ul li:hover .homedropdown {
   }
 
   nav .homelogo {
-    float:none;
+    float:inherit;
     width: auto;
     justify-content: center;
   }
@@ -425,7 +425,7 @@ nav ul li:hover .homedropdown {
 
   nav .home-icon-burger {
     display: block;
-    float: right;
+    float:inherit;
   }
 
   nav :checked ~ .homelinks {
