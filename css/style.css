@@ -347,13 +347,13 @@ nav ul li:hover .homedropdown {
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
-    padding: 10%;
+    padding: 5%;
   }
 
   .moldura {
     margin-top: 2%;
     box-shadow: 0px 0px 0px 0px #fff;
-    padding: 3%;
+    width:auto;
   }
 
   .gallery {
@@ -424,8 +424,8 @@ nav ul li:hover .homedropdown {
   }
 
   nav .home-icon-burger {
-    display:inline-block;
-    float:inherit;
+    display:block;
+    float:none;
   }
 
   nav :checked ~ .homelinks {
