@@ -424,7 +424,7 @@ nav ul li:hover .homedropdown {
   }
 
   nav .home-icon-burger {
-    display: block;
+    display:inline-block;
     float:inherit;
   }
 
