@@ -9,8 +9,8 @@ body {
   background-image: url("../images/maze.png");
   margin: auto;
   max-width: 46em;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 100px;
   padding-bottom: 50px;
   hyphens: auto;
@@ -398,7 +398,7 @@ nav ul li:hover .homedropdown {
   }
 
   nav .homelogo {
-    float: none;
+    float:none;
     width: auto;
     justify-content: center;
   }
