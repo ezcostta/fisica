@@ -385,6 +385,7 @@ nav ul li:hover .homedropdown {
 
   #cap1fig1 {
     max-height: 150px;
+    float: center;
   }
 
   #cap1fig2 {
