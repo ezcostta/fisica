@@ -96,6 +96,16 @@ nav ul li:hover .homedropdown {
 
 
 @media screen and (max-width: 750px) {
+  body{
+    background-image: url("#");
+    padding: 10%;
+  }
+
+  nav{
+    height: 50px;
+    width: auto;
+  }
+
   nav .homelogo {
     float: none;
     width: auto;
@@ -108,7 +118,7 @@ nav ul li:hover .homedropdown {
     z-index: 5;
     left: 0;
     right: 0;
-    top: 100px;
+    top: 50px;
     bottom: 100%;
     background-color:lightblue;
     flex-direction: column;
@@ -124,6 +134,7 @@ nav ul li:hover .homedropdown {
 
   nav .home-icon-burger {
     display: block;
+    float: right;
   }
 
   nav :checked ~ .homelinks {
