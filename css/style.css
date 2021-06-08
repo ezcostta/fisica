@@ -347,7 +347,7 @@ nav ul li:hover .homedropdown {
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
-    padding: 10%;
+    padding: 0%;
   }
 
   .moldura {
@@ -384,9 +384,9 @@ nav ul li:hover .homedropdown {
   }
 
   #cap1fig1 {
-    max-height: 120px;
-    float: none;
-    display:block;
+    max-height: 100px;
+    display:float;
+    float:inline-start;
   }
 
   #cap1fig2 {
@@ -427,6 +427,7 @@ nav ul li:hover .homedropdown {
   nav .home-icon-burger {
     display: block;
     float: right;
+    padding-right: 10%;
   }
 
   nav :checked ~ .homelinks {
