@@ -11,7 +11,7 @@ body {
   max-width: 46em;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
   hyphens: auto;
   word-wrap: break-word;
@@ -252,74 +252,97 @@ ul.task-list {
   grid-area: legenda;
 }
 
-.menunav {
-  box-shadow: 2px 0px 15px 0px #1a1a1a;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
 
-
-
-
+/*Aqui vai a configuração da barra de menu*/
 nav {
-  background: #1a1a1a;
-  padding: 1%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  background-color: #101010;
+  z-index: 20;
+  padding: 0 5%;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+nav .homelogo {
+  float: left;
+  color: white;
+  width: 40%;
+  height: 100%;
+  align-items: center;
   display: flex;
 }
 
-nav ul li {
-  text-align: center;
-  width: 100%;
-  display: block;
-  position: relative;
-  padding: 0.3%;
+nav .homelinks {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav ul li a {
-  text-decoration: none;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
+nav .homelinks li {
+  list-style: none;
+}
+
+nav .homelinks a {
+  display: block;
+  padding: 1em;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: sans-serif;
-  font-weight: bolder;
-  font-size: 16px;
-  top: 100%;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
-.dropdown {
+.homedropdown {
   position: absolute;
-  width: 100%;
-  flex-wrap: wrap;
-  box-shadow: 0px 0px 15px 0px #1a1a1a;
-  background: #1a1a1a;
   visibility: hidden;
-  top: -10%;
-  transition: 0.7s;
+  width: 100%;
 }
 
 nav ul li:hover {
-  background: lightblue;
-  color: #000;
+    background: lightblue;
+    border-radius: 5px;
+    color:#000;
+  }
+
+#nav-toggle {
+  position: absolute;
+  top: -100%;
 }
 
-nav ul li:hover .dropdown {
-  visibility: visible;
-  color: #000;
+nav .home-icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-nav ul li a:hover {
-  color: #000;
+nav .home-icon-burger .line {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
+
+nav ul li:hover .homedropdown {
+    position: absolute;
+    visibility: visible;
+    background: black;
+    width:max-content;
+    height: auto;
+    padding-right: 37px;
+}
+
+
 
 @media screen and (max-width: 750px) {
   body {
@@ -367,6 +390,50 @@ nav ul li a:hover {
     max-height: 350px;
     text-align: center;
   }
+/*Aqui vai a configuração da barra de menu para cel.*/
+nav .homelogo {
+  float: none;
+  width: auto;
+  justify-content: center;
+}
+
+nav .homelinks {
+  float: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 100%;
+  background-color:lightblue;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .homelinks a {
+  font-size: 20px;
+}
+
+nav .home-icon-burger {
+  display: block;
+}
+
+nav :checked ~ .homelinks {
+  bottom: 0;
+}
+
+nav ul li:hover .homedropdown {
+  visibility: visible;
+  background: lightblue;
+  position: relative;
+  width: auto;
+  height: auto;
+  color: #101010;
+}
+
 }
 
 #cap1fig1 {
@@ -392,3 +459,10 @@ nav ul li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+html {
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 16px;
+  margin-top: 20%;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  background-color: #101010;
+  z-index: 20;
+  padding: 0 5%;
+}
+
+nav .homelogo {
+  float: left;
+  color: white;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+nav .homelinks {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .homelinks li {
+  list-style: none;
+}
+
+nav .homelinks a {
+  display: block;
+  padding: 1em;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homedropdown {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+}
+
+nav ul li:hover {
+    background: lightblue;
+    border-radius: 5px;
+    color:#000;
+  }
+
+#nav-toggle {
+  position: absolute;
+  top: -100%;
+}
+
+nav .home-icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .home-icon-burger .line {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+nav ul li:hover .homedropdown {
+    position: absolute;
+    visibility: visible;
+    background: black;
+    width:max-content;
+    height: auto;
+    padding-right: 37px;
+}
+
+
+@media screen and (max-width: 750px) {
+  nav .homelogo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+
+  nav .homelinks {
+    float: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    background-color:lightblue;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav .homelinks a {
+    font-size: 20px;
+  }
+
+  nav .home-icon-burger {
+    display: block;
+  }
+
+  nav :checked ~ .homelinks {
+    bottom: 0;
+  }
+
+  nav ul li:hover .homedropdown {
+    visibility: visible;
+    background: lightblue;
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #101010;
+  }
+}
