@@ -9,8 +9,8 @@ body {
   background-image: url("../images/maze.png");
   margin: auto;
   max-width: 46em;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 100px;
   padding-bottom: 50px;
   hyphens: auto;
@@ -252,6 +252,7 @@ ul.task-list {
   grid-area: legenda;
 }
 
+
 /*Aqui vai a configuração da barra de menu*/
 nav {
   position: fixed;
@@ -306,10 +307,10 @@ nav .homelinks a {
 }
 
 nav ul li:hover {
-  background: lightblue;
-  border-radius: 5px;
-  color: #000;
-}
+    background: lightblue;
+    border-radius: 5px;
+    color:#000;
+  }
 
 #nav-toggle {
   position: absolute;
@@ -333,26 +334,26 @@ nav .home-icon-burger .line {
 }
 
 nav ul li:hover .homedropdown {
-  position: absolute;
-  visibility: visible;
-  background: black;
-  width: max-content;
-  height: auto;
-  padding-right: 37px;
+    position: absolute;
+    visibility: visible;
+    background: black;
+    width:max-content;
+    height: auto;
+    padding-right: 37px;
 }
+
+
 
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
-    width: auto;
+    padding: 10%;
   }
 
   .moldura {
     margin-top: 2%;
     box-shadow: 0px 0px 0px 0px #fff;
-    padding-right: 1%;
-    padding-left: 1%;
-    width: auto;
+    padding: 3%;
   }
 
   .gallery {
@@ -390,8 +391,8 @@ nav ul li:hover .homedropdown {
     max-height: 350px;
     text-align: center;
   }
-  /*Aqui vai a configuração da barra de menu para cel.*/
-  nav {
+/*Aqui vai a configuração da barra de menu para cel.*/
+  nav{
     height: 50px;
     width: auto;
   }
@@ -410,7 +411,7 @@ nav ul li:hover .homedropdown {
     right: 0;
     top: 50px;
     bottom: 100%;
-    background-color: lightblue;
+    background-color:lightblue;
     flex-direction: column;
     width: auto;
     height: auto;
@@ -439,6 +440,7 @@ nav ul li:hover .homedropdown {
     height: auto;
     color: #101010;
   }
+
 }
 
 #cap1fig1 {
@@ -464,3 +466,10 @@ nav ul li:hover .homedropdown {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
+
+
+
+
