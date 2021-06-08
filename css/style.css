@@ -347,6 +347,7 @@ nav ul li:hover .homedropdown {
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
+    padding-top: 200px;
   }
 
   .moldura {
