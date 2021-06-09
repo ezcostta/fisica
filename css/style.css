@@ -252,7 +252,6 @@ ul.task-list {
   grid-area: legenda;
 }
 
-
 /*Aqui vai a configuração da barra de menu*/
 nav {
   position: fixed;
@@ -307,10 +306,10 @@ nav .homelinks a {
 }
 
 nav ul li:hover {
-    background: lightblue;
-    border-radius: 5px;
-    color:#000;
-  }
+  background: lightblue;
+  border-radius: 5px;
+  color: #000;
+}
 
 #nav-toggle {
   position: absolute;
@@ -333,22 +332,33 @@ nav .home-icon-burger .line {
   border-radius: 5px;
 }
 
-nav ul li:hover .homedropdown {
+/*nav ul li:hover .homedropdown {
     position: absolute;
     visibility: visible;
     background: black;
     width:max-content;
     height: auto;
     padding-right: 37px;
+}*/
+
+#menu-toggle {
+display: none;
+  }
+
+input:checked ~ .homedropdown {
+  visibility: visible;
+  position: absolute;
+  background: black;
+  width:max-content;
+  height: auto;
+  padding-right: 37px;
 }
-
-
 
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
     padding: 0%;
-    padding-top: 65px;
+    padding-top: 50px;
   }
 
   .moldura {
@@ -386,16 +396,16 @@ nav ul li:hover .homedropdown {
 
   #cap1fig1 {
     max-height: 100px;
-    display:float;
-    float:inline-start;
+    display: float;
+    float: inline-start;
   }
 
   #cap1fig2 {
     max-height: 350px;
     text-align: center;
   }
-/*Aqui vai a configuração da barra de menu para cel.*/
-  nav{
+  /*Aqui vai a configuração da barra de menu para cel.*/
+  nav {
     height: 50px;
     width: auto;
   }
@@ -413,7 +423,7 @@ nav ul li:hover .homedropdown {
     right: 0;
     top: 50px;
     bottom: 100%;
-    background-color:lightblue;
+    background-color: lightblue;
     flex-direction: column;
     width: auto;
     height: auto;
@@ -435,7 +445,7 @@ nav ul li:hover .homedropdown {
     bottom: 0;
   }
 
-  nav ul li:hover .homedropdown {
+  input:checked ~ .homedropdown {
     visibility: visible;
     background: lightblue;
     position: relative;
@@ -443,7 +453,6 @@ nav ul li:hover .homedropdown {
     height: auto;
     color: #101010;
   }
-
 }
 
 #cap1fig1 {
@@ -469,10 +478,3 @@ nav ul li:hover .homedropdown {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
-
-
-
-
