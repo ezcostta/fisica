@@ -85,15 +85,28 @@ nav .home-icon-burger .line {
   border-radius: 5px;
 }
 
-nav ul li:hover .homedropdown {
+/*nav ul li:hover .homedropdown {
     position: absolute;
     visibility: visible;
     background: black;
     width:max-content;
     height: auto;
     padding-right: 37px;
-}
+}*/
 
+#menu-toggle {
+  display: none;
+    }
+
+
+input:checked ~ .homedropdown {
+      visibility: visible;
+      position: absolute;
+      background: black;
+      width:max-content;
+      height: auto;
+      padding-right: 37px;
+    }
 
 @media screen and (max-width: 750px) {
   body{
@@ -141,7 +154,7 @@ nav ul li:hover .homedropdown {
     bottom: 0;
   }
 
-  nav ul li:hover .homedropdown {
+  input:checked ~ .homedropdown {
     visibility: visible;
     background: lightblue;
     position: relative;
