@@ -411,6 +411,11 @@ input:checked ~ .homedropdown {
     text-align: center;
   }
 
+  #fig2chap3{
+    max-width: 400px;
+    text-align: center;
+  }
+
   /*Aqui vai a configuração da barra de menu para cel.*/
   nav {
     height: 50px;
