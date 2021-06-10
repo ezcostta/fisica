@@ -408,8 +408,7 @@ input:checked ~ .homedropdown {
 
   #fig1chap3{
     max-width: 300px;
-    float:none;
-    width:auto;
+    text-align: center;
   }
 
   /*Aqui vai a configuração da barra de menu para cel.*/
