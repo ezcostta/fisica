@@ -409,6 +409,7 @@ input:checked ~ .homedropdown {
   #fig1chap3{
     max-height: 300px;
     float:left;
+    width:auto;
   }
 
   /*Aqui vai a configuração da barra de menu para cel.*/
