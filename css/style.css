@@ -354,6 +354,11 @@ input:checked ~ .homedropdown {
   padding-right: 37px;
 }
 
+#fig2chap3{
+  max-width: 600px;
+  text-align: center;
+}
+
 @media screen and (max-width: 750px) {
   body {
     background-image: url("#");
