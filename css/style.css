@@ -445,7 +445,7 @@ input:checked ~ .homedropdown {
   nav .home-icon-burger {
     display: block;
     float: right;
-    padding-right: 10%;
+    padding-right: 40%;
   }
 
   nav :checked ~ .homelinks {
